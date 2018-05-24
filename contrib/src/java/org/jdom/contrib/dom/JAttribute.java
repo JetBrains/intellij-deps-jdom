@@ -52,7 +52,7 @@
 
  */
 
-package org.jdom2.contrib.dom;
+package org.jdom.contrib.dom;
 
 import java.net.URISyntaxException;
 
@@ -64,9 +64,9 @@ import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 import org.w3c.dom.TypeInfo;
 
-import org.jdom2.Attribute;
-import org.jdom2.AttributeType;
-import org.jdom2.Namespace;
+import org.jdom.Attribute;
+import org.jdom.AttributeType;
+import org.jdom.Namespace;
 
 final class JAttribute extends JNamespaceAware implements Attr {
 

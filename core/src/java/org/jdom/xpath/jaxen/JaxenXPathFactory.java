@@ -52,14 +52,14 @@
 
  */
 
-package org.jdom2.xpath.jaxen;
+package org.jdom.xpath.jaxen;
 
 import java.util.Map;
 
-import org.jdom2.Namespace;
-import org.jdom2.filter.Filter;
-import org.jdom2.xpath.XPathExpression;
-import org.jdom2.xpath.XPathFactory;
+import org.jdom.Namespace;
+import org.jdom.filter.Filter;
+import org.jdom.xpath.XPathExpression;
+import org.jdom.xpath.XPathFactory;
 
 /**
  * This simple Factory creates XPath instances tailored to the Jaxen library.

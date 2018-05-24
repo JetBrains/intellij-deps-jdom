@@ -2,11 +2,11 @@ import java.io.IOException;
 
 import org.xml.sax.InputSource;
 
-import org.jdom2.Element;
-import org.jdom2.output.XMLOutputter;
+import org.jdom.Element;
+import org.jdom.output.XMLOutputter;
 
-import org.jdom2.contrib.input.scanner.ElementScanner;
-import org.jdom2.contrib.input.scanner.ElementListener;
+import org.jdom.contrib.input.scanner.ElementScanner;
+import org.jdom.contrib.input.scanner.ElementListener;
 
 
 @SuppressWarnings("javadoc")
@@ -16,7 +16,7 @@ public class ElementScannerTest
 
    public static void main(String[] args) throws Exception
    {
-      org.jdom2.contrib.input.scanner.XPathMatcher.setDebug(true);
+      org.jdom.contrib.input.scanner.XPathMatcher.setDebug(true);
 
       ElementScanner scanner = new ElementScanner();
 

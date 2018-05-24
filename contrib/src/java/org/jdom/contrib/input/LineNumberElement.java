@@ -52,10 +52,10 @@
 
  */
 
- package org.jdom2.contrib.input;
+ package org.jdom.contrib.input;
 
-import org.jdom2.Element;
-import org.jdom2.Namespace;
+import org.jdom.Element;
+import org.jdom.Namespace;
 
 /**
  * This class extends a normal Element with a traceback to its

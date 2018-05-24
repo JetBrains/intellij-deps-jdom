@@ -52,9 +52,9 @@
 
  */
 
-package org.jdom2.output;
+package org.jdom.output;
 
-import static org.jdom2.JDOMConstants.*;
+import static org.jdom.JDOMConstants.*;
 
 import java.util.List;
 
@@ -69,19 +69,19 @@ import org.xml.sax.SAXParseException;
 import org.xml.sax.ext.DeclHandler;
 import org.xml.sax.ext.LexicalHandler;
 
-import org.jdom2.CDATA;
-import org.jdom2.Comment;
-import org.jdom2.Content;
-import org.jdom2.DocType;
-import org.jdom2.Document;
-import org.jdom2.Element;
-import org.jdom2.EntityRef;
-import org.jdom2.JDOMException;
-import org.jdom2.ProcessingInstruction;
-import org.jdom2.Text;
-import org.jdom2.output.support.AbstractSAXOutputProcessor;
-import org.jdom2.output.support.SAXOutputProcessor;
-import org.jdom2.output.support.SAXTarget;
+import org.jdom.CDATA;
+import org.jdom.Comment;
+import org.jdom.Content;
+import org.jdom.DocType;
+import org.jdom.Document;
+import org.jdom.Element;
+import org.jdom.EntityRef;
+import org.jdom.JDOMException;
+import org.jdom.ProcessingInstruction;
+import org.jdom.Text;
+import org.jdom.output.support.AbstractSAXOutputProcessor;
+import org.jdom.output.support.SAXOutputProcessor;
+import org.jdom.output.support.SAXTarget;
 
 /**
  * Outputs a JDOM document as a stream of SAX2 events.
@@ -668,7 +668,7 @@ public class SAXOutputter {
 	 *        <code>List</code> of JDOM nodes to output.
 	 * @throws JDOMException
 	 *         if any error occurred.
-	 * @see #output(org.jdom2.Document)
+	 * @see #output(org.jdom.Document)
 	 */
 	public void output(List<? extends Content> nodes) throws JDOMException {
 		processor.processAsDocument(buildTarget(null), format, nodes);
@@ -703,7 +703,7 @@ public class SAXOutputter {
 	 *        <code>List</code> of JDOM nodes to output.
 	 * @throws JDOMException
 	 *         if any error occurred.
-	 * @see #outputFragment(org.jdom2.Content)
+	 * @see #outputFragment(org.jdom.Content)
 	 */
 	public void outputFragment(List<? extends Content> nodes)
 			throws JDOMException {

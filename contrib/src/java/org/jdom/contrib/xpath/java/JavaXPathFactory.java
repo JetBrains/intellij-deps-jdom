@@ -52,15 +52,15 @@
 
  */
 
-package org.jdom2.contrib.xpath.java;
+package org.jdom.contrib.xpath.java;
 
 import java.util.Map;
 
 import javax.xml.xpath.XPathFactory;
 
-import org.jdom2.Namespace;
-import org.jdom2.filter.Filter;
-import org.jdom2.xpath.XPathExpression;
+import org.jdom.Namespace;
+import org.jdom.filter.Filter;
+import org.jdom.xpath.XPathExpression;
 
 /**
  * An XPathFactory using the underlying infrastructure in javax.xml.xpath.*
@@ -68,7 +68,7 @@ import org.jdom2.xpath.XPathExpression;
  * @author Rolf Lear
  *
  */
-public class JavaXPathFactory extends org.jdom2.xpath.XPathFactory {
+public class JavaXPathFactory extends org.jdom.xpath.XPathFactory {
 	
 	ThreadLocal<XPathFactory> localfac = 
 			new ThreadLocal<XPathFactory>();

@@ -1,8 +1,8 @@
-package org.jdom2.test.cases.filter;
+package org.jdom.test.cases.filter;
 
-import org.jdom2.Element;
-import org.jdom2.Namespace;
-import org.jdom2.filter.ElementFilter;
+import org.jdom.Element;
+import org.jdom.Namespace;
+import org.jdom.filter.ElementFilter;
 import org.junit.Test;
 
 @SuppressWarnings("javadoc")

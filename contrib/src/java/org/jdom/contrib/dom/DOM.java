@@ -52,7 +52,7 @@
 
  */
 
-package org.jdom2.contrib.dom;
+package org.jdom.contrib.dom;
 
 import org.w3c.dom.Attr;
 import org.w3c.dom.CDATASection;
@@ -64,7 +64,7 @@ import org.w3c.dom.EntityReference;
 import org.w3c.dom.ProcessingInstruction;
 import org.w3c.dom.Text;
 
-import org.jdom2.Content;
+import org.jdom.Content;
 
 /**
  * Access JDOM Content using a (Read-Only) DOM model
@@ -78,7 +78,7 @@ public final class DOM {
 	 * @param doc The JDOM Document to wrap.
 	 * @return the wrapped Document
 	 */
-	public static final Document wrap(final org.jdom2.Document doc) {
+	public static final Document wrap(final org.jdom.Document doc) {
 		return wrap(doc, false);
 	}
 
@@ -89,7 +89,7 @@ public final class DOM {
 	 * @return the wrapped Document
 	 */
 	public static final Document wrap(
-			final org.jdom2.Document doc, final boolean scan) {
+      final org.jdom.Document doc, final boolean scan) {
 		final JDocument ret = new JDocument(doc);
 		if (scan) {
 			ret.scanAll();
@@ -98,7 +98,7 @@ public final class DOM {
 	}
 
 	private static final JDocument makeDoc(final Content c) {
-		final org.jdom2.Document doc = c.getDocument();
+		final org.jdom.Document doc = c.getDocument();
 		return new JDocument(doc);
 	}
 
@@ -107,7 +107,7 @@ public final class DOM {
 	 * @param emt The JDOM Element to wrap.
 	 * @return the wrapped Element
 	 */
-	public static final Element wrap(final org.jdom2.Element emt) {
+	public static final Element wrap(final org.jdom.Element emt) {
 		return makeDoc(emt).find(emt);
 	}
 
@@ -117,8 +117,8 @@ public final class DOM {
 	 * @param att The JDOM Attribute to wrap.
 	 * @return the wrapped Attribute
 	 */
-	public static final Attr wrap(final org.jdom2.Attribute att) {
-		final org.jdom2.Document doc = att.getDocument();
+	public static final Attr wrap(final org.jdom.Attribute att) {
+		final org.jdom.Document doc = att.getDocument();
 		final JDocument jd = new JDocument(doc);
 		return jd.find(att);
 	}
@@ -130,7 +130,7 @@ public final class DOM {
 	 * @param text The JDOM Text to wrap.
 	 * @return the wrapped Text
 	 */
-	public static final Text wrap(final org.jdom2.Text text) {
+	public static final Text wrap(final org.jdom.Text text) {
 		return makeDoc(text).find(text);
 	}
 
@@ -139,7 +139,7 @@ public final class DOM {
 	 * @param cdata The JDOM CDATA to wrap.
 	 * @return the wrapped CDATA
 	 */
-	public static final CDATASection wrap(final org.jdom2.CDATA cdata) {
+	public static final CDATASection wrap(final org.jdom.CDATA cdata) {
 		return makeDoc(cdata).find(cdata);
 	}
 
@@ -148,7 +148,7 @@ public final class DOM {
 	 * @param eref The JDOM EntityRef to wrap.
 	 * @return the wrapped EtityRef
 	 */
-	public static final EntityReference wrap(final org.jdom2.EntityRef eref) {
+	public static final EntityReference wrap(final org.jdom.EntityRef eref) {
 		return makeDoc(eref).find(eref);
 	}
 
@@ -159,7 +159,7 @@ public final class DOM {
 	 * @return the wrapped ProcessingInstrction
 	 */
 	public static final ProcessingInstruction wrap(
-			final org.jdom2.ProcessingInstruction pi) {
+			final org.jdom.ProcessingInstruction pi) {
 		return makeDoc(pi).find(pi);
 	}
 
@@ -168,7 +168,7 @@ public final class DOM {
 	 * @param comment The JDOM Comment to wrap.
 	 * @return the wrapped Comment
 	 */
-	public static final Comment wrap(final org.jdom2.Comment comment) {
+	public static final Comment wrap(final org.jdom.Comment comment) {
 		return makeDoc(comment).find(comment);
 	}
 
@@ -177,7 +177,7 @@ public final class DOM {
 	 * @param dt The JDOM DocType to wrap.
 	 * @return the wrapped DocType
 	 */
-	public static final DocumentType wrap(final org.jdom2.DocType dt) {
+	public static final DocumentType wrap(final org.jdom.DocType dt) {
 		return makeDoc(dt).find(dt);
 	}
 

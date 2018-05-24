@@ -1,4 +1,4 @@
-package org.jdom2.test.cases;
+package org.jdom.test.cases;
 
 import static org.junit.Assert.assertTrue;
 
@@ -7,9 +7,9 @@ import java.util.List;
 
 import org.junit.Test;
 
-import org.jdom2.Element;
-import org.jdom2.Namespace;
-import org.jdom2.test.util.AbstractTestList;
+import org.jdom.Element;
+import org.jdom.Namespace;
+import org.jdom.test.util.AbstractTestList;
 
 @SuppressWarnings("javadoc")
 public class TestFilterListElement extends AbstractTestList<Element> {

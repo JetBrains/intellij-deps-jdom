@@ -52,7 +52,7 @@
 
  */
 
-package org.jdom2.input.sax;
+package org.jdom.input.sax;
 
 import java.io.File;
 import java.io.IOException;
@@ -69,10 +69,10 @@ import org.xml.sax.SAXException;
 import org.xml.sax.SAXParseException;
 import org.xml.sax.XMLReader;
 
-import org.jdom2.Document;
-import org.jdom2.JDOMException;
-import org.jdom2.JDOMFactory;
-import org.jdom2.input.JDOMParseException;
+import org.jdom.Document;
+import org.jdom.JDOMException;
+import org.jdom.JDOMFactory;
+import org.jdom.input.JDOMParseException;
 
 /**
  * Builds a JDOM document from files, streams, readers, URLs, or a SAX
@@ -93,7 +93,7 @@ import org.jdom2.input.JDOMParseException;
  * instance of a SAXHanfler on each call (the JDOM-supplied one does)
  * </ol>
  * 
- * @see org.jdom2.input.sax
+ * @see org.jdom.input.sax
  * @author Rolf Lear
  */
 public class SAXBuilderEngine implements SAXEngine {
@@ -127,7 +127,7 @@ public class SAXBuilderEngine implements SAXEngine {
 	/*
 	 * (non-Javadoc)
 	 * 
-	 * @see org.jdom2.input.sax.SAXEngine#getJDOMFactory()
+	 * @see org.jdom.input.sax.SAXEngine#getJDOMFactory()
 	 */
 	@Override
 	public JDOMFactory getJDOMFactory() {
@@ -137,7 +137,7 @@ public class SAXBuilderEngine implements SAXEngine {
 	/*
 	 * (non-Javadoc)
 	 * 
-	 * @see org.jdom2.input.sax.SAXEngine#isValidating()
+	 * @see org.jdom.input.sax.SAXEngine#isValidating()
 	 */
 	@Override
 	public boolean isValidating() {
@@ -147,7 +147,7 @@ public class SAXBuilderEngine implements SAXEngine {
 	/*
 	 * (non-Javadoc)
 	 * 
-	 * @see org.jdom2.input.sax.SAXEngine#getErrorHandler()
+	 * @see org.jdom.input.sax.SAXEngine#getErrorHandler()
 	 */
 	@Override
 	public ErrorHandler getErrorHandler() {
@@ -157,7 +157,7 @@ public class SAXBuilderEngine implements SAXEngine {
 	/*
 	 * (non-Javadoc)
 	 * 
-	 * @see org.jdom2.input.sax.SAXEngine#getEntityResolver()
+	 * @see org.jdom.input.sax.SAXEngine#getEntityResolver()
 	 */
 	@Override
 	public EntityResolver getEntityResolver() {
@@ -167,7 +167,7 @@ public class SAXBuilderEngine implements SAXEngine {
 	/*
 	 * (non-Javadoc)
 	 * 
-	 * @see org.jdom2.input.sax.SAXEngine#getDTDHandler()
+	 * @see org.jdom.input.sax.SAXEngine#getDTDHandler()
 	 */
 	@Override
 	public DTDHandler getDTDHandler() {
@@ -177,7 +177,7 @@ public class SAXBuilderEngine implements SAXEngine {
 	/*
 	 * (non-Javadoc)
 	 * 
-	 * @see org.jdom2.input.sax.SAXEngine#isIgnoringElementContentWhitespace()
+	 * @see org.jdom.input.sax.SAXEngine#isIgnoringElementContentWhitespace()
 	 */
 	@Override
 	public boolean getIgnoringElementContentWhitespace() {
@@ -187,7 +187,7 @@ public class SAXBuilderEngine implements SAXEngine {
 	/*
 	 * (non-Javadoc)
 	 * 
-	 * @see org.jdom2.input.sax.SAXEngine#isIgnoringBoundaryWhitespace()
+	 * @see org.jdom.input.sax.SAXEngine#isIgnoringBoundaryWhitespace()
 	 */
 	@Override
 	public boolean getIgnoringBoundaryWhitespace() {
@@ -197,7 +197,7 @@ public class SAXBuilderEngine implements SAXEngine {
 	/*
 	 * (non-Javadoc)
 	 * 
-	 * @see org.jdom2.input.sax.SAXEngine#isExpandEntities()
+	 * @see org.jdom.input.sax.SAXEngine#isExpandEntities()
 	 */
 	@Override
 	public boolean getExpandEntities() {
@@ -207,7 +207,7 @@ public class SAXBuilderEngine implements SAXEngine {
 	/*
 	 * (non-Javadoc)
 	 * 
-	 * @see org.jdom2.input.sax.SAXEngine#build(org.xml.sax.InputSource)
+	 * @see org.jdom.input.sax.SAXEngine#build(org.xml.sax.InputSource)
 	 */
 	@Override
 	public Document build(final InputSource in)
@@ -246,7 +246,7 @@ public class SAXBuilderEngine implements SAXEngine {
 	/*
 	 * (non-Javadoc)
 	 * 
-	 * @see org.jdom2.input.sax.SAXEngine#build(java.io.InputStream)
+	 * @see org.jdom.input.sax.SAXEngine#build(java.io.InputStream)
 	 */
 	@Override
 	public Document build(final InputStream in) throws JDOMException, IOException {
@@ -256,7 +256,7 @@ public class SAXBuilderEngine implements SAXEngine {
 	/*
 	 * (non-Javadoc)
 	 * 
-	 * @see org.jdom2.input.sax.SAXEngine#build(java.io.File)
+	 * @see org.jdom.input.sax.SAXEngine#build(java.io.File)
 	 */
 	@Override
 	public Document build(final File file) throws JDOMException, IOException {
@@ -270,7 +270,7 @@ public class SAXBuilderEngine implements SAXEngine {
 	/*
 	 * (non-Javadoc)
 	 * 
-	 * @see org.jdom2.input.sax.SAXEngine#build(java.net.URL)
+	 * @see org.jdom.input.sax.SAXEngine#build(java.net.URL)
 	 */
 	@Override
 	public Document build(final URL url) throws JDOMException, IOException {
@@ -280,7 +280,7 @@ public class SAXBuilderEngine implements SAXEngine {
 	/*
 	 * (non-Javadoc)
 	 * 
-	 * @see org.jdom2.input.sax.SAXEngine#build(java.io.InputStream,
+	 * @see org.jdom.input.sax.SAXEngine#build(java.io.InputStream,
 	 * java.lang.String)
 	 */
 	@Override
@@ -295,7 +295,7 @@ public class SAXBuilderEngine implements SAXEngine {
 	/*
 	 * (non-Javadoc)
 	 * 
-	 * @see org.jdom2.input.sax.SAXEngine#build(java.io.Reader)
+	 * @see org.jdom.input.sax.SAXEngine#build(java.io.Reader)
 	 */
 	@Override
 	public Document build(final Reader characterStream)
@@ -306,7 +306,7 @@ public class SAXBuilderEngine implements SAXEngine {
 	/*
 	 * (non-Javadoc)
 	 * 
-	 * @see org.jdom2.input.sax.SAXEngine#build(java.io.Reader,
+	 * @see org.jdom.input.sax.SAXEngine#build(java.io.Reader,
 	 * java.lang.String)
 	 */
 	@Override
@@ -321,7 +321,7 @@ public class SAXBuilderEngine implements SAXEngine {
 	/*
 	 * (non-Javadoc)
 	 * 
-	 * @see org.jdom2.input.sax.SAXEngine#build(java.lang.String)
+	 * @see org.jdom.input.sax.SAXEngine#build(java.lang.String)
 	 */
 	@Override
 	public Document build(final String systemId)

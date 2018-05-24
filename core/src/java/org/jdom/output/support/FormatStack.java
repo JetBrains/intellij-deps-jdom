@@ -52,12 +52,12 @@
 
  */
 
-package org.jdom2.output.support;
+package org.jdom.output.support;
 
-import org.jdom2.internal.ArrayCopy;
-import org.jdom2.output.EscapeStrategy;
-import org.jdom2.output.Format;
-import org.jdom2.output.Format.TextMode;
+import org.jdom.internal.ArrayCopy;
+import org.jdom.output.EscapeStrategy;
+import org.jdom.output.Format;
+import org.jdom.output.Format.TextMode;
 
 /**
  * FormatStack implements a mechanism where the formatting details can be

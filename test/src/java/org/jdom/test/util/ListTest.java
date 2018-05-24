@@ -1,4 +1,4 @@
-package org.jdom2.test.util;
+package org.jdom.test.util;
 
 import java.util.ArrayList;
 import java.util.List;

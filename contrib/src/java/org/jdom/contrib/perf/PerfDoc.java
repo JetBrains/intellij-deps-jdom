@@ -53,7 +53,7 @@
  */
 
 
-package org.jdom2.contrib.perf;
+package org.jdom.contrib.perf;
 
 import java.io.CharArrayReader;
 import java.io.File;
@@ -76,31 +76,31 @@ import org.xml.sax.SAXException;
 import org.xml.sax.XMLReader;
 import org.xml.sax.ext.DefaultHandler2;
 
-import org.jdom2.Attribute;
-import org.jdom2.CDATA;
-import org.jdom2.Comment;
-import org.jdom2.Content;
-import org.jdom2.DefaultJDOMFactory;
-import org.jdom2.DocType;
-import org.jdom2.Document;
-import org.jdom2.Element;
-import org.jdom2.EntityRef;
-import org.jdom2.Namespace;
-import org.jdom2.ProcessingInstruction;
-import org.jdom2.Text;
-import org.jdom2.UncheckedJDOMFactory;
-import org.jdom2.filter.ElementFilter;
-import org.jdom2.input.DOMBuilder;
-import org.jdom2.input.SAXBuilder;
-import org.jdom2.input.StAXEventBuilder;
-import org.jdom2.input.StAXStreamBuilder;
-import org.jdom2.input.sax.SAXHandler;
-import org.jdom2.internal.ArrayCopy;
-import org.jdom2.output.Format;
-import org.jdom2.output.SAXOutputter;
-import org.jdom2.output.XMLOutputter;
-import org.jdom2.xpath.XPathExpression;
-import org.jdom2.xpath.XPathFactory;
+import org.jdom.Attribute;
+import org.jdom.CDATA;
+import org.jdom.Comment;
+import org.jdom.Content;
+import org.jdom.DefaultJDOMFactory;
+import org.jdom.DocType;
+import org.jdom.Document;
+import org.jdom.Element;
+import org.jdom.EntityRef;
+import org.jdom.Namespace;
+import org.jdom.ProcessingInstruction;
+import org.jdom.Text;
+import org.jdom.UncheckedJDOMFactory;
+import org.jdom.filter.ElementFilter;
+import org.jdom.input.DOMBuilder;
+import org.jdom.input.SAXBuilder;
+import org.jdom.input.StAXEventBuilder;
+import org.jdom.input.StAXStreamBuilder;
+import org.jdom.input.sax.SAXHandler;
+import org.jdom.internal.ArrayCopy;
+import org.jdom.output.Format;
+import org.jdom.output.SAXOutputter;
+import org.jdom.output.XMLOutputter;
+import org.jdom.xpath.XPathExpression;
+import org.jdom.xpath.XPathFactory;
 
 @SuppressWarnings("javadoc")
 public class PerfDoc {

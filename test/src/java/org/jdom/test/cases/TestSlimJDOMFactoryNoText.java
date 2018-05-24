@@ -1,11 +1,11 @@
-package org.jdom2.test.cases;
+package org.jdom.test.cases;
 
 import static org.junit.Assert.*;
 import org.junit.Test;
 
-import org.jdom2.JDOMFactory;
-import org.jdom2.SlimJDOMFactory;
-import org.jdom2.Text;
+import org.jdom.JDOMFactory;
+import org.jdom.SlimJDOMFactory;
+import org.jdom.Text;
 
 @SuppressWarnings("javadoc")
 public class TestSlimJDOMFactoryNoText extends AbstractTestJDOMFactory {

@@ -52,7 +52,7 @@
 
  */
 
-package org.jdom2.contrib.output;
+package org.jdom.contrib.output;
 
 /**
  * A JTree outputter.
@@ -66,9 +66,9 @@ package org.jdom2.contrib.output;
  */
 import java.util.Iterator;
 import javax.swing.tree.DefaultMutableTreeNode;
-import org.jdom2.Document;
-import org.jdom2.Attribute;
-import org.jdom2.Element;
+import org.jdom.Document;
+import org.jdom.Attribute;
+import org.jdom.Element;
 
 @SuppressWarnings("javadoc")
 public class JTreeOutputter {

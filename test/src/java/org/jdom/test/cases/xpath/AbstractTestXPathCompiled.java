@@ -52,10 +52,10 @@
 
  */
 
-package org.jdom2.test.cases.xpath;
+package org.jdom.test.cases.xpath;
 
-import static org.jdom2.test.util.UnitTestUtil.checkException;
-import static org.jdom2.test.util.UnitTestUtil.failNoException;
+import static org.jdom.test.util.UnitTestUtil.checkException;
+import static org.jdom.test.util.UnitTestUtil.failNoException;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
@@ -72,24 +72,24 @@ import java.util.Map;
 
 import org.junit.Test;
 
-import org.jdom2.Attribute;
-import org.jdom2.CDATA;
-import org.jdom2.Comment;
-import org.jdom2.Document;
-import org.jdom2.Element;
-import org.jdom2.EntityRef;
-import org.jdom2.JDOMException;
-import org.jdom2.Namespace;
-import org.jdom2.NamespaceAware;
-import org.jdom2.ProcessingInstruction;
-import org.jdom2.Text;
-import org.jdom2.filter.Filter;
-import org.jdom2.filter.Filters;
-import org.jdom2.test.util.UnitTestUtil;
-import org.jdom2.xpath.XPathBuilder;
-import org.jdom2.xpath.XPathDiagnostic;
-import org.jdom2.xpath.XPathExpression;
-import org.jdom2.xpath.XPathFactory;
+import org.jdom.Attribute;
+import org.jdom.CDATA;
+import org.jdom.Comment;
+import org.jdom.Document;
+import org.jdom.Element;
+import org.jdom.EntityRef;
+import org.jdom.JDOMException;
+import org.jdom.Namespace;
+import org.jdom.NamespaceAware;
+import org.jdom.ProcessingInstruction;
+import org.jdom.Text;
+import org.jdom.filter.Filter;
+import org.jdom.filter.Filters;
+import org.jdom.test.util.UnitTestUtil;
+import org.jdom.xpath.XPathBuilder;
+import org.jdom.xpath.XPathDiagnostic;
+import org.jdom.xpath.XPathExpression;
+import org.jdom.xpath.XPathFactory;
 
 @SuppressWarnings({"javadoc"})
 public abstract class AbstractTestXPathCompiled {

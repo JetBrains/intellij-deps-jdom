@@ -52,7 +52,7 @@
 
  */
 
-package org.jdom2;
+package org.jdom;
 
 /**
  * Thrown when a name is supplied in construction of a JDOM construct whose

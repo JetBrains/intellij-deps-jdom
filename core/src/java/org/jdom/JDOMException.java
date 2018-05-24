@@ -52,7 +52,7 @@
 
  */
 
-package org.jdom2;
+package org.jdom;
 
 /**
  * The top level 'checked' exception that JDOM classes can throw. JDOM does

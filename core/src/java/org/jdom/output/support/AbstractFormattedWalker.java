@@ -52,17 +52,17 @@
 
  */
 
-package org.jdom2.output.support;
+package org.jdom.output.support;
 
 import java.util.Iterator;
 import java.util.List;
 import java.util.NoSuchElementException;
 
-import org.jdom2.CDATA;
-import org.jdom2.Content;
-import org.jdom2.internal.ArrayCopy;
-import org.jdom2.output.EscapeStrategy;
-import org.jdom2.output.Format;
+import org.jdom.CDATA;
+import org.jdom.Content;
+import org.jdom.internal.ArrayCopy;
+import org.jdom.output.EscapeStrategy;
+import org.jdom.output.Format;
 
 /**
  * This Walker implementation walks a list of Content in a Formatted form of

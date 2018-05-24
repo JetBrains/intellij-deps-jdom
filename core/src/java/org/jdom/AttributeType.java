@@ -52,7 +52,7 @@
 
  */
 
-package org.jdom2;
+package org.jdom;
 
 import org.xml.sax.Attributes;
 

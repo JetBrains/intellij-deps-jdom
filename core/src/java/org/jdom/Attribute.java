@@ -52,7 +52,7 @@
 
  */
 
-package org.jdom2;
+package org.jdom;
 
 import java.io.Serializable;
 import java.util.ArrayList;
@@ -168,7 +168,7 @@ public class Attribute extends CloneBase
 	 *         namespace. Attributes cannot be in a default namespace.
 	 * @throws IllegalDataException if the given attribute value is
 	 *         illegal character data (as determined by
-	 *         {@link org.jdom2.Verifier#checkCharacterData}).
+	 *         {@link org.jdom.Verifier#checkCharacterData}).
 	 */
 	public Attribute(final String name, final String value, final Namespace namespace) {
 		this(name, value, AttributeType.UNDECLARED, namespace);
@@ -188,7 +188,7 @@ public class Attribute extends CloneBase
 	 *         namespace. Attributes cannot be in a default namespace.
 	 * @throws IllegalDataException if the given attribute value is
 	 *         illegal character data (as determined by
-	 *         {@link org.jdom2.Verifier#checkCharacterData}) or
+	 *         {@link org.jdom.Verifier#checkCharacterData}) or
 	 *         if the given attribute type is not one of the
 	 *         supported types.
 	 * @deprecated Use {@link #Attribute(String, String, AttributeType, Namespace)}.
@@ -212,7 +212,7 @@ public class Attribute extends CloneBase
 	 *         namespace. Attributes cannot be in a default namespace.
 	 * @throws IllegalDataException if the given attribute value is
 	 *         illegal character data (as determined by
-	 *         {@link org.jdom2.Verifier#checkCharacterData}) or
+	 *         {@link org.jdom.Verifier#checkCharacterData}) or
 	 *         if the given attribute type is not one of the
 	 *         supported types.
 	 */
@@ -238,7 +238,7 @@ public class Attribute extends CloneBase
 	 *         attribute name.
 	 * @throws IllegalDataException if the given attribute value is
 	 *         illegal character data (as determined by
-	 *         {@link org.jdom2.Verifier#checkCharacterData}).
+	 *         {@link org.jdom.Verifier#checkCharacterData}).
 	 */
 	public Attribute(final String name, final String value) {
 		this(name, value, AttributeType.UNDECLARED, Namespace.NO_NAMESPACE);
@@ -260,7 +260,7 @@ public class Attribute extends CloneBase
 	 *         attribute name.
 	 * @throws IllegalDataException if the given attribute value is
 	 *         illegal character data (as determined by
-	 *         {@link org.jdom2.Verifier#checkCharacterData}) or
+	 *         {@link org.jdom.Verifier#checkCharacterData}) or
 	 *         if the given attribute type is not one of the
 	 *         supported types.
 	 */
@@ -284,7 +284,7 @@ public class Attribute extends CloneBase
 	 *         attribute name.
 	 * @throws IllegalDataException if the given attribute value is
 	 *         illegal character data (as determined by
-	 *         {@link org.jdom2.Verifier#checkCharacterData}) or
+	 *         {@link org.jdom.Verifier#checkCharacterData}) or
 	 *         if the given attribute type is not one of the
 	 *         supported types.
 	 * @deprecated Use {@link #Attribute(String, String, AttributeType)}
@@ -475,7 +475,7 @@ public class Attribute extends CloneBase
 	 * @return <code>Attribute</code> - this Attribute modified.
 	 * @throws IllegalDataException if the given attribute value is
 	 *         illegal character data (as determined by
-	 *         {@link org.jdom2.Verifier#checkCharacterData}).
+	 *         {@link org.jdom.Verifier#checkCharacterData}).
 	 */
 	public Attribute setValue(final String value) {
 		if (value == null) {

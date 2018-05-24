@@ -52,7 +52,7 @@
 
  */
 
-package org.jdom2;
+package org.jdom;
 
 
 /**
@@ -147,7 +147,7 @@ public class Comment extends Content {
 	 * This returns a <code>String</code> representation of the
 	 * <code>Comment</code>, suitable for debugging. If the XML
 	 * representation of the <code>Comment</code> is desired,
-	 * {@link org.jdom2.output.XMLOutputter#outputString(Comment)}
+	 * {@link org.jdom.output.XMLOutputter#outputString(Comment)}
 	 * should be used.
 	 *
 	 * @return <code>String</code> - information about the
@@ -157,7 +157,7 @@ public class Comment extends Content {
 	public String toString() {
 		return new StringBuilder()
 		.append("[Comment: ")
-		.append(new org.jdom2.output.XMLOutputter().outputString(this))
+		.append(new org.jdom.output.XMLOutputter().outputString(this))
 		.append("]")
 		.toString();
 	}

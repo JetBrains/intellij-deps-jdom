@@ -52,7 +52,7 @@
 
  */
 
-package org.jdom2.output.support;
+package org.jdom.output.support;
 
 import org.xml.sax.ContentHandler;
 import org.xml.sax.DTDHandler;
@@ -61,7 +61,7 @@ import org.xml.sax.ErrorHandler;
 import org.xml.sax.ext.DeclHandler;
 import org.xml.sax.ext.LexicalHandler;
 
-import org.jdom2.output.JDOMLocator;
+import org.jdom.output.JDOMLocator;
 
 /**
  * The target for all SAX notifications in this OuputProcessor

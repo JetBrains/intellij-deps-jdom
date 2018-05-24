@@ -86,7 +86,7 @@ For instructions on how to build JDOM, please view the README.txt file.
 	<property name="stax.dir" value="dummy" />
 	
 	<property name="lib.dir" value="./lib"/>
-	<property name="packages" value="org.jdom2.*"/>
+	<property name="packages" value="org.jdom.*"/>
 
 	<property name="build.javadocs" value="${build}/apidocs"/>
 
@@ -356,7 +356,7 @@ For instructions on how to build JDOM, please view the README.txt file.
 			    
 		<!-- Convert the test cases from JUnit4 to a JUnit3 format -->
 		<!-- This also copies the resources only. -->
-		<java classname="org.jdom2.contrib.android.TranslateTests"
+		<java classname="org.jdom.contrib.android.TranslateTests"
 		    classpathref="at.class.path" >
 			<arg value="${package}/${jarbase}-junit.jar" />
 		    <arg value="${android}/${android.project}Test/src" />

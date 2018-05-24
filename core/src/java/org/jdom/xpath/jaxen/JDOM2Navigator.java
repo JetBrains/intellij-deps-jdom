@@ -52,7 +52,7 @@
 
  */
 
-package org.jdom2.xpath.jaxen;
+package org.jdom.xpath.jaxen;
 
 /**
  * Simply extend the core Navigator to make it all final.

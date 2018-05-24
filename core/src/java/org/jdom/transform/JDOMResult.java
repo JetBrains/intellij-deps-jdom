@@ -52,14 +52,14 @@
 
  */
 
-package org.jdom2.transform;
+package org.jdom.transform;
 
 import java.util.*;
 
 import javax.xml.transform.sax.*;
 
-import org.jdom2.*;
-import org.jdom2.input.sax.SAXHandler;
+import org.jdom.*;
+import org.jdom.input.sax.SAXHandler;
 
 import org.xml.sax.*;
 import org.xml.sax.ext.*;
@@ -93,7 +93,7 @@ import org.xml.sax.helpers.*;
  *   }
  * </code></pre>
  *
- * @see      org.jdom2.transform.JDOMSource
+ * @see      org.jdom.transform.JDOMSource
  *
  * @author  Laurent Bihanic
  * @author  Jason Hunter

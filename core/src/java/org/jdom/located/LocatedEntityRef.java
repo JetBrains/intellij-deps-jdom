@@ -52,11 +52,11 @@
 
  */
 
-package org.jdom2.located;
+package org.jdom.located;
 
-import org.jdom2.EntityRef;
-import org.jdom2.IllegalDataException;
-import org.jdom2.IllegalNameException;
+import org.jdom.EntityRef;
+import org.jdom.IllegalDataException;
+import org.jdom.IllegalNameException;
 
 /**
  * An XML entity reference. Methods allow the user to manage its name, public

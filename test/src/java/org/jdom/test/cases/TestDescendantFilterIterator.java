@@ -1,4 +1,4 @@
-package org.jdom2.test.cases;
+package org.jdom.test.cases;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
@@ -10,11 +10,11 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.NoSuchElementException;
 
-import org.jdom2.Content;
-import org.jdom2.Document;
-import org.jdom2.Element;
-import org.jdom2.filter.ElementFilter;
-import org.jdom2.util.IteratorIterable;
+import org.jdom.Content;
+import org.jdom.Document;
+import org.jdom.Element;
+import org.jdom.filter.ElementFilter;
+import org.jdom.util.IteratorIterable;
 
 import org.junit.Test;
 

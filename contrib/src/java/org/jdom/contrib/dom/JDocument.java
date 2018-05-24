@@ -52,7 +52,7 @@
 
  */
 
-package org.jdom2.contrib.dom;
+package org.jdom.contrib.dom;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -76,15 +76,15 @@ import org.w3c.dom.NodeList;
 import org.w3c.dom.ProcessingInstruction;
 import org.w3c.dom.Text;
 
-import org.jdom2.Attribute;
-import org.jdom2.AttributeType;
-import org.jdom2.CDATA;
-import org.jdom2.DocType;
-import org.jdom2.EntityRef;
-import org.jdom2.Namespace;
-import org.jdom2.Parent;
-import org.jdom2.filter.Filters;
-import org.jdom2.util.NamespaceStack;
+import org.jdom.Attribute;
+import org.jdom.AttributeType;
+import org.jdom.CDATA;
+import org.jdom.DocType;
+import org.jdom.EntityRef;
+import org.jdom.Namespace;
+import org.jdom.Parent;
+import org.jdom.filter.Filters;
+import org.jdom.util.NamespaceStack;
 
 class JDocument extends JParent implements Document {
 
@@ -101,7 +101,7 @@ class JDocument extends JParent implements Document {
 			new IdentityHashMap<Object, JNamespaceAware>();
 	private final HashMap<String, JElement> idmap = new HashMap<String, JElement>();
 
-	public JDocument(final org.jdom2.Document shadow) {
+	public JDocument(final org.jdom.Document shadow) {
 		super(null, null, shadow, Node.DOCUMENT_NODE, new Namespace[]{
 				Namespace.NO_NAMESPACE,
 				Namespace.XML_NAMESPACE
@@ -135,21 +135,21 @@ class JDocument extends JParent implements Document {
 			return;
 		}
 		allscanned = true;
-		final Iterator<org.jdom2.Element> it = shadow.getDescendants(Filters.element());
+		final Iterator<org.jdom.Element> it = shadow.getDescendants(Filters.element());
 		while (it.hasNext()) {
 			find(it.next());
 		}
 	}
 
-	public JElement find(final org.jdom2.Element emt) {
+	public JElement find(final org.jdom.Element emt) {
 		final JNamespaceAware me = mapped.get(emt);
 		if (me != null) {
 			return (JElement)me;
 		}
-		final org.jdom2.Element jp = emt.getParentElement();
+		final org.jdom.Element jp = emt.getParentElement();
 		if (jp == null) {
 			// root level element (or detached).
-			final org.jdom2.Document jd = emt.getDocument();
+			final org.jdom.Document jd = emt.getDocument();
 			// both may be null....
 			if (jd != shadow) {
 				// we are from different documents...
@@ -183,12 +183,12 @@ class JDocument extends JParent implements Document {
 		return ret;
 	}
 
-	public JAttribute find(final org.jdom2.Attribute att) {
+	public JAttribute find(final org.jdom.Attribute att) {
 		final JNamespaceAware me = mapped.get(att);
 		if (me != null) {
 			return (JAttribute)me;
 		}
-		final org.jdom2.Element jp = att.getParent();
+		final org.jdom.Element jp = att.getParent();
 		final JParent pnt = jp == null ? this : find(jp);
 		final NamespaceStack ns = jp == null ?
 				new NamespaceStack() : new NamespaceStack(find(jp).scope);
@@ -198,12 +198,12 @@ class JDocument extends JParent implements Document {
 				return ret;
 	}
 
-	private JContent findContent(final org.jdom2.Content content) {
+	private JContent findContent(final org.jdom.Content content) {
 		final JNamespaceAware me = mapped.get(content);
 		if (me != null) {
 			return (JContent)me;
 		}
-		final org.jdom2.Element jp = content.getParentElement();
+		final org.jdom.Element jp = content.getParentElement();
 		final JParent pnt = jp == null ? this : find(jp);
 		JContent ret = null;
 		switch (content.getCType()) {
@@ -242,7 +242,7 @@ class JDocument extends JParent implements Document {
 	}
 
 	public JProcessingInstruction find(
-			final org.jdom2.ProcessingInstruction content) {
+			final org.jdom.ProcessingInstruction content) {
 		return (JProcessingInstruction)findContent(content);
 	}
 
@@ -250,16 +250,16 @@ class JDocument extends JParent implements Document {
 		return (JEntityRef)findContent(content);
 	}
 
-	public JComment find(final org.jdom2.Comment content) {
+	public JComment find(final org.jdom.Comment content) {
 		return (JComment)findContent(content);
 	}
 
-	public JText find(final org.jdom2.Text content) {
+	public JText find(final org.jdom.Text content) {
 		return (JText)findContent(content);
 	}
 
 	private void checkID(final JElement je) {
-		final org.jdom2.Element emt = (org.jdom2.Element)(je.shadow);
+		final org.jdom.Element emt = (org.jdom.Element)(je.shadow);
 		if (emt.hasAttributes()) {
 			for (final Attribute a : emt.getAttributes()) {
 				if (a.getAttributeType() == AttributeType.ID) {
@@ -301,11 +301,11 @@ class JDocument extends JParent implements Document {
 		final ArrayList<JElement> enodes = new ArrayList<JElement>();
 		final boolean alltags = "*".equals(tagname);
 		
-		final Iterator<org.jdom2.Element> it =
+		final Iterator<org.jdom.Element> it =
 				xshadow.getDescendants(Filters.element());
 
 		while (it.hasNext()) {
-			final org.jdom2.Element e = it.next();
+			final org.jdom.Element e = it.next();
 			if (alltags || tagname.equals(e.getQualifiedName())) {
 				enodes.add(find(e));
 			}
@@ -327,11 +327,11 @@ class JDocument extends JParent implements Document {
 
 		final ArrayList<JElement> enodes = new ArrayList<JElement>();
 
-		final Iterator<org.jdom2.Element> it =
+		final Iterator<org.jdom.Element> it =
 				xshadow.getDescendants(Filters.element());
 
 		while (it.hasNext()) {
-			final org.jdom2.Element e = it.next();
+			final org.jdom.Element e = it.next();
 			if ((allname || localName.equals(e.getName())) &&
 					(alluri || namespaceURI.equals(e.getNamespaceURI()))) {
 				enodes.add(find(e));
@@ -349,7 +349,7 @@ class JDocument extends JParent implements Document {
 
 	@Override
 	public String getDocumentURI() {
-		return shadow == null ? null : ((org.jdom2.Document)shadow).getBaseURI();
+		return shadow == null ? null : ((org.jdom.Document)shadow).getBaseURI();
 	}
 
 	@Override
@@ -359,7 +359,7 @@ class JDocument extends JParent implements Document {
 
 	@Override
 	public String getBaseURI() {
-		return shadow == null ? null : ((org.jdom2.Document)shadow).getBaseURI();
+		return shadow == null ? null : ((org.jdom.Document)shadow).getBaseURI();
 	}
 
 	/* *********************************************************

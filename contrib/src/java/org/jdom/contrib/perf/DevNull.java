@@ -53,7 +53,7 @@
  */
 
 
-package org.jdom2.contrib.perf;
+package org.jdom.contrib.perf;
 
 import java.io.IOException;
 import java.io.Writer;

@@ -1,15 +1,15 @@
-package org.jdom2.test.cases.xpath;
+package org.jdom.test.cases.xpath;
 
 import static org.junit.Assert.assertNotNull;
 import static org.junit.Assert.assertTrue;
 
 import org.junit.Test;
 
-import org.jdom2.Element;
-import org.jdom2.filter.Filters;
-import org.jdom2.xpath.XPathExpression;
-import org.jdom2.xpath.XPathFactory;
-import org.jdom2.xpath.jaxen.JaxenXPathFactory;
+import org.jdom.Element;
+import org.jdom.filter.Filters;
+import org.jdom.xpath.XPathExpression;
+import org.jdom.xpath.XPathFactory;
+import org.jdom.xpath.jaxen.JaxenXPathFactory;
 
 @SuppressWarnings("javadoc")
 public class TestXPathFactory {

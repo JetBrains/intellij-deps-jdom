@@ -52,7 +52,7 @@
 
  */
 
-package org.jdom2.contrib.dtdaware;
+package org.jdom.contrib.dtdaware;
 
 import java.io.IOException;
 import java.io.Writer;
@@ -61,10 +61,10 @@ import java.util.HashSet;
 import java.util.Map;
 import java.util.Set;
 
-import org.jdom2.Attribute;
-import org.jdom2.Element;
-import org.jdom2.output.support.AbstractXMLOutputProcessor;
-import org.jdom2.output.support.FormatStack;
+import org.jdom.Attribute;
+import org.jdom.Element;
+import org.jdom.output.support.AbstractXMLOutputProcessor;
+import org.jdom.output.support.FormatStack;
 
 /**
  * Implement a class that is sensitive to an input document's defaulted/implied

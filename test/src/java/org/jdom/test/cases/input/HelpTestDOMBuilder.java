@@ -1,4 +1,4 @@
-package org.jdom2.test.cases.input;
+package org.jdom.test.cases.input;
 
 import java.io.IOException;
 
@@ -12,7 +12,7 @@ import org.w3c.dom.Node;
 import org.xml.sax.InputSource;
 import org.xml.sax.SAXException;
 
-import org.jdom2.test.util.FidoFetch;
+import org.jdom.test.util.FidoFetch;
 
 /**
  * This class encapsulates all the org.w3c.dom.DOM details, so that the actual

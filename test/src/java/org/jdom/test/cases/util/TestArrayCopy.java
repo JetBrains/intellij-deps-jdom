@@ -1,4 +1,4 @@
-package org.jdom2.test.cases.util;
+package org.jdom.test.cases.util;
 
 import static org.junit.Assert.*;
 
@@ -6,8 +6,8 @@ import java.util.Arrays;
 
 import org.junit.Test;
 
-import org.jdom2.internal.ArrayCopy;
-import org.jdom2.test.util.UnitTestUtil;
+import org.jdom.internal.ArrayCopy;
+import org.jdom.test.util.UnitTestUtil;
 
 @SuppressWarnings("javadoc")
 public class TestArrayCopy {

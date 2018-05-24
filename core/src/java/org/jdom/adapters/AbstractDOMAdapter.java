@@ -52,13 +52,13 @@
 
  */
 
-package org.jdom2.adapters;
+package org.jdom.adapters;
 
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 
-import org.jdom2.DocType;
-import org.jdom2.JDOMException;
+import org.jdom.DocType;
+import org.jdom.JDOMException;
 import org.w3c.dom.DOMImplementation;
 import org.w3c.dom.Document;
 import org.w3c.dom.DocumentType;

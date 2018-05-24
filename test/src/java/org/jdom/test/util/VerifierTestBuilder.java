@@ -1,12 +1,12 @@
-package org.jdom2.test.util;
+package org.jdom.test.util;
 
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 import java.lang.reflect.Modifier;
 import java.lang.reflect.Type;
 
-import org.jdom2.Verifier;
-import org.jdom2.internal.ArrayCopy;
+import org.jdom.Verifier;
+import org.jdom.internal.ArrayCopy;
 
 /**
  * This class builds jUnitTestCases for the Verifier character classes.

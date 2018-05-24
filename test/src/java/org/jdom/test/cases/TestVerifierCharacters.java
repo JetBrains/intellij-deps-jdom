@@ -1,8 +1,8 @@
-package org.jdom2.test.cases;
+package org.jdom.test.cases;
 
 import static org.junit.Assert.*;
 
-import org.jdom2.Verifier;
+import org.jdom.Verifier;
 import org.junit.Test;
 
 @SuppressWarnings("javadoc")

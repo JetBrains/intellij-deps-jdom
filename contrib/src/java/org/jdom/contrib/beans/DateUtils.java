@@ -54,7 +54,7 @@
 
 // Based on code Copyright (c) 1998-2000 Alex Chaffee and Purple Technology.
 
-package org.jdom2.contrib.beans;
+package org.jdom.contrib.beans;
 
 import java.util.*;
 import java.util.regex.Matcher;

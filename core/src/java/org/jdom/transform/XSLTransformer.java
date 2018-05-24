@@ -52,13 +52,13 @@
 
  */
 
-package org.jdom2.transform;
+package org.jdom.transform;
 
 import java.util.*;
 import java.io.*;
 import javax.xml.transform.*;
 import javax.xml.transform.stream.StreamSource;
-import org.jdom2.*;
+import org.jdom.*;
 import org.xml.sax.EntityResolver;
 
 /**

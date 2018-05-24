@@ -52,7 +52,7 @@
 
  */
 
-package org.jdom2.output.support;
+package org.jdom.output.support;
 
 import java.io.StringWriter;
 import java.util.ArrayList;
@@ -64,23 +64,23 @@ import javax.xml.stream.XMLEventFactory;
 import javax.xml.stream.XMLStreamException;
 import javax.xml.stream.util.XMLEventConsumer;
 
-import org.jdom2.Attribute;
-import org.jdom2.CDATA;
-import org.jdom2.Comment;
-import org.jdom2.Content;
-import org.jdom2.Content.CType;
-import org.jdom2.DocType;
-import org.jdom2.Document;
-import org.jdom2.Element;
-import org.jdom2.EntityRef;
-import org.jdom2.Namespace;
-import org.jdom2.ProcessingInstruction;
-import org.jdom2.Text;
-import org.jdom2.Verifier;
-import org.jdom2.output.Format;
-import org.jdom2.output.Format.TextMode;
-import org.jdom2.output.StAXEventOutputter;
-import org.jdom2.util.NamespaceStack;
+import org.jdom.Attribute;
+import org.jdom.CDATA;
+import org.jdom.Comment;
+import org.jdom.Content;
+import org.jdom.Content.CType;
+import org.jdom.DocType;
+import org.jdom.Document;
+import org.jdom.Element;
+import org.jdom.EntityRef;
+import org.jdom.Namespace;
+import org.jdom.ProcessingInstruction;
+import org.jdom.Text;
+import org.jdom.Verifier;
+import org.jdom.output.Format;
+import org.jdom.output.Format.TextMode;
+import org.jdom.output.StAXEventOutputter;
+import org.jdom.util.NamespaceStack;
 
 /**
  * This class provides a concrete implementation of {@link StAXEventProcessor}
@@ -211,8 +211,8 @@ public abstract class AbstractStAXEventProcessor extends AbstractOutputProcessor
 	/*
 	 * (non-Javadoc)
 	 * 
-	 * @see org.jdom2.output.StAXEventProcessor#process(java.io.XMLEventConsumer,
-	 * org.jdom2.Document, org.jdom2.output.Format)
+	 * @see org.jdom.output.StAXEventProcessor#process(java.io.XMLEventConsumer,
+	 * org.jdom.Document, org.jdom.output.Format)
 	 */
 	@Override
 	public void process(final XMLEventConsumer out, final Format format,
@@ -223,8 +223,8 @@ public abstract class AbstractStAXEventProcessor extends AbstractOutputProcessor
 	/*
 	 * (non-Javadoc)
 	 * 
-	 * @see org.jdom2.output.StAXEventProcessor#process(java.io.XMLEventConsumer,
-	 * org.jdom2.DocType, org.jdom2.output.Format)
+	 * @see org.jdom.output.StAXEventProcessor#process(java.io.XMLEventConsumer,
+	 * org.jdom.DocType, org.jdom.output.Format)
 	 */
 	@Override
 	public void process(final XMLEventConsumer out, final Format format,
@@ -235,8 +235,8 @@ public abstract class AbstractStAXEventProcessor extends AbstractOutputProcessor
 	/*
 	 * (non-Javadoc)
 	 * 
-	 * @see org.jdom2.output.StAXEventProcessor#process(java.io.XMLEventConsumer,
-	 * org.jdom2.Element, org.jdom2.output.Format)
+	 * @see org.jdom.output.StAXEventProcessor#process(java.io.XMLEventConsumer,
+	 * org.jdom.Element, org.jdom.output.Format)
 	 */
 	@Override
 	public void process(final XMLEventConsumer out, final Format format,
@@ -250,8 +250,8 @@ public abstract class AbstractStAXEventProcessor extends AbstractOutputProcessor
 	/*
 	 * (non-Javadoc)
 	 * 
-	 * @see org.jdom2.output.StAXEventProcessor#process(java.io.XMLEventConsumer,
-	 * java.util.List, org.jdom2.output.Format)
+	 * @see org.jdom.output.StAXEventProcessor#process(java.io.XMLEventConsumer,
+	 * java.util.List, org.jdom.output.Format)
 	 */
 	@Override
 	public void process(final XMLEventConsumer out, final Format format,
@@ -265,8 +265,8 @@ public abstract class AbstractStAXEventProcessor extends AbstractOutputProcessor
 	/*
 	 * (non-Javadoc)
 	 * 
-	 * @see org.jdom2.output.StAXEventProcessor#process(java.io.XMLEventConsumer,
-	 * org.jdom2.CDATA, org.jdom2.output.Format)
+	 * @see org.jdom.output.StAXEventProcessor#process(java.io.XMLEventConsumer,
+	 * org.jdom.CDATA, org.jdom.output.Format)
 	 */
 	@Override
 	public void process(final XMLEventConsumer out, final Format format,
@@ -287,8 +287,8 @@ public abstract class AbstractStAXEventProcessor extends AbstractOutputProcessor
 	/*
 	 * (non-Javadoc)
 	 * 
-	 * @see org.jdom2.output.StAXEventProcessor#process(java.io.XMLEventConsumer,
-	 * org.jdom2.Text, org.jdom2.output.Format)
+	 * @see org.jdom.output.StAXEventProcessor#process(java.io.XMLEventConsumer,
+	 * org.jdom.Text, org.jdom.output.Format)
 	 */
 	@Override
 	public void process(final XMLEventConsumer out, final Format format,
@@ -309,8 +309,8 @@ public abstract class AbstractStAXEventProcessor extends AbstractOutputProcessor
 	/*
 	 * (non-Javadoc)
 	 * 
-	 * @see org.jdom2.output.StAXEventProcessor#process(java.io.XMLEventConsumer,
-	 * org.jdom2.Comment, org.jdom2.output.Format)
+	 * @see org.jdom.output.StAXEventProcessor#process(java.io.XMLEventConsumer,
+	 * org.jdom.Comment, org.jdom.output.Format)
 	 */
 	@Override
 	public void process(final XMLEventConsumer out, final Format format,
@@ -321,8 +321,8 @@ public abstract class AbstractStAXEventProcessor extends AbstractOutputProcessor
 	/*
 	 * (non-Javadoc)
 	 * 
-	 * @see org.jdom2.output.StAXEventProcessor#process(java.io.XMLEventConsumer,
-	 * org.jdom2.ProcessingInstruction, org.jdom2.output.Format)
+	 * @see org.jdom.output.StAXEventProcessor#process(java.io.XMLEventConsumer,
+	 * org.jdom.ProcessingInstruction, org.jdom.output.Format)
 	 */
 	@Override
 	public void process(final XMLEventConsumer out, final Format format,
@@ -336,8 +336,8 @@ public abstract class AbstractStAXEventProcessor extends AbstractOutputProcessor
 	/*
 	 * (non-Javadoc)
 	 * 
-	 * @see org.jdom2.output.StAXEventProcessor#process(java.io.XMLEventConsumer,
-	 * org.jdom2.EntityRef, org.jdom2.output.Format)
+	 * @see org.jdom.output.StAXEventProcessor#process(java.io.XMLEventConsumer,
+	 * org.jdom.EntityRef, org.jdom.output.Format)
 	 */
 	@Override
 	public void process(final XMLEventConsumer out, final Format format,

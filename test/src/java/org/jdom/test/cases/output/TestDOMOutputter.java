@@ -1,4 +1,4 @@
-package org.jdom2.test.cases.output;
+package org.jdom.test.cases.output;
 
 /* Please run replic.pl on me ! */
 /**
@@ -20,28 +20,28 @@ import org.junit.Test;
 import org.junit.runner.JUnitCore;
 import org.w3c.dom.Attr;
 
-import org.jdom2.Attribute;
-import org.jdom2.CDATA;
-import org.jdom2.Comment;
-import org.jdom2.Content;
-import org.jdom2.DocType;
-import org.jdom2.Document;
-import org.jdom2.Element;
-import org.jdom2.EntityRef;
-import org.jdom2.JDOMException;
-import org.jdom2.Namespace;
-import org.jdom2.ProcessingInstruction;
-import org.jdom2.Text;
-import org.jdom2.adapters.DOMAdapter;
-import org.jdom2.adapters.JAXPDOMAdapter;
-import org.jdom2.input.DOMBuilder;
-import org.jdom2.output.DOMOutputter;
-import org.jdom2.output.Format;
-import org.jdom2.output.LineSeparator;
-import org.jdom2.output.XMLOutputter;
-import org.jdom2.output.support.AbstractDOMOutputProcessor;
-import org.jdom2.output.support.DOMOutputProcessor;
-import org.jdom2.test.util.UnitTestUtil;
+import org.jdom.Attribute;
+import org.jdom.CDATA;
+import org.jdom.Comment;
+import org.jdom.Content;
+import org.jdom.DocType;
+import org.jdom.Document;
+import org.jdom.Element;
+import org.jdom.EntityRef;
+import org.jdom.JDOMException;
+import org.jdom.Namespace;
+import org.jdom.ProcessingInstruction;
+import org.jdom.Text;
+import org.jdom.adapters.DOMAdapter;
+import org.jdom.adapters.JAXPDOMAdapter;
+import org.jdom.input.DOMBuilder;
+import org.jdom.output.DOMOutputter;
+import org.jdom.output.Format;
+import org.jdom.output.LineSeparator;
+import org.jdom.output.XMLOutputter;
+import org.jdom.output.support.AbstractDOMOutputProcessor;
+import org.jdom.output.support.DOMOutputProcessor;
+import org.jdom.test.util.UnitTestUtil;
 
 @SuppressWarnings("javadoc")
 public final class TestDOMOutputter extends AbstractTestOutputter {

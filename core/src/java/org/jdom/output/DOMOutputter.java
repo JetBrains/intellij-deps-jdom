@@ -52,29 +52,29 @@
 
  */
 
-package org.jdom2.output;
+package org.jdom.output;
 
 import java.util.List;
 
-import org.jdom2.Attribute;
-import org.jdom2.CDATA;
-import org.jdom2.Comment;
-import org.jdom2.Content;
-import org.jdom2.DocType;
-import org.jdom2.Document;
-import org.jdom2.Element;
-import org.jdom2.EntityRef;
-import org.jdom2.JDOMException;
-import org.jdom2.ProcessingInstruction;
-import org.jdom2.Text;
-import org.jdom2.adapters.DOMAdapter;
-import org.jdom2.adapters.JAXPDOMAdapter;
-import org.jdom2.internal.ReflectionConstructor;
-import org.jdom2.output.support.AbstractDOMOutputProcessor;
-import org.jdom2.output.support.DOMOutputProcessor;
+import org.jdom.Attribute;
+import org.jdom.CDATA;
+import org.jdom.Comment;
+import org.jdom.Content;
+import org.jdom.DocType;
+import org.jdom.Document;
+import org.jdom.Element;
+import org.jdom.EntityRef;
+import org.jdom.JDOMException;
+import org.jdom.ProcessingInstruction;
+import org.jdom.Text;
+import org.jdom.adapters.DOMAdapter;
+import org.jdom.adapters.JAXPDOMAdapter;
+import org.jdom.internal.ReflectionConstructor;
+import org.jdom.output.support.AbstractDOMOutputProcessor;
+import org.jdom.output.support.DOMOutputProcessor;
 
 /**
- * Outputs a JDOM {@link org.jdom2.Document org.jdom2.Document} as a DOM
+ * Outputs a JDOM {@link org.jdom.Document org.jdom.Document} as a DOM
  * {@link org.w3c.dom.Document org.w3c.dom.Document}. Also provides methods to
  * output other types of JDOM Content in the equivalent DOM nodes.
  * <p>

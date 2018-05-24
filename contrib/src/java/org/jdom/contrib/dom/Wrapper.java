@@ -52,7 +52,7 @@
 
  */
 
-package org.jdom2.contrib.dom;
+package org.jdom.contrib.dom;
 
 /**
  * All DOM Node instances from this package are also instances of this.

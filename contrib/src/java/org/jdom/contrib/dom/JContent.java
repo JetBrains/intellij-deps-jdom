@@ -52,14 +52,14 @@
 
  */
 
-package org.jdom2.contrib.dom;
+package org.jdom.contrib.dom;
 
 import org.w3c.dom.NamedNodeMap;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 
-import org.jdom2.Content;
-import org.jdom2.Namespace;
+import org.jdom.Content;
+import org.jdom.Namespace;
 
 abstract class JContent extends JNamespaceAware {
 

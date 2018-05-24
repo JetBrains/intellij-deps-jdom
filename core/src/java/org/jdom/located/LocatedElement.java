@@ -52,11 +52,11 @@
 
  */
 
-package org.jdom2.located;
+package org.jdom.located;
 
-import org.jdom2.Element;
-import org.jdom2.IllegalNameException;
-import org.jdom2.Namespace;
+import org.jdom.Element;
+import org.jdom.IllegalNameException;
+import org.jdom.Namespace;
 
 /**
  * This Element specialization contains the location information as parsed.

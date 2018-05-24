@@ -52,14 +52,14 @@
 
  */
 
-package org.jdom2.output.support;
+package org.jdom.output.support;
 
 import java.util.NoSuchElementException;
 
-import org.jdom2.CDATA;
-import org.jdom2.Content;
-import org.jdom2.EntityRef;
-import org.jdom2.Text;
+import org.jdom.CDATA;
+import org.jdom.Content;
+import org.jdom.EntityRef;
+import org.jdom.Text;
 
 /**
  * A model for walking the (potentially formatted) content of an Element.

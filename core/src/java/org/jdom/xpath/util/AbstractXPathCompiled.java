@@ -52,7 +52,7 @@
 
  */
 
-package org.jdom2.xpath.util;
+package org.jdom.xpath.util;
 
 import java.util.Arrays;
 import java.util.Collections;
@@ -61,11 +61,11 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import org.jdom2.Namespace;
-import org.jdom2.Verifier;
-import org.jdom2.filter.Filter;
-import org.jdom2.xpath.XPathExpression;
-import org.jdom2.xpath.XPathDiagnostic;
+import org.jdom.Namespace;
+import org.jdom.Verifier;
+import org.jdom.filter.Filter;
+import org.jdom.xpath.XPathExpression;
+import org.jdom.xpath.XPathDiagnostic;
 
 /**
  * A mostly-implemented XPathExpression that only needs two methods to be

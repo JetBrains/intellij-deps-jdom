@@ -52,10 +52,10 @@
 
  */
 
-package org.jdom2.contrib.input.scanner;
+package org.jdom.contrib.input.scanner;
 
-import org.jdom2.Element;
-import org.jdom2.JDOMException;
+import org.jdom.Element;
+import org.jdom.JDOMException;
 
 /**
  * The interface objects listening for element creation notification

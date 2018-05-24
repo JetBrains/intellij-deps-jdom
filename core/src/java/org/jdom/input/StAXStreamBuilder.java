@@ -52,7 +52,7 @@
 
  */
 
-package org.jdom2.input;
+package org.jdom.input;
 
 import static javax.xml.stream.XMLStreamConstants.*;
 
@@ -63,17 +63,17 @@ import javax.xml.namespace.QName;
 import javax.xml.stream.XMLStreamException;
 import javax.xml.stream.XMLStreamReader;
 
-import org.jdom2.AttributeType;
-import org.jdom2.Content;
-import org.jdom2.DefaultJDOMFactory;
-import org.jdom2.Document;
-import org.jdom2.Element;
-import org.jdom2.JDOMException;
-import org.jdom2.JDOMFactory;
-import org.jdom2.Namespace;
-import org.jdom2.Verifier;
-import org.jdom2.input.stax.DTDParser;
-import org.jdom2.input.stax.StAXFilter;
+import org.jdom.AttributeType;
+import org.jdom.Content;
+import org.jdom.DefaultJDOMFactory;
+import org.jdom.Document;
+import org.jdom.Element;
+import org.jdom.JDOMException;
+import org.jdom.JDOMFactory;
+import org.jdom.Namespace;
+import org.jdom.Verifier;
+import org.jdom.input.stax.DTDParser;
+import org.jdom.input.stax.StAXFilter;
 
 /**
  * Builds a JDOM Document from a StAX-based XMLStreamReader.
@@ -530,7 +530,7 @@ public class StAXStreamBuilder {
 	private JDOMFactory builderfactory = new DefaultJDOMFactory();
 
 	/**
-	 * Returns the current {@link org.jdom2.JDOMFactory} in use.
+	 * Returns the current {@link org.jdom.JDOMFactory} in use.
 	 * @return the factory in use
 	 */
 	public JDOMFactory getFactory() {

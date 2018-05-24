@@ -1,8 +1,8 @@
-package org.jdom2.test.cases;
+package org.jdom.test.cases;
 
-import static org.jdom2.test.util.UnitTestUtil.checkEquals;
-import static org.jdom2.test.util.UnitTestUtil.cloneString;
-import static org.jdom2.test.util.UnitTestUtil.deSerialize;
+import static org.jdom.test.util.UnitTestUtil.checkEquals;
+import static org.jdom.test.util.UnitTestUtil.cloneString;
+import static org.jdom.test.util.UnitTestUtil.deSerialize;
 import static org.junit.Assert.*;
 
 import java.util.Collections;
@@ -10,11 +10,11 @@ import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
 
-import org.jdom2.Element;
-import org.jdom2.IllegalDataException;
-import org.jdom2.IllegalNameException;
-import org.jdom2.IllegalTargetException;
-import org.jdom2.ProcessingInstruction;
+import org.jdom.Element;
+import org.jdom.IllegalDataException;
+import org.jdom.IllegalNameException;
+import org.jdom.IllegalTargetException;
+import org.jdom.ProcessingInstruction;
 import org.junit.Ignore;
 import org.junit.Test;
 

@@ -52,7 +52,7 @@
 
  */
 
-package org.jdom2.input.sax;
+package org.jdom.input.sax;
 
 import org.xml.sax.*;
 

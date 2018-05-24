@@ -1,6 +1,6 @@
-package org.jdom2.test.cases.serialize;
+package org.jdom.test.cases.serialize;
 
-import org.jdom2.CDATA;
+import org.jdom.CDATA;
 
 @SuppressWarnings("javadoc")
 public class SCDATA extends CDATA {

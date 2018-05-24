@@ -1,9 +1,9 @@
-package org.jdom2.test.cases.input;
+package org.jdom.test.cases.input;
 
 import static org.junit.Assert.*;
 
-import org.jdom2.Document;
-import org.jdom2.input.JDOMParseException;
+import org.jdom.Document;
+import org.jdom.input.JDOMParseException;
 import org.junit.Test;
 import org.xml.sax.SAXParseException;
 

@@ -52,25 +52,25 @@
 
  */
 
-package org.jdom2.input.sax;
+package org.jdom.input.sax;
 
-import static org.jdom2.JDOMConstants.*;
+import static org.jdom.JDOMConstants.*;
 
 import org.xml.sax.SAXException;
 import org.xml.sax.XMLReader;
 import org.xml.sax.helpers.XMLReaderFactory;
 
-import org.jdom2.JDOMException;
+import org.jdom.JDOMException;
 
 /**
  * Create XMLReaders directly from the SAX2.0 API using a SAX Driver class name
  * or the default SAX2.0 location process.
  * <p>
  * Unless you have good reason to use this mechanism you should rather use the
- * JAXP-based processes. Read the {@link org.jdom2.input.sax package
+ * JAXP-based processes. Read the {@link org.jdom.input.sax package
  * documentation} for other alternatives.
  * 
- * @see org.jdom2.input.sax
+ * @see org.jdom.input.sax
  * @author Rolf Lear
  */
 public class XMLReaderSAX2Factory implements XMLReaderJDOMFactory {

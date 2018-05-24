@@ -52,14 +52,14 @@
 
  */
 
-package org.jdom2.xpath;
+package org.jdom.xpath;
 
 import java.util.Collection;
 import java.util.HashMap;
 import java.util.Map;
 
-import org.jdom2.Namespace;
-import org.jdom2.filter.Filter;
+import org.jdom.Namespace;
+import org.jdom.filter.Filter;
 
 /**
  * A helper class for creating {@link XPathExpression} instances without having

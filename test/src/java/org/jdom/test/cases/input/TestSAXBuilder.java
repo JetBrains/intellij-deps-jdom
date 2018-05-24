@@ -53,7 +53,7 @@ Copyright (C) 2000 Brett McLaughlin & Jason Hunter.
  */
 
 
-package org.jdom2.test.cases.input;
+package org.jdom.test.cases.input;
 
 /**
  * Tests of SAXBuilder functionality.  Since most of these methods are tested in other parts
@@ -62,8 +62,8 @@ package org.jdom2.test.cases.input;
  * @author Philip Nelson
  * @version 0.5
  */
-import static org.jdom2.test.util.UnitTestUtil.checkException;
-import static org.jdom2.test.util.UnitTestUtil.failNoException;
+import static org.jdom.test.util.UnitTestUtil.checkException;
+import static org.jdom.test.util.UnitTestUtil.failNoException;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertNotNull;
@@ -97,25 +97,25 @@ import org.xml.sax.XMLReader;
 import org.xml.sax.ext.LexicalHandler;
 import org.xml.sax.helpers.XMLFilterImpl;
 
-import org.jdom2.Content;
-import org.jdom2.DefaultJDOMFactory;
-import org.jdom2.Document;
-import org.jdom2.EntityRef;
-import org.jdom2.JDOMException;
-import org.jdom2.JDOMFactory;
-import org.jdom2.UncheckedJDOMFactory;
-import org.jdom2.input.SAXBuilder;
-import org.jdom2.input.sax.BuilderErrorHandler;
-import org.jdom2.input.sax.SAXEngine;
-import org.jdom2.input.sax.SAXHandler;
-import org.jdom2.input.sax.SAXHandlerFactory;
-import org.jdom2.input.sax.XMLReaderJDOMFactory;
-import org.jdom2.input.sax.XMLReaderSAX2Factory;
-import org.jdom2.input.sax.XMLReaders;
-import org.jdom2.output.Format;
-import org.jdom2.output.XMLOutputter;
-import org.jdom2.test.util.FidoFetch;
-import org.jdom2.test.util.UnitTestUtil;
+import org.jdom.Content;
+import org.jdom.DefaultJDOMFactory;
+import org.jdom.Document;
+import org.jdom.EntityRef;
+import org.jdom.JDOMException;
+import org.jdom.JDOMFactory;
+import org.jdom.UncheckedJDOMFactory;
+import org.jdom.input.SAXBuilder;
+import org.jdom.input.sax.BuilderErrorHandler;
+import org.jdom.input.sax.SAXEngine;
+import org.jdom.input.sax.SAXHandler;
+import org.jdom.input.sax.SAXHandlerFactory;
+import org.jdom.input.sax.XMLReaderJDOMFactory;
+import org.jdom.input.sax.XMLReaderSAX2Factory;
+import org.jdom.input.sax.XMLReaders;
+import org.jdom.output.Format;
+import org.jdom.output.XMLOutputter;
+import org.jdom.test.util.FidoFetch;
+import org.jdom.test.util.UnitTestUtil;
 
 
 @SuppressWarnings("javadoc")
@@ -1149,7 +1149,7 @@ public final class TestSAXBuilder {
 	public void testParserFactory() throws JDOMException, IOException {
 		if (System.getProperty("org.jdom2.performance") == null) {
 			// for android.
-			//Assume.assumeNotNull(System.getProperty("org.jdom2.performance"));
+			//Assume.assumeNotNull(System.getProperty("org.jdom.performance"));
 			return;
 		}
 		long start = 0L, time = 0L;

@@ -1,4 +1,4 @@
-package org.jdom2.test.cases;
+package org.jdom.test.cases;
 
 import static org.junit.Assert.*;
 
@@ -7,7 +7,7 @@ import java.io.CharArrayWriter;
 import java.io.PrintStream;
 import java.io.PrintWriter;
 
-import org.jdom2.JDOMException;
+import org.jdom.JDOMException;
 import org.junit.Test;
 
 @SuppressWarnings("javadoc")

@@ -1,6 +1,6 @@
-package org.jdom2.test.cases.serialize;
+package org.jdom.test.cases.serialize;
 
-import org.jdom2.Attribute;
+import org.jdom.Attribute;
 
 @SuppressWarnings("javadoc")
 public class SAttribute extends Attribute {

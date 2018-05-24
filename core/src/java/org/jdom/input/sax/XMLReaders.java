@@ -52,7 +52,7 @@
 
  */
 
-package org.jdom2.input.sax;
+package org.jdom.input.sax;
 
 import javax.xml.XMLConstants;
 import javax.xml.parsers.ParserConfigurationException;
@@ -63,7 +63,7 @@ import javax.xml.validation.SchemaFactory;
 import org.xml.sax.SAXException;
 import org.xml.sax.XMLReader;
 
-import org.jdom2.JDOMException;
+import org.jdom.JDOMException;
 
 /**
  * An enumeration of {@link XMLReaderJDOMFactory} that allows for a single
@@ -71,10 +71,10 @@ import org.jdom2.JDOMException;
  * enumeration can produce the most common XMLReaders: non-validating, XSD
  * validating, and DocType validating.
  * <p>
- * See the {@link org.jdom2.input.sax package documentation} for details of how
+ * See the {@link org.jdom.input.sax package documentation} for details of how
  * to create the SAXParser you desire.
  * 
- * @see org.jdom2.input.sax
+ * @see org.jdom.input.sax
  * @author Rolf Lear
  */
 public enum XMLReaders implements XMLReaderJDOMFactory {

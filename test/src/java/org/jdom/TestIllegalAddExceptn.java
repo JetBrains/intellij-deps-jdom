@@ -1,9 +1,7 @@
-package org.jdom2;
+package org.jdom;
 
 import static org.junit.Assert.*;
 
-import org.jdom2.DefaultJDOMFactory;
-import org.jdom2.IllegalAddException;
 import org.junit.Test;
 
 @SuppressWarnings("javadoc")

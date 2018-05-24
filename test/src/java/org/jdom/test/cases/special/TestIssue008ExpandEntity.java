@@ -1,16 +1,16 @@
-package org.jdom2.test.cases.special;
+package org.jdom.test.cases.special;
 
 import static org.junit.Assert.*;
 
 import java.io.IOException;
 import java.net.URL;
 
-import org.jdom2.Document;
-import org.jdom2.JDOMException;
-import org.jdom2.input.SAXBuilder;
-import org.jdom2.output.Format;
-import org.jdom2.output.XMLOutputter;
-import org.jdom2.test.util.FidoFetch;
+import org.jdom.Document;
+import org.jdom.JDOMException;
+import org.jdom.input.SAXBuilder;
+import org.jdom.output.Format;
+import org.jdom.output.XMLOutputter;
+import org.jdom.test.util.FidoFetch;
 
 import org.junit.Test;
 

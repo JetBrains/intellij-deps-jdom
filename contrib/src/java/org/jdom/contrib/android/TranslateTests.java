@@ -52,7 +52,7 @@
 
  */
 
-package org.jdom2.contrib.android;
+package org.jdom.contrib.android;
 
 import java.io.File;
 import java.io.FileWriter;
@@ -177,7 +177,7 @@ public class TranslateTests {
 
 package com.example.android.skeletonapp.test;
 
-import org.jdom2.test.cases.TestElement;
+import org.jdom.test.cases.TestElement;
 
 import android.test.AndroidTestCase;
 
@@ -231,7 +231,7 @@ public class JDOMMainTest extends AndroidTestCase {
 			sb.append("  public void setUp() throws Exception {\n");
 			sb.append("    super.setUp();\n");
 			sb.append("    // tests run when class starts...\n");
-			sb.append("    org.jdom2.test.util.UnitTestUtil.setAndroid();\n");
+			sb.append("    org.jdom.test.util.UnitTestUtil.setAndroid();\n");
 			sb.append("    System.setProperty(\"javax.xml.validation.SchemaFactory:http://www.w3.org/2001/XMLSchema\",\n");
 			sb.append("        \"org.apache.xerces.jaxp.validation.XMLSchemaFactory\");\n");
 			for (Method m : methods) {
@@ -269,9 +269,9 @@ public class JDOMMainTest extends AndroidTestCase {
 						} else {
 							sb.append("    try {\n");
 							sb.append("      test.").append(m.getName()).append("();\n");
-							sb.append("        org.jdom2.test.util.UnitTestUtil.failNoException(").append(tanno.expected().getName()).append(".class);\n");
+							sb.append("        org.jdom.test.util.UnitTestUtil.failNoException(").append(tanno.expected().getName()).append(".class);\n");
 							sb.append("    } catch (").append(tanno.expected().getName()).append(" e) {\n");
-							sb.append("        org.jdom2.test.util.UnitTestUtil.checkException(").append(tanno.expected().getName()).append(".class, e);\n");
+							sb.append("        org.jdom.test.util.UnitTestUtil.checkException(").append(tanno.expected().getName()).append(".class, e);\n");
 							sb.append("    }\n");
 						}
 					} else {
@@ -282,9 +282,9 @@ public class JDOMMainTest extends AndroidTestCase {
 						} else {
 							sb.append("      try {\n");
 							sb.append("        test.").append(m.getName()).append("();\n");
-							sb.append("        org.jdom2.test.util.UnitTestUtil.failNoException(").append(tanno.expected().getName()).append(".class);\n");
+							sb.append("        org.jdom.test.util.UnitTestUtil.failNoException(").append(tanno.expected().getName()).append(".class);\n");
 							sb.append("      } catch (Exception e) {\n");
-							sb.append("        org.jdom2.test.util.UnitTestUtil.checkException(").append(tanno.expected().getName()).append(".class, e);\n");
+							sb.append("        org.jdom.test.util.UnitTestUtil.checkException(").append(tanno.expected().getName()).append(".class, e);\n");
 							sb.append("      }\n");
 						}
 						sb.append("    } finally {\n");

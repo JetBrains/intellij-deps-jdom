@@ -1,10 +1,10 @@
-package org.jdom2.test.cases.adapters;
+package org.jdom.test.cases.adapters;
 
 import org.junit.Test;
 import org.w3c.dom.Document;
 
-import org.jdom2.JDOMException;
-import org.jdom2.adapters.JAXPDOMAdapter;
+import org.jdom.JDOMException;
+import org.jdom.adapters.JAXPDOMAdapter;
 
 @SuppressWarnings("javadoc")
 public class TestJAXPDOMAdapter {

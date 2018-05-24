@@ -52,7 +52,7 @@
 
  */
 
-package org.jdom2.filter;
+package org.jdom.filter;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -60,7 +60,7 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.RandomAccess;
 
-import org.jdom2.Content;
+import org.jdom.Content;
 
 /**
  * Partial implementation of {@link Filter}.

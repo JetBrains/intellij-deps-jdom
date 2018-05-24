@@ -1,4 +1,4 @@
-package org.jdom2.test.cases.xpath;
+package org.jdom.test.cases.xpath;
 
 import static org.junit.Assert.assertTrue;
 import static org.junit.Assert.fail;
@@ -7,11 +7,11 @@ import java.util.List;
 
 import org.junit.Test;
 
-import org.jdom2.Document;
-import org.jdom2.Element;
-import org.jdom2.JDOMException;
-import org.jdom2.xpath.XPath;
-import org.jdom2.xpath.jaxen.JDOMXPath;
+import org.jdom.Document;
+import org.jdom.Element;
+import org.jdom.JDOMException;
+import org.jdom.xpath.XPath;
+import org.jdom.xpath.jaxen.JDOMXPath;
 
 /**
  * 

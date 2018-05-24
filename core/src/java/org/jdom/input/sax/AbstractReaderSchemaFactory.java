@@ -52,7 +52,7 @@
 
  */
 
-package org.jdom2.input.sax;
+package org.jdom.input.sax;
 
 import javax.xml.parsers.ParserConfigurationException;
 import javax.xml.parsers.SAXParserFactory;
@@ -61,7 +61,7 @@ import javax.xml.validation.Schema;
 import org.xml.sax.SAXException;
 import org.xml.sax.XMLReader;
 
-import org.jdom2.JDOMException;
+import org.jdom.JDOMException;
 
 /**
  * This {@link AbstractReaderSchemaFactory} class returns XMLReaders configured to
@@ -73,10 +73,10 @@ import org.jdom2.JDOMException;
  * but rather use an alternate means like
  * {@link XMLReaders#XSDVALIDATING}.
  * <p>
- * See the {@link org.jdom2.input.sax package documentation} for the best
+ * See the {@link org.jdom.input.sax package documentation} for the best
  * alternatives.
  * 
- * @see org.jdom2.input.sax
+ * @see org.jdom.input.sax
  * @author Rolf Lear
  */
 public abstract class AbstractReaderSchemaFactory implements XMLReaderJDOMFactory {

@@ -1,6 +1,6 @@
-package org.jdom2.test.cases.serialize;
+package org.jdom.test.cases.serialize;
 
-import org.jdom2.ProcessingInstruction;
+import org.jdom.ProcessingInstruction;
 
 @SuppressWarnings("javadoc")
 public class SProcessingInstruction extends ProcessingInstruction {

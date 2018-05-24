@@ -52,13 +52,13 @@
 
  */
 
-package org.jdom2.contrib.dom;
+package org.jdom.contrib.dom;
 
 import org.w3c.dom.DOMException;
 import org.w3c.dom.ProcessingInstruction;
 
-import org.jdom2.Content;
-import org.jdom2.Namespace;
+import org.jdom.Content;
+import org.jdom.Namespace;
 
 class JProcessingInstruction extends JSimpleContent implements
 ProcessingInstruction {
@@ -85,12 +85,12 @@ ProcessingInstruction {
 
 	@Override
 	public String getTarget() {
-		return ((org.jdom2.ProcessingInstruction)shadow).getTarget();
+		return ((org.jdom.ProcessingInstruction)shadow).getTarget();
 	}
 
 	@Override
 	public String getData() {
-		return ((org.jdom2.ProcessingInstruction)shadow).getData();
+		return ((org.jdom.ProcessingInstruction)shadow).getData();
 	}
 
 	@Override

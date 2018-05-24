@@ -52,9 +52,9 @@
 
  */
 
-package org.jdom2.filter;
+package org.jdom.filter;
 
-import org.jdom2.*;
+import org.jdom.*;
 
 /**
  * A general purpose Filter able to represent all legal JDOM objects or a

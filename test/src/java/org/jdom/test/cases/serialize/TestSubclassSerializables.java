@@ -1,6 +1,6 @@
-package org.jdom2.test.cases.serialize;
+package org.jdom.test.cases.serialize;
 
-import static org.jdom2.test.util.UnitTestUtil.deSerialize;
+import static org.jdom.test.util.UnitTestUtil.deSerialize;
 
 import org.junit.Test;
 

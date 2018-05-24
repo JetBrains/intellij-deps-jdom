@@ -1,4 +1,4 @@
-package org.jdom2.test.cases.transform;
+package org.jdom.test.cases.transform;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNull;
@@ -14,17 +14,17 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-import org.jdom2.Content;
-import org.jdom2.DefaultJDOMFactory;
-import org.jdom2.Document;
-import org.jdom2.Element;
-import org.jdom2.JDOMException;
-import org.jdom2.JDOMFactory;
-import org.jdom2.Namespace;
-import org.jdom2.input.SAXBuilder;
-import org.jdom2.output.XMLOutputter;
-import org.jdom2.transform.XSLTransformException;
-import org.jdom2.transform.XSLTransformer;
+import org.jdom.Content;
+import org.jdom.DefaultJDOMFactory;
+import org.jdom.Document;
+import org.jdom.Element;
+import org.jdom.JDOMException;
+import org.jdom.JDOMFactory;
+import org.jdom.Namespace;
+import org.jdom.input.SAXBuilder;
+import org.jdom.output.XMLOutputter;
+import org.jdom.transform.XSLTransformException;
+import org.jdom.transform.XSLTransformer;
 import org.junit.Ignore;
 import org.junit.Test;
 

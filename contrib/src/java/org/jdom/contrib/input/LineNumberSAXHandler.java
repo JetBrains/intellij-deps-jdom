@@ -52,18 +52,18 @@
 
  */
 
-package org.jdom2.contrib.input;
+package org.jdom.contrib.input;
 
 import org.xml.sax.Attributes;
 import org.xml.sax.Locator;
 import org.xml.sax.SAXException;
 
-import org.jdom2.DefaultJDOMFactory;
-import org.jdom2.Element;
-import org.jdom2.JDOMFactory;
-import org.jdom2.Namespace;
-import org.jdom2.input.sax.SAXHandler;
-import org.jdom2.input.sax.SAXHandlerFactory;
+import org.jdom.DefaultJDOMFactory;
+import org.jdom.Element;
+import org.jdom.JDOMFactory;
+import org.jdom.Namespace;
+import org.jdom.input.sax.SAXHandler;
+import org.jdom.input.sax.SAXHandlerFactory;
 
 /**
  * This builder works in parallell with {@link LineNumberElement} 

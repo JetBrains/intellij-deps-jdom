@@ -52,7 +52,7 @@
 
  */
 
-package org.jdom2;
+package org.jdom;
 
 import java.util.*;
 
@@ -111,7 +111,7 @@ final public class Verifier {
 	 * Before this particular performance upgrade, the knowledge of what roles
 	 * each character can play was embedded in each of the isXML*() methods.
 	 * Those methods have been transferred in to the 'contrib' class
-	 * org.jdom2.contrib.verifier.VerifierBuilder. That VerifierBuilder class
+	 * org.jdom.contrib.verifier.VerifierBuilder. That VerifierBuilder class
 	 * has a main method which takes that knowledge, and converts it in to a
 	 * 'compressed' set of two arrays, the byte mask, and the number of
 	 * consecutive characters that have that mask, which are then copy/pasted
@@ -125,7 +125,7 @@ final public class Verifier {
 	 * If you need to change the roles a character plays in XML (i.e. change
 	 * the return-value of one of the isXML...() methods, then you need to:
 	 * 
-	 *  - update the logic in org.jdom2.contrib.verifier.VerifierBuilder
+	 *  - update the logic in org.jdom.contrib.verifier.VerifierBuilder
 	 *  - run the VerifierBuilder
 	 *  - copy/paste the output to this file.
 	 *  - update the JUnit test harness TestVerifier

@@ -52,14 +52,14 @@
 
  */
 
-package org.jdom2.output;
+package org.jdom.output;
 
 import java.nio.charset.Charset;
 import java.nio.charset.CharsetEncoder;
 import java.util.Locale;
 
-import org.jdom2.IllegalDataException;
-import org.jdom2.Verifier;
+import org.jdom.IllegalDataException;
+import org.jdom.Verifier;
 
 /**
  * Class to encapsulate XMLOutputter format options.
@@ -1029,7 +1029,7 @@ public class Format implements Cloneable {
 		/**
 		 * Mode for text normalization (left and right trim plus internal
 		 * whitespace is normalized to a single space.
-		 * @see org.jdom2.Element#getTextNormalize
+		 * @see org.jdom.Element#getTextNormalize
 		 */
 		NORMALIZE,
 

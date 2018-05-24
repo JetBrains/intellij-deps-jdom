@@ -52,7 +52,7 @@
 
  */
 
-package org.jdom2.adapters;
+package org.jdom.adapters;
 
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
@@ -60,7 +60,7 @@ import javax.xml.parsers.ParserConfigurationException;
 
 import org.w3c.dom.Document;
 
-import org.jdom2.JDOMException;
+import org.jdom.JDOMException;
 
 /**
  * A DOMAdapter that uses JAXP to obtain a org.w3c.dom.Document instance.

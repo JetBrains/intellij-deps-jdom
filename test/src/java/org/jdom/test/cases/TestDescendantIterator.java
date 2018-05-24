@@ -1,4 +1,4 @@
-package org.jdom2.test.cases;
+package org.jdom.test.cases;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
@@ -12,11 +12,11 @@ import java.util.NoSuchElementException;
 
 import org.junit.Test;
 
-import org.jdom2.Content;
-import org.jdom2.Document;
-import org.jdom2.Element;
-import org.jdom2.test.util.UnitTestUtil;
-import org.jdom2.util.IteratorIterable;
+import org.jdom.Content;
+import org.jdom.Document;
+import org.jdom.Element;
+import org.jdom.test.util.UnitTestUtil;
+import org.jdom.util.IteratorIterable;
 
 @SuppressWarnings("javadoc")
 public class TestDescendantIterator {

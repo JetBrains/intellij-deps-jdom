@@ -52,10 +52,10 @@ Copyright (C) 2012 Jason Hunter & Brett McLaughlin.
 
  */
 
-package org.jdom2.filter;
+package org.jdom.filter;
 
-import org.jdom2.Text;
-import org.jdom2.Content.CType;
+import org.jdom.Text;
+import org.jdom.Content.CType;
 
 /**
  * A filter that matches Text, but not CDATA content.

@@ -52,11 +52,11 @@
 
  */
 
-package org.jdom2.adapters;
+package org.jdom.adapters;
 
-import org.jdom2.DocType;
-import org.jdom2.JDOMException;
-import org.jdom2.output.DOMOutputter;
+import org.jdom.DocType;
+import org.jdom.JDOMException;
+import org.jdom.output.DOMOutputter;
 
 import org.w3c.dom.Document;
 

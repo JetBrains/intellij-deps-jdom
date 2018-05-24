@@ -1,4 +1,4 @@
-package org.jdom2.test.cases.filter;
+package org.jdom.test.cases.filter;
 
 import static org.junit.Assert.*;
 
@@ -7,9 +7,9 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.RandomAccess;
 
-import org.jdom2.filter.Filter;
-import org.jdom2.filter.Filters;
-import org.jdom2.test.util.UnitTestUtil;
+import org.jdom.filter.Filter;
+import org.jdom.filter.Filters;
+import org.jdom.test.util.UnitTestUtil;
 
 import org.junit.Test;
 

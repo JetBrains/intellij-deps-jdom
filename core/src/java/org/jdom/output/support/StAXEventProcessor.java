@@ -52,7 +52,7 @@
 
  */
 
-package org.jdom2.output.support;
+package org.jdom.output.support;
 
 import java.util.List;
 
@@ -60,18 +60,18 @@ import javax.xml.stream.XMLEventFactory;
 import javax.xml.stream.util.XMLEventConsumer;
 import javax.xml.stream.XMLStreamException;
 
-import org.jdom2.Attribute;
-import org.jdom2.CDATA;
-import org.jdom2.Comment;
-import org.jdom2.Content;
-import org.jdom2.DocType;
-import org.jdom2.Document;
-import org.jdom2.Element;
-import org.jdom2.EntityRef;
-import org.jdom2.ProcessingInstruction;
-import org.jdom2.Text;
-import org.jdom2.output.Format;
-import org.jdom2.output.XMLOutputter;
+import org.jdom.Attribute;
+import org.jdom.CDATA;
+import org.jdom.Comment;
+import org.jdom.Content;
+import org.jdom.DocType;
+import org.jdom.Document;
+import org.jdom.Element;
+import org.jdom.EntityRef;
+import org.jdom.ProcessingInstruction;
+import org.jdom.Text;
+import org.jdom.output.Format;
+import org.jdom.output.XMLOutputter;
 
 /**
  * This interface provides a base support for the {@link XMLOutputter}.

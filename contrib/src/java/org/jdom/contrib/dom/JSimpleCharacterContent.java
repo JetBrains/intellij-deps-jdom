@@ -52,13 +52,13 @@
 
  */
 
-package org.jdom2.contrib.dom;
+package org.jdom.contrib.dom;
 
 import org.w3c.dom.CharacterData;
 import org.w3c.dom.DOMException;
 
-import org.jdom2.Content;
-import org.jdom2.Namespace;
+import org.jdom.Content;
+import org.jdom.Namespace;
 
 abstract class JSimpleCharacterContent extends JSimpleContent implements CharacterData {
 

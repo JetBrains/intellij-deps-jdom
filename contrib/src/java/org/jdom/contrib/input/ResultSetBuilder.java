@@ -52,13 +52,13 @@
 
  */
 
-package org.jdom2.contrib.input;
+package org.jdom.contrib.input;
 
 import java.sql.*;
 import java.text.*;
 import java.util.*;
 
-import org.jdom2.*;
+import org.jdom.*;
 
 /**
  * <p><code>ResultSetBuilder</code> builds a JDOM tree from a 
@@ -216,7 +216,7 @@ public class ResultSetBuilder {
           columnName[index] = rsmd.getColumnName(index+1); 
         } 
 
-        // build the org.jdom2.Document out of the result set 
+        // build the org.jdom.Document out of the result set
         String name; 
         String value; 
         Element entry; 

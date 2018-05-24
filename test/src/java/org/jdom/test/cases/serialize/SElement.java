@@ -1,6 +1,6 @@
-package org.jdom2.test.cases.serialize;
+package org.jdom.test.cases.serialize;
 
-import org.jdom2.Element;
+import org.jdom.Element;
 
 @SuppressWarnings("javadoc")
 public class SElement extends Element {

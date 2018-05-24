@@ -52,13 +52,13 @@
 
  */
 
-package org.jdom2.output.support;
+package org.jdom.output.support;
 
 import java.util.List;
 
-import org.jdom2.Content;
-import org.jdom2.Text;
-import org.jdom2.Verifier;
+import org.jdom.Content;
+import org.jdom.Text;
+import org.jdom.Verifier;
 
 /**
  * This Walker implementation will produce trimmed text content.

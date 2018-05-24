@@ -1,4 +1,4 @@
-package org.jdom2.test.cases;
+package org.jdom.test.cases;
 
 /*-- 
 
@@ -66,10 +66,10 @@ import static org.junit.Assert.assertNull;
 import static org.junit.Assert.assertTrue;
 import static org.junit.Assert.fail;
 
-import org.jdom2.Comment;
-import org.jdom2.Content;
-import org.jdom2.Element;
-import org.jdom2.IllegalDataException;
+import org.jdom.Comment;
+import org.jdom.Content;
+import org.jdom.Element;
+import org.jdom.IllegalDataException;
 import org.junit.Test;
 import org.junit.runner.JUnitCore;
 
@@ -98,14 +98,14 @@ public final class TestComment {
 	 */
 	@Test
 	public void test_TCC___String() {
-		Comment theComment = new org.jdom2.Comment("this is a comment");
+		Comment theComment = new org.jdom.Comment("this is a comment");
 
 		assertEquals(
 				"incorrect Comment constructed", 
 				"[Comment: <!--this is a comment-->]", 
 				theComment.toString()); 
 		try {
-			theComment = new org.jdom2.Comment(null);
+			theComment = new org.jdom.Comment(null);
 			fail("Comment constructor didn't catch invalid comment string");
 		} catch (IllegalDataException e) {
 			// Do nothing
@@ -156,7 +156,7 @@ public final class TestComment {
 	 */
 	@Test
 	public void test_TCM__OrgJdomComment_setText_String() {
-		Comment theComment= new org.jdom2.Comment("this is a comment");
+		Comment theComment= new org.jdom.Comment("this is a comment");
 
 		assertEquals(
 				"incorrect Comment constructed",
@@ -205,7 +205,7 @@ public final class TestComment {
 	public void test_TCM__String_getSerializedForm() {
 
 		/** No op because the method is deprecated
-		Comment theComment = new org.jdom2.Comment("this is a comment");
+		Comment theComment = new org.jdom.Comment("this is a comment");
 
 		assertEquals(
 				"incorrect Comment constructed", 
@@ -220,7 +220,7 @@ public final class TestComment {
 	 */
 	@Test
 	public void test_TCM__String_getText() {
-		Comment theComment = new org.jdom2.Comment("this is a comment");
+		Comment theComment = new org.jdom.Comment("this is a comment");
 
 		assertEquals(
 				"incorrect Comment constructed", 
@@ -234,14 +234,14 @@ public final class TestComment {
 	 */
 	@Test
 	public void test_TCM__String_toString() {
-		Comment theComment= new org.jdom2.Comment("this is a comment");
+		Comment theComment= new org.jdom.Comment("this is a comment");
 
 		assertEquals(
 				"incorrect Comment constructed",
 				"[Comment: <!--this is a comment-->]",
 				theComment.toString());
 		try {
-			theComment= new org.jdom2.Comment(null);
+			theComment= new org.jdom.Comment(null);
 			fail("Comment constructor didn't catch invalid comment string");
 		} catch (IllegalDataException e) {
 			// Do nothing

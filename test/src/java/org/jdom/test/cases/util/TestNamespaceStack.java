@@ -1,4 +1,4 @@
-package org.jdom2.test.cases.util;
+package org.jdom.test.cases.util;
 
 import static org.junit.Assert.*;
 
@@ -7,9 +7,9 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.NoSuchElementException;
 
-import org.jdom2.Element;
-import org.jdom2.Namespace;
-import org.jdom2.util.NamespaceStack;
+import org.jdom.Element;
+import org.jdom.Namespace;
+import org.jdom.util.NamespaceStack;
 
 import org.junit.Test;
 

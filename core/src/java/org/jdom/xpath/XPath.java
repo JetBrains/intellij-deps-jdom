@@ -52,15 +52,15 @@
 
  */
 
-package org.jdom2.xpath;
+package org.jdom.xpath;
 
 
 import java.io.*;
 import java.lang.reflect.*;
 import java.util.*;
 
-import org.jdom2.*;
-import org.jdom2.internal.SystemProperty;
+import org.jdom.*;
+import org.jdom.internal.SystemProperty;
 
 
 /**
@@ -68,7 +68,7 @@ import org.jdom2.internal.SystemProperty;
  * interface for obtaining a first XPath instance. Users operate against this
  * class while XPath vendors can plug-in implementations underneath.  Users
  * can choose an implementation using either {@link #setXPathClass} or
- * the system property "org.jdom2.xpath.class".
+ * the system property "org.jdom.xpath.class".
  *
  * @author  Laurent Bihanic
  * @deprecated Use XPathFactory/XPathExpression/XPathBuilder instead.
@@ -86,15 +86,15 @@ public abstract class XPath implements Serializable {
 	 * name of the implementation class to use.
 	 * <p>
 	 * The property name is:
-	 * "<code>org.jdom2.xpath.class</code>".</p>
+	 * "<code>org.jdom.xpath.class</code>".</p>
 	 */
-	private final static String  XPATH_CLASS_PROPERTY = "org.jdom2.xpath.class";
+	private final static String  XPATH_CLASS_PROPERTY = "org.jdom.xpath.class";
 
 	/**
 	 * The default implementation class to use if none was configured.
 	 */
 	private final static String  DEFAULT_XPATH_CLASS  =
-			"org.jdom2.xpath.jaxen.JDOMXPath";
+			"org.jdom.xpath.jaxen.JDOMXPath";
 
 	/**
 	 * The string passable to the JAXP 1.3 XPathFactory isObjectModelSupported()

@@ -52,7 +52,7 @@
 
  */
 
-package org.jdom2.input;
+package org.jdom.input;
 
 import java.util.Iterator;
 
@@ -64,17 +64,17 @@ import javax.xml.stream.events.Characters;
 import javax.xml.stream.events.StartElement;
 import javax.xml.stream.events.XMLEvent;
 
-import org.jdom2.AttributeType;
-import org.jdom2.Comment;
-import org.jdom2.DefaultJDOMFactory;
-import org.jdom2.DocType;
-import org.jdom2.Document;
-import org.jdom2.Element;
-import org.jdom2.JDOMException;
-import org.jdom2.JDOMFactory;
-import org.jdom2.Namespace;
-import org.jdom2.ProcessingInstruction;
-import org.jdom2.input.stax.DTDParser;
+import org.jdom.AttributeType;
+import org.jdom.Comment;
+import org.jdom.DefaultJDOMFactory;
+import org.jdom.DocType;
+import org.jdom.Document;
+import org.jdom.Element;
+import org.jdom.JDOMException;
+import org.jdom.JDOMFactory;
+import org.jdom.Namespace;
+import org.jdom.ProcessingInstruction;
+import org.jdom.input.stax.DTDParser;
 
 /**
  * Builds a JDOM Document from a StAX-based XMLEventReader.
@@ -249,7 +249,7 @@ public class StAXEventBuilder {
 	private JDOMFactory factory = new DefaultJDOMFactory();
 	
 	/**
-	 * Returns the current {@link org.jdom2.JDOMFactory} in use.
+	 * Returns the current {@link org.jdom.JDOMFactory} in use.
 	 * @return the factory in use
 	 */
 	public JDOMFactory getFactory() {

@@ -52,7 +52,7 @@
 
  */
 
-package org.jdom2.transform;
+package org.jdom.transform;
 
 import java.io.InputStream;
 import java.io.Reader;
@@ -62,13 +62,13 @@ import java.util.List;
 
 import javax.xml.transform.sax.SAXSource;
 
-import org.jdom2.Content;
-import org.jdom2.Document;
-import org.jdom2.Element;
-import org.jdom2.JDOMConstants;
-import org.jdom2.JDOMException;
-import org.jdom2.output.SAXOutputter;
-import org.jdom2.output.XMLOutputter;
+import org.jdom.Content;
+import org.jdom.Document;
+import org.jdom.Element;
+import org.jdom.JDOMConstants;
+import org.jdom.JDOMException;
+import org.jdom.output.SAXOutputter;
+import org.jdom.output.XMLOutputter;
 import org.xml.sax.EntityResolver;
 import org.xml.sax.InputSource;
 import org.xml.sax.SAXException;
@@ -103,7 +103,7 @@ import org.xml.sax.XMLReader;
  *   }
  * </code></pre>
  *
- * @see org.jdom2.transform.JDOMResult
+ * @see org.jdom.transform.JDOMResult
  *
  * @author Laurent Bihanic
  * @author Jason Hunter
@@ -368,7 +368,7 @@ public class JDOMSource extends SAXSource {
 	 * be used independently of its friend: DocumentReader.
 	 * </p>
 	 *
-	 * @see    org.jdom2.Document
+	 * @see    org.jdom.Document
 	 */
 	private static class JDOMInputSource extends InputSource {
 		/**
@@ -499,8 +499,8 @@ public class JDOMSource extends SAXSource {
 	 * a SAX view of a JDOM Document.  The actual generation of the
 	 * SAX events is delegated to JDOM's SAXOutputter.
 	 *
-	 * @see    org.jdom2.Document
-	 * @see    org.jdom2.output.SAXOutputter
+	 * @see    org.jdom.Document
+	 * @see    org.jdom.output.SAXOutputter
 	 */
 	private static class DocumentReader   extends    SAXOutputter
 	implements XMLReader    {

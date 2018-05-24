@@ -52,7 +52,7 @@
 
  */
 
-package org.jdom2.contrib.dom;
+package org.jdom.contrib.dom;
 
 import java.net.URISyntaxException;
 import java.util.Iterator;
@@ -66,10 +66,10 @@ import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 import org.w3c.dom.TypeInfo;
 
-import org.jdom2.Attribute;
-import org.jdom2.Namespace;
-import org.jdom2.Parent;
-import org.jdom2.filter.Filters;
+import org.jdom.Attribute;
+import org.jdom.Namespace;
+import org.jdom.Parent;
+import org.jdom.filter.Filters;
 
 class JElement extends JParent implements Element {
 
@@ -173,7 +173,7 @@ class JElement extends JParent implements Element {
 	@Override
 	public final NamedNodeMap getAttributes() {
 		if (attmap == null) {
-			final org.jdom2.Element emt = (org.jdom2.Element)shadow;
+			final org.jdom.Element emt = (org.jdom.Element)shadow;
 			if (emt.hasAttributes() || nsdec.length > 0) {
 				final List<Attribute> list = emt.getAttributes();
 				final int sz = list.size();
@@ -194,23 +194,23 @@ class JElement extends JParent implements Element {
 
 	@Override
 	public final String getNamespaceURI() {
-		return ((org.jdom2.Element)shadow).getNamespaceURI();
+		return ((org.jdom.Element)shadow).getNamespaceURI();
 	}
 
 	@Override
 	public final String getPrefix() {
-		return ((org.jdom2.Element)shadow).getNamespacePrefix();
+		return ((org.jdom.Element)shadow).getNamespacePrefix();
 	}
 
 	@Override
 	public final String getLocalName() {
-		return ((org.jdom2.Element)shadow).getName();
+		return ((org.jdom.Element)shadow).getName();
 	}
 
 	@Override
 	public final String getBaseURI() {
 		try {
-			return ((org.jdom2.Element)shadow).getXMLBaseURI().toASCIIString();
+			return ((org.jdom.Element)shadow).getXMLBaseURI().toASCIIString();
 		} catch (final URISyntaxException e) {
 			throw new IllegalStateException("Broken base URI references.", e);
 		}
@@ -218,8 +218,8 @@ class JElement extends JParent implements Element {
 
 	@Override
 	public String getTextContent() throws DOMException {
-		final Iterator<org.jdom2.Text> it = ((org.jdom2.Element)shadow).
-				getDescendants(Filters.fclass(org.jdom2.Text.class));
+		final Iterator<org.jdom.Text> it = ((org.jdom.Element)shadow).
+				getDescendants(Filters.fclass(org.jdom.Text.class));
 		final StringBuilder sb = new StringBuilder();
 		while (it.hasNext()) {
 			sb.append(it.next().getText());
@@ -229,7 +229,7 @@ class JElement extends JParent implements Element {
 
 	@Override
 	public String getTagName() {
-		return ((org.jdom2.Element)shadow).getQualifiedName();
+		return ((org.jdom.Element)shadow).getQualifiedName();
 	}
 
 	@Override
@@ -255,12 +255,12 @@ class JElement extends JParent implements Element {
 
 	@Override
 	public final boolean hasAttributes() {
-		return ((org.jdom2.Element)shadow).hasAttributes();
+		return ((org.jdom.Element)shadow).hasAttributes();
 	}
 
 	@Override
 	public boolean hasAttribute(final String name) {
-		final Attribute att = ((org.jdom2.Element)shadow).getAttribute(name);
+		final Attribute att = ((org.jdom.Element)shadow).getAttribute(name);
 		return att != null;
 	}
 
@@ -268,14 +268,14 @@ class JElement extends JParent implements Element {
 	public boolean hasAttributeNS(final String namespaceURI, final String localName)
 			throws DOMException {
 		final Attribute att =
-				((org.jdom2.Element)shadow).getAttribute(
+				((org.jdom.Element)shadow).getAttribute(
 						localName, Namespace.getNamespace(namespaceURI));
 		return att != null;
 	}
 
 	@Override
 	public String getAttribute(final String name) {
-		final Attribute att = ((org.jdom2.Element)shadow).getAttribute(name);
+		final Attribute att = ((org.jdom.Element)shadow).getAttribute(name);
 		return att == null ? "" : att.getValue();
 	}
 
@@ -283,7 +283,7 @@ class JElement extends JParent implements Element {
 	public String getAttributeNS(final String namespaceURI, final String localName)
 			throws DOMException {
 		final Attribute att =
-				((org.jdom2.Element)shadow).getAttribute(
+				((org.jdom.Element)shadow).getAttribute(
 						localName, Namespace.getNamespace(namespaceURI));
 		return att == null ? "" : att.getValue();
 	}

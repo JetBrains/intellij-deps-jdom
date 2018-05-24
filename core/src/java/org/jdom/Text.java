@@ -52,9 +52,9 @@
 
  */
 
-package org.jdom2;
+package org.jdom;
 
-import org.jdom2.output.Format;
+import org.jdom.output.Format;
 
 /**
  * An XML character sequence. Provides a modular, parentable method of
@@ -105,7 +105,7 @@ public class Text extends Content {
 	 * @param str the node's character content.
 	 * @throws IllegalDataException if <code>str</code> contains an
 	 *         illegal character such as a vertical tab (as determined
-	 *         by {@link org.jdom2.Verifier#checkCharacterData})
+	 *         by {@link org.jdom.Verifier#checkCharacterData})
 	 */
 	public Text(String str) {
 		this(CType.Text);
@@ -168,7 +168,7 @@ public class Text extends Content {
 	 * @return the object on which the method was invoked
 	 * @throws IllegalDataException if <code>str</code> contains an
 	 *         illegal character such as a vertical tab (as determined
-	 *         by {@link org.jdom2.Verifier#checkCharacterData})
+	 *         by {@link org.jdom.Verifier#checkCharacterData})
 	 */
 	public Text setText(String str) {
 		String reason;
@@ -192,7 +192,7 @@ public class Text extends Content {
 	 * @param str character content to append.
 	 * @throws IllegalDataException if <code>str</code> contains an
 	 *         illegal character such as a vertical tab (as determined
-	 *         by {@link org.jdom2.Verifier#checkCharacterData})
+	 *         by {@link org.jdom.Verifier#checkCharacterData})
 	 */
 	public void append(String str) {
 		String reason;
@@ -238,7 +238,7 @@ public class Text extends Content {
 	 * <code>Text</code> node, suitable for debugging. If the XML
 	 * representation of the <code>Text</code> node is desired,
 	 * either <code>{@link #getText}</code> or
-	 * {@link org.jdom2.output.XMLOutputter#outputString(Text)}</code>
+	 * {@link org.jdom.output.XMLOutputter#outputString(Text)}</code>
 	 * should be used.
 	 *
 	 * @return <code>String</code> - information about this node.

@@ -52,13 +52,13 @@
 
  */
 
-package org.jdom2.filter;
+package org.jdom.filter;
 
-import org.jdom2.Attribute;
-import org.jdom2.Namespace;
+import org.jdom.Attribute;
+import org.jdom.Namespace;
 
 /**
- * A Filter that only matches {@link org.jdom2.Attribute} objects.
+ * A Filter that only matches {@link org.jdom.Attribute} objects.
  *
  * @author  Rolf Lear
  */

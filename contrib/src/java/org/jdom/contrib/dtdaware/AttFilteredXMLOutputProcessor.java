@@ -52,15 +52,15 @@
 
  */
 
-package org.jdom2.contrib.dtdaware;
+package org.jdom.contrib.dtdaware;
 
 import java.io.IOException;
 import java.io.Writer;
 
-import org.jdom2.Attribute;
-import org.jdom2.filter.Filter;
-import org.jdom2.output.support.AbstractXMLOutputProcessor;
-import org.jdom2.output.support.FormatStack;
+import org.jdom.Attribute;
+import org.jdom.filter.Filter;
+import org.jdom.output.support.AbstractXMLOutputProcessor;
+import org.jdom.output.support.FormatStack;
 
 /**
  * Implement a class that is sensitive to a document's attributes, and will not

@@ -52,9 +52,9 @@
 
  */
 
-package org.jdom2.input.sax;
+package org.jdom.input.sax;
 
-import org.jdom2.JDOMFactory;
+import org.jdom.JDOMFactory;
 
 /**
  * This SAXHandlerFactory instance provides default-configured SAXHandler

@@ -52,7 +52,7 @@
 
  */
 
-package org.jdom2.contrib.perf;
+package org.jdom.contrib.perf;
 
 import java.io.BufferedWriter;
 import java.io.FileOutputStream;
@@ -63,14 +63,14 @@ import java.nio.charset.Charset;
 import java.util.*;
 import java.util.concurrent.atomic.AtomicBoolean;
 
-import org.jdom2.Attribute;
-import org.jdom2.CDATA;
-import org.jdom2.Comment;
-import org.jdom2.DocType;
-import org.jdom2.Element;
-import org.jdom2.EntityRef;
-import org.jdom2.Namespace;
-import org.jdom2.ProcessingInstruction;
+import org.jdom.Attribute;
+import org.jdom.CDATA;
+import org.jdom.Comment;
+import org.jdom.DocType;
+import org.jdom.Element;
+import org.jdom.EntityRef;
+import org.jdom.Namespace;
+import org.jdom.ProcessingInstruction;
 
 /**
  * NOTE

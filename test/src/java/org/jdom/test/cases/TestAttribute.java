@@ -1,4 +1,4 @@
-package org.jdom2.test.cases;
+package org.jdom.test.cases;
 
 /*--
 
@@ -65,15 +65,15 @@ import static org.junit.Assert.fail;
 import org.junit.Test;
 import org.junit.runner.JUnitCore;
 
-import org.jdom2.Attribute;
-import org.jdom2.AttributeType;
-import org.jdom2.DataConversionException;
-import org.jdom2.Document;
-import org.jdom2.Element;
-import org.jdom2.IllegalDataException;
-import org.jdom2.IllegalNameException;
-import org.jdom2.Namespace;
-import org.jdom2.test.util.UnitTestUtil;
+import org.jdom.Attribute;
+import org.jdom.AttributeType;
+import org.jdom.DataConversionException;
+import org.jdom.Document;
+import org.jdom.Element;
+import org.jdom.IllegalDataException;
+import org.jdom.IllegalNameException;
+import org.jdom.Namespace;
+import org.jdom.test.util.UnitTestUtil;
 
 /**
  * Test the expected behaviour of the Attribute class.

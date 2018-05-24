@@ -52,7 +52,7 @@
 
  */
 
-package org.jdom2;
+package org.jdom;
 
 import java.util.*;
 
@@ -228,7 +228,7 @@ public class UncheckedJDOMFactory extends DefaultJDOMFactory {
 
 	@Override
 	public EntityRef entityRef(final int line, final int col, final String name) {
-		EntityRef e = new org.jdom2.EntityRef();
+		EntityRef e = new org.jdom.EntityRef();
 		e.name = name;
 		return e;
 	}

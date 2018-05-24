@@ -52,7 +52,7 @@
 
  */
 
-package org.jdom2;
+package org.jdom;
 
 /**
  * An XML entity reference. Methods allow the user to manage its name, public

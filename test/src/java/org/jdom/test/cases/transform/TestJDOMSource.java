@@ -1,4 +1,4 @@
-package org.jdom2.test.cases.transform;
+package org.jdom.test.cases.transform;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNull;
@@ -18,12 +18,12 @@ import java.util.Collections;
 import java.util.List;
 import java.util.concurrent.atomic.AtomicReference;
 
-import org.jdom2.Content;
-import org.jdom2.Document;
-import org.jdom2.Element;
-import org.jdom2.output.SAXOutputter;
-import org.jdom2.output.XMLOutputter;
-import org.jdom2.transform.JDOMSource;
+import org.jdom.Content;
+import org.jdom.Document;
+import org.jdom.Element;
+import org.jdom.output.SAXOutputter;
+import org.jdom.output.XMLOutputter;
+import org.jdom.transform.JDOMSource;
 import org.junit.Test;
 import org.xml.sax.Attributes;
 import org.xml.sax.InputSource;

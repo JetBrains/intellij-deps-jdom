@@ -52,7 +52,7 @@
 
  */
 
-package org.jdom2.input.sax;
+package org.jdom.input.sax;
 
 import java.io.File;
 import java.net.URL;
@@ -62,7 +62,7 @@ import javax.xml.parsers.SAXParserFactory;
 import javax.xml.transform.Source;
 import javax.xml.validation.SchemaFactory;
 
-import org.jdom2.JDOMException;
+import org.jdom.JDOMException;
 
 /**
  * This XMLReaderJDOMFactory class returns XMLReaders configured to validate
@@ -81,7 +81,7 @@ import org.jdom2.JDOMException;
  * Document validdoc = builder.build(xmlfile);
  * </pre>
  * 
- * @see org.jdom2.input.sax
+ * @see org.jdom.input.sax
  * @author Rolf Lear
  */
 public class XMLReaderXSDFactory extends AbstractReaderXSDFactory {

@@ -1,4 +1,4 @@
-package org.jdom2.test.cases;
+package org.jdom.test.cases;
 
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertNull;
@@ -6,10 +6,10 @@ import static org.junit.Assert.assertTrue;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.fail;
 
-import org.jdom2.Content;
-import org.jdom2.Element;
-import org.jdom2.IllegalDataException;
-import org.jdom2.Text;
+import org.jdom.Content;
+import org.jdom.Element;
+import org.jdom.IllegalDataException;
+import org.jdom.Text;
 import org.junit.Test;
 
 @SuppressWarnings("javadoc")

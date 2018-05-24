@@ -52,7 +52,7 @@
 
  */
 
-package org.jdom2.contrib.perf;
+package org.jdom.contrib.perf;
 
 interface TimeRunnable {
 	void run() throws Exception;

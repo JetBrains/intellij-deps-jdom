@@ -52,7 +52,7 @@
 
  */
 
-package org.jdom2.input;
+package org.jdom.input;
 
 /*
  * To keep things simple, all DOM-based items are fully qualified in this code.
@@ -60,17 +60,17 @@ package org.jdom2.input;
  * This way there isless confusion about what a Document or Element is....
  */
 
-import static org.jdom2.JDOMConstants.*;
+import static org.jdom.JDOMConstants.*;
 
 import java.util.HashMap;
 
-import org.jdom2.Attribute;
-import org.jdom2.DefaultJDOMFactory;
-import org.jdom2.DocType;
-import org.jdom2.Document;
-import org.jdom2.Element;
-import org.jdom2.JDOMFactory;
-import org.jdom2.Namespace;
+import org.jdom.Attribute;
+import org.jdom.DefaultJDOMFactory;
+import org.jdom.DocType;
+import org.jdom.Document;
+import org.jdom.Element;
+import org.jdom.JDOMFactory;
+import org.jdom.Namespace;
 
 
 /**
@@ -123,7 +123,7 @@ public class DOMBuilder {
 	}
 
 	/**
-	 * Returns the current {@link org.jdom2.JDOMFactory} in use.
+	 * Returns the current {@link org.jdom.JDOMFactory} in use.
 	 * @return the factory in use
 	 */
 	public JDOMFactory getFactory() {
@@ -148,7 +148,7 @@ public class DOMBuilder {
 	 * @param domElement <code> org.w3c.dom.Element</code> object
 	 * @return <code>Element</code> - JDOM Element object
 	 */
-	public org.jdom2.Element build(org.w3c.dom.Element domElement) {
+	public org.jdom.Element build(org.w3c.dom.Element domElement) {
 		Document doc = factory.document(null);
 		buildTree(domElement, doc, null, true);
 		return doc.getRootElement();
@@ -161,7 +161,7 @@ public class DOMBuilder {
 	 * @return <code>CDATA</code> - JDOM CDATA object
 	 * @since JDOM2
 	 */
-	public org.jdom2.CDATA build(org.w3c.dom.CDATASection cdata) {
+	public org.jdom.CDATA build(org.w3c.dom.CDATASection cdata) {
 		return factory.cdata(cdata.getNodeValue());
 	}
 	
@@ -172,7 +172,7 @@ public class DOMBuilder {
 	 * @return <code>Text</code> - JDOM Text object
 	 * @since JDOM2
 	 */
-	public org.jdom2.Text build(org.w3c.dom.Text text) {
+	public org.jdom.Text build(org.w3c.dom.Text text) {
 		return factory.text(text.getNodeValue());
 	}
 	
@@ -183,7 +183,7 @@ public class DOMBuilder {
 	 * @return <code>Comment</code> - JDOM Comment object
 	 * @since JDOM2
 	 */
-	public org.jdom2.Comment build(org.w3c.dom.Comment comment) {
+	public org.jdom.Comment build(org.w3c.dom.Comment comment) {
 		return factory.comment(comment.getNodeValue());
 	}
 	
@@ -194,7 +194,7 @@ public class DOMBuilder {
 	 * @return <code>ProcessingInstruction</code> - JDOM ProcessingInstruction object
 	 * @since JDOM2
 	 */
-	public org.jdom2.ProcessingInstruction build(org.w3c.dom.ProcessingInstruction pi) {
+	public org.jdom.ProcessingInstruction build(org.w3c.dom.ProcessingInstruction pi) {
 		return factory.processingInstruction(pi.getTarget(), pi.getData());
 	}
 	
@@ -205,7 +205,7 @@ public class DOMBuilder {
 	 * @return <code>EnityRef</code> - JDOM EntityRef object
 	 * @since JDOM2
 	 */
-	public org.jdom2.EntityRef build(org.w3c.dom.EntityReference er) {
+	public org.jdom.EntityRef build(org.w3c.dom.EntityReference er) {
 		return factory.entityRef(er.getNodeName());
 	}
 	
@@ -216,7 +216,7 @@ public class DOMBuilder {
 	 * @return <code>Element</code> - JDOM Element object
 	 * @since JDOM2
 	 */
-	public org.jdom2.DocType build(org.w3c.dom.DocumentType doctype) {
+	public org.jdom.DocType build(org.w3c.dom.DocumentType doctype) {
 		String publicID = doctype.getPublicId();
 		String systemID = doctype.getSystemId();
 		String internalDTD = doctype.getInternalSubset();

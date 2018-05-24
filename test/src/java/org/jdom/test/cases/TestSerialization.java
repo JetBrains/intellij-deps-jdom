@@ -1,4 +1,4 @@
-package org.jdom2.test.cases;
+package org.jdom.test.cases;
 
 /*-- 
 
@@ -60,8 +60,8 @@ package org.jdom2.test.cases;
  * @author unascribed
  * @version 0.1
  */
-import static org.jdom2.test.util.UnitTestUtil.compare;
-import static org.jdom2.test.util.UnitTestUtil.deSerialize;
+import static org.jdom.test.util.UnitTestUtil.compare;
+import static org.jdom.test.util.UnitTestUtil.deSerialize;
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
 
@@ -70,18 +70,18 @@ import java.util.Iterator;
 import org.junit.Test;
 import org.junit.runner.JUnitCore;
 
-import org.jdom2.Attribute;
-import org.jdom2.CDATA;
-import org.jdom2.Comment;
-import org.jdom2.Content;
-import org.jdom2.DocType;
-import org.jdom2.Document;
-import org.jdom2.Element;
-import org.jdom2.EntityRef;
-import org.jdom2.Namespace;
-import org.jdom2.ProcessingInstruction;
-import org.jdom2.Text;
-import org.jdom2.filter.ElementFilter;
+import org.jdom.Attribute;
+import org.jdom.CDATA;
+import org.jdom.Comment;
+import org.jdom.Content;
+import org.jdom.DocType;
+import org.jdom.Document;
+import org.jdom.Element;
+import org.jdom.EntityRef;
+import org.jdom.Namespace;
+import org.jdom.ProcessingInstruction;
+import org.jdom.Text;
+import org.jdom.filter.ElementFilter;
 
 @SuppressWarnings("javadoc")
 public final class TestSerialization {

@@ -1,4 +1,4 @@
-package org.jdom2.test.cases;
+package org.jdom.test.cases;
 
 /*-- 
 
@@ -70,10 +70,10 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-import org.jdom2.Attribute;
-import org.jdom2.Element;
-import org.jdom2.Namespace;
-import org.jdom2.Verifier;
+import org.jdom.Attribute;
+import org.jdom.Element;
+import org.jdom.Namespace;
+import org.jdom.Verifier;
 import org.junit.Test;
 import org.junit.runner.JUnitCore;
 

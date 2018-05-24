@@ -52,9 +52,9 @@
 
  */
 
-package org.jdom2.contrib.dom;
+package org.jdom.contrib.dom;
 
-import org.jdom2.Namespace;
+import org.jdom.Namespace;
 
 abstract class JNamespaceAware extends JNode {
 

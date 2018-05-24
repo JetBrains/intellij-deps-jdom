@@ -1,7 +1,7 @@
-package org.jdom2.test.cases;
+package org.jdom.test.cases;
 
-import org.jdom2.DefaultJDOMFactory;
-import org.jdom2.JDOMFactory;
+import org.jdom.DefaultJDOMFactory;
+import org.jdom.JDOMFactory;
 
 @SuppressWarnings("javadoc")
 public class TestDefaultJDOMFactory extends AbstractTestJDOMFactory {

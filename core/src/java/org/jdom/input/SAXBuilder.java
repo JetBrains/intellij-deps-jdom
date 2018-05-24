@@ -52,12 +52,12 @@
 
  */
 
-package org.jdom2.input;
+package org.jdom.input;
 
-import static org.jdom2.JDOMConstants.SAX_FEATURE_EXTERNAL_ENT;
-import static org.jdom2.JDOMConstants.SAX_PROPERTY_DECLARATION_HANDLER;
-import static org.jdom2.JDOMConstants.SAX_PROPERTY_LEXICAL_HANDLER;
-import static org.jdom2.JDOMConstants.SAX_PROPERTY_LEXICAL_HANDLER_ALT;
+import static org.jdom.JDOMConstants.SAX_FEATURE_EXTERNAL_ENT;
+import static org.jdom.JDOMConstants.SAX_PROPERTY_DECLARATION_HANDLER;
+import static org.jdom.JDOMConstants.SAX_PROPERTY_LEXICAL_HANDLER;
+import static org.jdom.JDOMConstants.SAX_PROPERTY_LEXICAL_HANDLER_ALT;
 
 import java.io.File;
 import java.io.IOException;
@@ -78,22 +78,22 @@ import org.xml.sax.SAXNotSupportedException;
 import org.xml.sax.XMLFilter;
 import org.xml.sax.XMLReader;
 
-import org.jdom2.DefaultJDOMFactory;
-import org.jdom2.DocType;
-import org.jdom2.Document;
-import org.jdom2.EntityRef;
-import org.jdom2.JDOMException;
-import org.jdom2.JDOMFactory;
-import org.jdom2.Verifier;
-import org.jdom2.input.sax.BuilderErrorHandler;
-import org.jdom2.input.sax.DefaultSAXHandlerFactory;
-import org.jdom2.input.sax.SAXBuilderEngine;
-import org.jdom2.input.sax.SAXEngine;
-import org.jdom2.input.sax.SAXHandler;
-import org.jdom2.input.sax.SAXHandlerFactory;
-import org.jdom2.input.sax.XMLReaderJDOMFactory;
-import org.jdom2.input.sax.XMLReaderSAX2Factory;
-import org.jdom2.input.sax.XMLReaders;
+import org.jdom.DefaultJDOMFactory;
+import org.jdom.DocType;
+import org.jdom.Document;
+import org.jdom.EntityRef;
+import org.jdom.JDOMException;
+import org.jdom.JDOMFactory;
+import org.jdom.Verifier;
+import org.jdom.input.sax.BuilderErrorHandler;
+import org.jdom.input.sax.DefaultSAXHandlerFactory;
+import org.jdom.input.sax.SAXBuilderEngine;
+import org.jdom.input.sax.SAXEngine;
+import org.jdom.input.sax.SAXHandler;
+import org.jdom.input.sax.SAXHandlerFactory;
+import org.jdom.input.sax.XMLReaderJDOMFactory;
+import org.jdom.input.sax.XMLReaderSAX2Factory;
+import org.jdom.input.sax.XMLReaders;
 
 /**
  * Builds a JDOM Document using a SAX parser.
@@ -105,14 +105,14 @@ import org.jdom2.input.sax.XMLReaders;
  * <a href="http://www.saxproject.org">http://www.saxproject.org</a>.
  * <p>
  * For a complete description of how SAXBuilder is used, and how to customise
- * the process you should look at the {@link org.jdom2.input.sax} package
+ * the process you should look at the {@link org.jdom.input.sax} package
  * documentation.
  * <p>
  * JDOM users needing to customise the SAX parsing process have traditionally
  * sub-classed this SAXBuilder class. In JDOM2 this should never be necessary.
  * Please read the full documentation of this class, {@link SAXHandler},
  * {@link SAXHandlerFactory}, {@link JDOMFactory}, and the package documentation
- * for {@link org.jdom2.input.sax} before overriding this class. Future versions
+ * for {@link org.jdom.input.sax} before overriding this class. Future versions
  * of JDOM2 may make this class 'final'. I you feel you have a good reason to
  * subclass SAXBuilder please mention it on <a
  * href="http://www.jdom.org/involved/lists.html">jdom-interest</a> mailing list
@@ -132,7 +132,7 @@ import org.jdom2.input.sax.XMLReaders;
  * lost.
  * </ul>
  * 
- * @see org.jdom2.input.sax
+ * @see org.jdom.input.sax
  * @author Jason Hunter
  * @author Brett McLaughlin
  * @author Dan Schaffer
@@ -232,7 +232,7 @@ public class SAXBuilder implements SAXEngine {
 	 * @see XMLReaders#DTDVALIDATING
 	 * @see DefaultSAXHandlerFactory
 	 * @see DefaultJDOMFactory
-	 * @see org.jdom2.input.sax for important details on SAXBuilder
+	 * @see org.jdom.input.sax for important details on SAXBuilder
 	 * @param validate
 	 *        <code>boolean</code> indicating if DTD validation should occur.
 	 * @deprecated use {@link SAXBuilder#SAXBuilder(XMLReaderJDOMFactory)} with 
@@ -256,7 +256,7 @@ public class SAXBuilder implements SAXEngine {
 	 * @see XMLReaderSAX2Factory
 	 * @see DefaultSAXHandlerFactory
 	 * @see DefaultJDOMFactory
-	 * @see org.jdom2.input.sax for important details on SAXBuilder
+	 * @see org.jdom.input.sax for important details on SAXBuilder
 	 * @param saxDriverClass
 	 *        <code>String</code> name of SAX Driver to use for parsing.
 	 * @deprecated use {@link SAXBuilder#SAXBuilder(XMLReaderJDOMFactory)} with 
@@ -276,7 +276,7 @@ public class SAXBuilder implements SAXEngine {
 	 * @see XMLReaderSAX2Factory
 	 * @see DefaultSAXHandlerFactory
 	 * @see DefaultJDOMFactory
-	 * @see org.jdom2.input.sax for important details on SAXBuilder
+	 * @see org.jdom.input.sax for important details on SAXBuilder
 	 * @param saxDriverClass
 	 *        <code>String</code> name of SAX Driver to use for parsing.
 	 * @param validate
@@ -299,7 +299,7 @@ public class SAXBuilder implements SAXEngine {
 	 * @see XMLReaders#NONVALIDATING
 	 * @see DefaultSAXHandlerFactory
 	 * @see DefaultJDOMFactory
-	 * @see org.jdom2.input.sax for important details on SAXBuilder
+	 * @see org.jdom.input.sax for important details on SAXBuilder
 	 * @param readersouce
 	 *        the {@link XMLReaderJDOMFactory} that supplies XMLReaders. If the
 	 *        value is null then a Non-Validating JAXP-based SAX2.0 parser will
@@ -322,7 +322,7 @@ public class SAXBuilder implements SAXEngine {
 	 * @see DefaultSAXHandlerFactory
 	 * @see JDOMFactory
 	 * @see DefaultJDOMFactory
-	 * @see org.jdom2.input.sax for important details on SAXBuilder
+	 * @see org.jdom.input.sax for important details on SAXBuilder
 	 * @param xmlreaderfactory
 	 *        a {@link XMLReaderJDOMFactory} that creates XMLReaders. Specify
 	 *        null for the default.
@@ -365,7 +365,7 @@ public class SAXBuilder implements SAXEngine {
 	}
 
 	/**
-	 * Returns the current {@link org.jdom2.JDOMFactory} in use.
+	 * Returns the current {@link org.jdom.JDOMFactory} in use.
 	 * 
 	 * @return the factory in use
 	 * @deprecated as it is replaced by {@link #getJDOMFactory()}
@@ -376,7 +376,7 @@ public class SAXBuilder implements SAXEngine {
 	}
 
 	/**
-	 * Returns the current {@link org.jdom2.JDOMFactory} in use.
+	 * Returns the current {@link org.jdom.JDOMFactory} in use.
 	 * 
 	 * @return the factory in use
 	 */
@@ -787,7 +787,7 @@ public class SAXBuilder implements SAXEngine {
 	 * JDOM uses {@link XMLReaderJDOMFactory} instances to provide XMLReader
 	 * instances. If you require special configuration on your XMLReader you
 	 * should consider extending or implementing an XMLReaderJDOMFactory in the
-	 * {@link org.jdom2.input.sax} package.
+	 * {@link org.jdom.input.sax} package.
 	 * 
 	 * @param name
 	 *        The feature name, which is a fully-qualified URI.
@@ -814,7 +814,7 @@ public class SAXBuilder implements SAXEngine {
 	 * JDOM uses {@link XMLReaderJDOMFactory} instances to provide XMLReader
 	 * instances. If you require special configuration on your XMLReader you
 	 * should consider extending or implementing an XMLReaderJDOMFactory in the
-	 * {@link org.jdom2.input.sax} package.
+	 * {@link org.jdom.input.sax} package.
 	 * 
 	 * @param name
 	 *        The property name, which is a fully-qualified URI.

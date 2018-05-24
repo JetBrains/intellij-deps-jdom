@@ -1,9 +1,8 @@
-package org.jdom2;
+package org.jdom;
 
 import static org.junit.Assert.*;
 
-import org.jdom2.StringBin;
-import org.jdom2.test.util.UnitTestUtil;
+import org.jdom.test.util.UnitTestUtil;
 import org.junit.Test;
 
 @SuppressWarnings("javadoc")

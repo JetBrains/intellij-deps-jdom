@@ -52,15 +52,15 @@
 
  */
 
-package org.jdom2;
+package org.jdom;
 
 import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.util.*;
 
-import org.jdom2.filter.*;
-import org.jdom2.util.IteratorIterable;
+import org.jdom.filter.*;
+import org.jdom.util.IteratorIterable;
 
 /**
  * An XML document. Methods allow access to the root element as well as the
@@ -623,7 +623,7 @@ public class Document extends CloneBase implements Parent {
 	 * This returns a <code>String</code> representation of the
 	 * <code>Document</code>, suitable for debugging. If the XML
 	 * representation of the <code>Document</code> is desired,
-	 * {@link org.jdom2.output.XMLOutputter#outputString(Document)}
+	 * {@link org.jdom.output.XMLOutputter#outputString(Document)}
 	 * should be used.
 	 *
 	 * @return <code>String</code> - information about the

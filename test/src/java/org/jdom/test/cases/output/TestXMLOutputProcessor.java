@@ -1,15 +1,15 @@
-package org.jdom2.test.cases.output;
+package org.jdom.test.cases.output;
 
 import static org.junit.Assert.fail;
 
 import java.io.IOException;
 import java.io.Writer;
 
-import org.jdom2.IllegalDataException;
-import org.jdom2.Text;
-import org.jdom2.output.Format;
-import org.jdom2.output.support.AbstractXMLOutputProcessor;
-import org.jdom2.output.support.FormatStack;
+import org.jdom.IllegalDataException;
+import org.jdom.Text;
+import org.jdom.output.Format;
+import org.jdom.output.support.AbstractXMLOutputProcessor;
+import org.jdom.output.support.FormatStack;
 
 import org.junit.Test;
 

@@ -52,9 +52,9 @@
 
  */
 
-package org.jdom2.output.support;
+package org.jdom.output.support;
 
-import static org.jdom2.JDOMConstants.*;
+import static org.jdom.JDOMConstants.*;
 
 import java.io.IOException;
 import java.io.StringReader;
@@ -75,23 +75,23 @@ import org.xml.sax.helpers.AttributesImpl;
 import org.xml.sax.helpers.DefaultHandler;
 import org.xml.sax.helpers.XMLReaderFactory;
 
-import org.jdom2.Attribute;
-import org.jdom2.AttributeType;
-import org.jdom2.CDATA;
-import org.jdom2.Comment;
-import org.jdom2.Content;
-import org.jdom2.DocType;
-import org.jdom2.Document;
-import org.jdom2.Element;
-import org.jdom2.EntityRef;
-import org.jdom2.JDOMException;
-import org.jdom2.Namespace;
-import org.jdom2.ProcessingInstruction;
-import org.jdom2.Text;
-import org.jdom2.output.Format;
-import org.jdom2.output.Format.TextMode;
-import org.jdom2.output.XMLOutputter;
-import org.jdom2.util.NamespaceStack;
+import org.jdom.Attribute;
+import org.jdom.AttributeType;
+import org.jdom.CDATA;
+import org.jdom.Comment;
+import org.jdom.Content;
+import org.jdom.DocType;
+import org.jdom.Document;
+import org.jdom.Element;
+import org.jdom.EntityRef;
+import org.jdom.JDOMException;
+import org.jdom.Namespace;
+import org.jdom.ProcessingInstruction;
+import org.jdom.Text;
+import org.jdom.output.Format;
+import org.jdom.output.Format.TextMode;
+import org.jdom.output.XMLOutputter;
+import org.jdom.util.NamespaceStack;
 
 /**
  * Outputs a JDOM document as a stream of SAX2 events.
@@ -712,7 +712,7 @@ public class AbstractSAXOutputProcessor extends AbstractOutputProcessor
 	 * @param type
 	 *        <code>int</code> the type of the JDOM attribute.
 	 * @return <code>String</code> the SAX 2.0 attribute type string.
-	 * @see org.jdom2.Attribute#getAttributeType
+	 * @see org.jdom.Attribute#getAttributeType
 	 * @see org.xml.sax.Attributes#getType
 	 */
 	private static String getAttributeTypeName(AttributeType type) {

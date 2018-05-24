@@ -1,13 +1,13 @@
-package org.jdom2.test.cases.input;
+package org.jdom.test.cases.input;
 
 import static org.junit.Assert.*;
 
-import org.jdom2.DocType;
-import org.jdom2.JDOMException;
-import org.jdom2.JDOMFactory;
-import org.jdom2.DefaultJDOMFactory;
-import org.jdom2.input.stax.DTDParser;
-import org.jdom2.test.util.UnitTestUtil;
+import org.jdom.DocType;
+import org.jdom.JDOMException;
+import org.jdom.JDOMFactory;
+import org.jdom.DefaultJDOMFactory;
+import org.jdom.input.stax.DTDParser;
+import org.jdom.test.util.UnitTestUtil;
 import org.junit.Test;
 
 @SuppressWarnings("javadoc")

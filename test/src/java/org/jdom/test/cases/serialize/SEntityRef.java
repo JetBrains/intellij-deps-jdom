@@ -1,6 +1,6 @@
-package org.jdom2.test.cases.serialize;
+package org.jdom.test.cases.serialize;
 
-import org.jdom2.EntityRef;
+import org.jdom.EntityRef;
 
 @SuppressWarnings("javadoc")
 public class SEntityRef extends EntityRef {

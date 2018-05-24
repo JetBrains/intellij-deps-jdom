@@ -52,13 +52,13 @@
 
  */
 
-package org.jdom2.contrib.xpath.xalan;
+package org.jdom.contrib.xpath.xalan;
 
 import java.util.Map;
 
-import org.jdom2.Namespace;
-import org.jdom2.filter.Filter;
-import org.jdom2.xpath.XPathExpression;
+import org.jdom.Namespace;
+import org.jdom.filter.Filter;
+import org.jdom.xpath.XPathExpression;
 
 /**
  * An XPathFactory that wraps the JDOM content in a thin DOM layer, and then
@@ -66,7 +66,7 @@ import org.jdom2.xpath.XPathExpression;
  * @author Rolf Lear
  *
  */
-public class XalanXPathFactory extends org.jdom2.xpath.XPathFactory {
+public class XalanXPathFactory extends org.jdom.xpath.XPathFactory {
 	
 	@Override
 	public <T> XPathExpression<T> compile(String expression, Filter<T> filter,

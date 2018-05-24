@@ -1,7 +1,7 @@
 /**
  * 
  */
-package org.jdom2.test.cases.input;
+package org.jdom.test.cases.input;
 
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
@@ -15,16 +15,16 @@ import java.util.List;
 
 import org.junit.Test;
 
-import org.jdom2.Attribute;
-import org.jdom2.Document;
-import org.jdom2.Element;
-import org.jdom2.JDOMException;
-import org.jdom2.Namespace;
-import org.jdom2.input.SAXBuilder;
-import org.jdom2.input.sax.XMLReaders;
-import org.jdom2.output.Format;
-import org.jdom2.output.XMLOutputter;
-import org.jdom2.test.util.FidoFetch;
+import org.jdom.Attribute;
+import org.jdom.Document;
+import org.jdom.Element;
+import org.jdom.JDOMException;
+import org.jdom.Namespace;
+import org.jdom.input.SAXBuilder;
+import org.jdom.input.sax.XMLReaders;
+import org.jdom.output.Format;
+import org.jdom.output.XMLOutputter;
+import org.jdom.test.util.FidoFetch;
 
 
 /**

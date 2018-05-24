@@ -52,7 +52,7 @@
 
  */
 
-package org.jdom2.output.support;
+package org.jdom.output.support;
 
 import java.io.StringWriter;
 import java.util.ArrayList;
@@ -62,24 +62,24 @@ import java.util.List;
 import javax.xml.stream.XMLStreamException;
 import javax.xml.stream.XMLStreamWriter;
 
-import org.jdom2.Attribute;
-import org.jdom2.CDATA;
-import org.jdom2.Comment;
-import org.jdom2.Content;
-import org.jdom2.JDOMConstants;
-import org.jdom2.Content.CType;
-import org.jdom2.DocType;
-import org.jdom2.Document;
-import org.jdom2.Element;
-import org.jdom2.EntityRef;
-import org.jdom2.Namespace;
-import org.jdom2.ProcessingInstruction;
-import org.jdom2.Text;
-import org.jdom2.Verifier;
-import org.jdom2.output.Format;
-import org.jdom2.output.Format.TextMode;
-import org.jdom2.output.StAXStreamOutputter;
-import org.jdom2.util.NamespaceStack;
+import org.jdom.Attribute;
+import org.jdom.CDATA;
+import org.jdom.Comment;
+import org.jdom.Content;
+import org.jdom.JDOMConstants;
+import org.jdom.Content.CType;
+import org.jdom.DocType;
+import org.jdom.Document;
+import org.jdom.Element;
+import org.jdom.EntityRef;
+import org.jdom.Namespace;
+import org.jdom.ProcessingInstruction;
+import org.jdom.Text;
+import org.jdom.Verifier;
+import org.jdom.output.Format;
+import org.jdom.output.Format.TextMode;
+import org.jdom.output.StAXStreamOutputter;
+import org.jdom.util.NamespaceStack;
 
 /**
  * This class provides a concrete implementation of {@link StAXStreamProcessor}
@@ -132,8 +132,8 @@ public abstract class AbstractStAXStreamProcessor
 	/*
 	 * (non-Javadoc)
 	 * 
-	 * @see org.jdom2.output.StAXStreamProcessor#process(java.io.XMLStreamWriter,
-	 * org.jdom2.Document, org.jdom2.output.Format)
+	 * @see org.jdom.output.StAXStreamProcessor#process(java.io.XMLStreamWriter,
+	 * org.jdom.Document, org.jdom.output.Format)
 	 */
 	@Override
 	public void process(final XMLStreamWriter out, final Format format,
@@ -145,8 +145,8 @@ public abstract class AbstractStAXStreamProcessor
 	/*
 	 * (non-Javadoc)
 	 * 
-	 * @see org.jdom2.output.StAXStreamProcessor#process(java.io.XMLStreamWriter,
-	 * org.jdom2.DocType, org.jdom2.output.Format)
+	 * @see org.jdom.output.StAXStreamProcessor#process(java.io.XMLStreamWriter,
+	 * org.jdom.DocType, org.jdom.output.Format)
 	 */
 	@Override
 	public void process(final XMLStreamWriter out, final Format format,
@@ -158,8 +158,8 @@ public abstract class AbstractStAXStreamProcessor
 	/*
 	 * (non-Javadoc)
 	 * 
-	 * @see org.jdom2.output.StAXStreamProcessor#process(java.io.XMLStreamWriter,
-	 * org.jdom2.Element, org.jdom2.output.Format)
+	 * @see org.jdom.output.StAXStreamProcessor#process(java.io.XMLStreamWriter,
+	 * org.jdom.Element, org.jdom.output.Format)
 	 */
 	@Override
 	public void process(final XMLStreamWriter out, final Format format,
@@ -174,8 +174,8 @@ public abstract class AbstractStAXStreamProcessor
 	/*
 	 * (non-Javadoc)
 	 * 
-	 * @see org.jdom2.output.StAXStreamProcessor#process(java.io.XMLStreamWriter,
-	 * java.util.List, org.jdom2.output.Format)
+	 * @see org.jdom.output.StAXStreamProcessor#process(java.io.XMLStreamWriter,
+	 * java.util.List, org.jdom.output.Format)
 	 */
 	@Override
 	public void process(final XMLStreamWriter out, final Format format,
@@ -190,8 +190,8 @@ public abstract class AbstractStAXStreamProcessor
 	/*
 	 * (non-Javadoc)
 	 * 
-	 * @see org.jdom2.output.StAXStreamProcessor#process(java.io.XMLStreamWriter,
-	 * org.jdom2.CDATA, org.jdom2.output.Format)
+	 * @see org.jdom.output.StAXStreamProcessor#process(java.io.XMLStreamWriter,
+	 * org.jdom.CDATA, org.jdom.output.Format)
 	 */
 	@Override
 	public void process(final XMLStreamWriter out, final Format format,
@@ -213,8 +213,8 @@ public abstract class AbstractStAXStreamProcessor
 	/*
 	 * (non-Javadoc)
 	 * 
-	 * @see org.jdom2.output.StAXStreamProcessor#process(java.io.XMLStreamWriter,
-	 * org.jdom2.Text, org.jdom2.output.Format)
+	 * @see org.jdom.output.StAXStreamProcessor#process(java.io.XMLStreamWriter,
+	 * org.jdom.Text, org.jdom.output.Format)
 	 */
 	@Override
 	public void process(final XMLStreamWriter out, final Format format,
@@ -236,8 +236,8 @@ public abstract class AbstractStAXStreamProcessor
 	/*
 	 * (non-Javadoc)
 	 * 
-	 * @see org.jdom2.output.StAXStreamProcessor#process(java.io.XMLStreamWriter,
-	 * org.jdom2.Comment, org.jdom2.output.Format)
+	 * @see org.jdom.output.StAXStreamProcessor#process(java.io.XMLStreamWriter,
+	 * org.jdom.Comment, org.jdom.output.Format)
 	 */
 	@Override
 	public void process(final XMLStreamWriter out, final Format format,
@@ -249,8 +249,8 @@ public abstract class AbstractStAXStreamProcessor
 	/*
 	 * (non-Javadoc)
 	 * 
-	 * @see org.jdom2.output.StAXStreamProcessor#process(java.io.XMLStreamWriter,
-	 * org.jdom2.ProcessingInstruction, org.jdom2.output.Format)
+	 * @see org.jdom.output.StAXStreamProcessor#process(java.io.XMLStreamWriter,
+	 * org.jdom.ProcessingInstruction, org.jdom.output.Format)
 	 */
 	@Override
 	public void process(final XMLStreamWriter out, final Format format,
@@ -265,8 +265,8 @@ public abstract class AbstractStAXStreamProcessor
 	/*
 	 * (non-Javadoc)
 	 * 
-	 * @see org.jdom2.output.StAXStreamProcessor#process(java.io.XMLStreamWriter,
-	 * org.jdom2.EntityRef, org.jdom2.output.Format)
+	 * @see org.jdom.output.StAXStreamProcessor#process(java.io.XMLStreamWriter,
+	 * org.jdom.EntityRef, org.jdom.output.Format)
 	 */
 	@Override
 	public void process(final XMLStreamWriter out, final Format format,

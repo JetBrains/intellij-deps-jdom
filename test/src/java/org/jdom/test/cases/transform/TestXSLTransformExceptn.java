@@ -1,8 +1,8 @@
-package org.jdom2.test.cases.transform;
+package org.jdom.test.cases.transform;
 
 import static org.junit.Assert.*;
 
-import org.jdom2.transform.XSLTransformException;
+import org.jdom.transform.XSLTransformException;
 import org.junit.Test;
 
 @SuppressWarnings("javadoc")

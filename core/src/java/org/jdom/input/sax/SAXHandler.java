@@ -52,7 +52,7 @@
 
  */
 
-package org.jdom2.input.sax;
+package org.jdom.input.sax;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -70,21 +70,21 @@ import org.xml.sax.ext.DeclHandler;
 import org.xml.sax.ext.LexicalHandler;
 import org.xml.sax.helpers.DefaultHandler;
 
-import org.jdom2.Attribute;
-import org.jdom2.AttributeType;
-import org.jdom2.CDATA;
-import org.jdom2.Comment;
-import org.jdom2.DefaultJDOMFactory;
-import org.jdom2.DocType;
-import org.jdom2.Document;
-import org.jdom2.Element;
-import org.jdom2.EntityRef;
-import org.jdom2.JDOMFactory;
-import org.jdom2.Namespace;
-import org.jdom2.Parent;
-import org.jdom2.ProcessingInstruction;
-import org.jdom2.Text;
-import org.jdom2.input.SAXBuilder;
+import org.jdom.Attribute;
+import org.jdom.AttributeType;
+import org.jdom.CDATA;
+import org.jdom.Comment;
+import org.jdom.DefaultJDOMFactory;
+import org.jdom.DocType;
+import org.jdom.Document;
+import org.jdom.Element;
+import org.jdom.EntityRef;
+import org.jdom.JDOMFactory;
+import org.jdom.Namespace;
+import org.jdom.Parent;
+import org.jdom.ProcessingInstruction;
+import org.jdom.Text;
+import org.jdom.input.SAXBuilder;
 
 /**
  * A support class for {@link SAXBuilder} which listens for SAX events.
@@ -108,7 +108,7 @@ import org.jdom2.input.SAXBuilder;
  * example, the line and column of the simple XML <code>&lt;root /&gt;</code>
  * would be line 1, column 9.
  * 
- * @see org.jdom2.input.sax
+ * @see org.jdom.input.sax
  * @author Brett McLaughlin
  * @author Jason Hunter
  * @author Philip Nelson
@@ -277,7 +277,7 @@ public class SAXHandler extends DefaultHandler implements LexicalHandler,
 	 * 
 	 * @return <code>JDOMFactory</code> - the factory used for constructing
 	 *         objects.
-	 * @see #SAXHandler(org.jdom2.JDOMFactory)
+	 * @see #SAXHandler(org.jdom.JDOMFactory)
 	 */
 	public JDOMFactory getFactory() {
 		return factory;
@@ -1141,7 +1141,7 @@ public class SAXHandler extends DefaultHandler implements LexicalHandler,
 	 * Receives an object for locating the origin of SAX document events. This
 	 * method is invoked by the SAX parser.
 	 * <p>
-	 * {@link org.jdom2.JDOMFactory} implementations can use the
+	 * {@link org.jdom.JDOMFactory} implementations can use the
 	 * {@link #getDocumentLocator} method to get access to the {@link Locator}
 	 * during parse.
 	 * </p>

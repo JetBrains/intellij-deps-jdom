@@ -1,7 +1,7 @@
-package org.jdom2.test.cases.xpath;
+package org.jdom.test.cases.xpath;
 
-import org.jdom2.xpath.XPathFactory;
-import org.jdom2.xpath.jaxen.JaxenXPathFactory;
+import org.jdom.xpath.XPathFactory;
+import org.jdom.xpath.jaxen.JaxenXPathFactory;
 
 @SuppressWarnings("javadoc")
 public class TestJaxenXPathHelper extends AbstractTestXPathHepler {

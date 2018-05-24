@@ -52,7 +52,7 @@
 
  */
 
-package org.jdom2.internal;
+package org.jdom.internal;
 
 import java.lang.reflect.Constructor;
 import java.lang.reflect.InvocationTargetException;

@@ -53,7 +53,7 @@
  */
 
 
-package org.jdom2.contrib.perf;
+package org.jdom.contrib.perf;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -62,7 +62,7 @@ import java.io.InputStreamReader;
 import java.nio.charset.Charset;
 import java.util.ArrayList;
 
-import org.jdom2.Verifier;
+import org.jdom.Verifier;
 
 /**
  * This class is designed to test the performance of the JDOM Verifier.

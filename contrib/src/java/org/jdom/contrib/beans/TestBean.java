@@ -52,10 +52,10 @@
 
  */
 
-package org.jdom2.contrib.beans;
+package org.jdom.contrib.beans;
 
-import org.jdom2.*;
-import org.jdom2.output.*;
+import org.jdom.*;
+import org.jdom.output.*;
 import java.util.*;
 
 @SuppressWarnings("javadoc")
@@ -112,7 +112,7 @@ public class TestBean implements java.io.Serializable {
 			mapper.addMapping("birthdate", "dob");	// element mapping
 			mapper.addMapping("age", "dob", "age");	// attribute mapping
 
-			mapper.setBeanPackage("org.jdom2.contrib.beans");
+			mapper.setBeanPackage("org.jdom.contrib.beans");
 
 			// test bean->jdom
 

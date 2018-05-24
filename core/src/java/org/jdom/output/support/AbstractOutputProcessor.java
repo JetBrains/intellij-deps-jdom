@@ -52,11 +52,11 @@
 
  */
 
-package org.jdom2.output.support;
+package org.jdom.output.support;
 
 import java.util.List;
 
-import org.jdom2.Content;
+import org.jdom.Content;
 
 /**
  * Methods common/useful for all Outputter processors.

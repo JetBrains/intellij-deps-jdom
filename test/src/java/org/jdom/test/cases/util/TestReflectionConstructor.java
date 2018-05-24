@@ -1,15 +1,15 @@
-package org.jdom2.test.cases.util;
+package org.jdom.test.cases.util;
 
-import static org.jdom2.test.util.UnitTestUtil.checkException;
-import static org.jdom2.test.util.UnitTestUtil.failNoException;
+import static org.jdom.test.util.UnitTestUtil.checkException;
+import static org.jdom.test.util.UnitTestUtil.failNoException;
 import static org.junit.Assert.assertTrue;
 
 import java.util.List;
 
 import org.junit.Test;
 
-import org.jdom2.Namespace;
-import org.jdom2.internal.ReflectionConstructor;
+import org.jdom.Namespace;
+import org.jdom.internal.ReflectionConstructor;
 
 @SuppressWarnings("javadoc")
 public class TestReflectionConstructor {
@@ -43,7 +43,7 @@ public class TestReflectionConstructor {
 	@Test
 	public void testConstructNoaccessConstructor() {
 		try {
-			ReflectionConstructor.construct("org.jdom2.Namespace", Namespace.class);
+			ReflectionConstructor.construct("org.jdom.Namespace", Namespace.class);
 			failNoException(IllegalArgumentException.class);
 		} catch (Exception e) {
 			checkException(IllegalArgumentException.class, e);

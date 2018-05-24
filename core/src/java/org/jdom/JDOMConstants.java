@@ -52,14 +52,14 @@
 
  */
 
-package org.jdom2;
+package org.jdom;
 
 import javax.xml.transform.TransformerFactory;
 
-import org.jdom2.output.LineSeparator;
-import org.jdom2.transform.JDOMResult;
-import org.jdom2.transform.JDOMSource;
-import org.jdom2.xpath.XPathFactory;
+import org.jdom.output.LineSeparator;
+import org.jdom.transform.JDOMResult;
+import org.jdom.transform.JDOMSource;
+import org.jdom.xpath.XPathFactory;
 
 
 /**
@@ -162,7 +162,7 @@ public final class JDOMConstants {
 	 * @see XPathFactory
 	 */
 	public static final String JDOM2_PROPERTY_XPATH_FACTORY =
-			"org.jdom2.xpath.XPathFactory";
+			"org.jdom.xpath.XPathFactory";
 	
 	/**
 	 * System Property queried to obtain an alternate default Line Separator.
@@ -171,6 +171,6 @@ public final class JDOMConstants {
 	 * @see LineSeparator
 	 */
 	public static final String JDOM2_PROPERTY_LINE_SEPARATOR =
-			"org.jdom2.output.LineSeparator";
+			"org.jdom.output.LineSeparator";
 	
 }

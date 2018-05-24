@@ -52,10 +52,10 @@
 
  */
 
-package org.jdom2.output;
+package org.jdom.output;
 
-import org.jdom2.JDOMConstants;
-import org.jdom2.internal.SystemProperty;
+import org.jdom.JDOMConstants;
+import org.jdom.internal.SystemProperty;
 
 /**
  * An enumeration of common separators that are used for JDOM output.
@@ -104,7 +104,7 @@ import org.jdom2.internal.SystemProperty;
  * sequence instead of always CRLF:
  * <p>
  * <pre>
- * java -Dorg.jdom2.output.LineSeparator=SYSTEM ...
+ * java -Dorg.jdom.output.LineSeparator=SYSTEM ...
  * </pre>
  * 
  * @since JDOM2
@@ -166,7 +166,7 @@ public enum LineSeparator {
 			// need to do this to catch the normal process where the property is not set
 			// which will cause the value 'DEFAULT' to be returned by the getProperty(),
 			// or in an unlikely instance when someone sets
-			// -Dorg.jdom2.output.LineSeparator=DEFAULT
+			// -Dorg.jdom.output.LineSeparator=DEFAULT
 			// which would create some sort of loop to happen....
 			return "\r\n";
 		} else if ("SYSTEM".equals(prop)) {

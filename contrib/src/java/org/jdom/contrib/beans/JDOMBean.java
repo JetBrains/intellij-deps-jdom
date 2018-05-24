@@ -52,19 +52,19 @@
 
  */
 
-package org.jdom2.contrib.beans;
+package org.jdom.contrib.beans;
 
 import java.io.File;
 import java.io.IOException;
 import java.util.*;
 
-import org.jdom2.Document;
-import org.jdom2.Element;
-import org.jdom2.JDOMException;
-import org.jdom2.input.SAXBuilder;
-import org.jdom2.input.sax.XMLReaderJDOMFactory;
-import org.jdom2.input.sax.XMLReaderSAX2Factory;
-import org.jdom2.output.XMLOutputter;
+import org.jdom.Document;
+import org.jdom.Element;
+import org.jdom.JDOMException;
+import org.jdom.input.SAXBuilder;
+import org.jdom.input.sax.XMLReaderJDOMFactory;
+import org.jdom.input.sax.XMLReaderSAX2Factory;
+import org.jdom.output.XMLOutputter;
 
 // todo:
 // weak references and/or timeout cache
@@ -192,7 +192,7 @@ public class JDOMBean {
     }
     
     /**
-     * Load a file, parse it with JDOM, return a org.jdom2.Document.
+     * Load a file, parse it with JDOM, return a org.jdom.Document.
      * If the file has already been parsed, return the previously
      * cached object.  If the file has changed, ignore the previously
      * parsed version and reload.  <p>

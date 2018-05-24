@@ -52,21 +52,21 @@
 
  */
 
-package org.jdom2.contrib.helpers;
+package org.jdom.contrib.helpers;
 
 
 import java.util.Iterator;
 import java.util.List;
 
-import org.jdom2.Attribute;
-import org.jdom2.Comment;
-import org.jdom2.Document;
-import org.jdom2.Element;
-import org.jdom2.JDOMException;
-import org.jdom2.Namespace;
-import org.jdom2.ProcessingInstruction;
-import org.jdom2.Text;
-import org.jdom2.filter.Filters;
+import org.jdom.Attribute;
+import org.jdom.Comment;
+import org.jdom.Document;
+import org.jdom.Element;
+import org.jdom.JDOMException;
+import org.jdom.Namespace;
+import org.jdom.ProcessingInstruction;
+import org.jdom.Text;
+import org.jdom.filter.Filters;
 
 
 /**
@@ -79,8 +79,8 @@ import org.jdom2.filter.Filters;
  * of the document may invalidate the generated XPaths.</p>
  *
  * @author Laurent Bihanic
- * @deprecated moved in to core: org.jdom2.xpath.XPathHelper
- * @see org.jdom2.xpath.XPathHelper
+ * @deprecated moved in to core: org.jdom.xpath.XPathHelper
+ * @see org.jdom.xpath.XPathHelper
  */
 @Deprecated
 public class XPathHelper {

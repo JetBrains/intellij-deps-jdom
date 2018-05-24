@@ -52,9 +52,9 @@
 
  */
 
-package org.jdom2.located;
+package org.jdom.located;
 
-import org.jdom2.Comment;
+import org.jdom.Comment;
 
 /**
  * An XML comment. Methods allow the user to get and set the text of the

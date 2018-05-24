@@ -1,4 +1,4 @@
-package org.jdom2.test.cases.input;
+package org.jdom.test.cases.input;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
@@ -16,20 +16,20 @@ import org.xml.sax.SAXException;
 import org.xml.sax.ext.Attributes2;
 import org.xml.sax.helpers.LocatorImpl;
 
-import org.jdom2.Attribute;
-import org.jdom2.AttributeType;
-import org.jdom2.CDATA;
-import org.jdom2.Comment;
-import org.jdom2.DefaultJDOMFactory;
-import org.jdom2.DocType;
-import org.jdom2.Document;
-import org.jdom2.Element;
-import org.jdom2.EntityRef;
-import org.jdom2.JDOMFactory;
-import org.jdom2.Namespace;
-import org.jdom2.ProcessingInstruction;
-import org.jdom2.filter.ContentFilter;
-import org.jdom2.input.sax.SAXHandler;
+import org.jdom.Attribute;
+import org.jdom.AttributeType;
+import org.jdom.CDATA;
+import org.jdom.Comment;
+import org.jdom.DefaultJDOMFactory;
+import org.jdom.DocType;
+import org.jdom.Document;
+import org.jdom.Element;
+import org.jdom.EntityRef;
+import org.jdom.JDOMFactory;
+import org.jdom.Namespace;
+import org.jdom.ProcessingInstruction;
+import org.jdom.filter.ContentFilter;
+import org.jdom.input.sax.SAXHandler;
 
 @SuppressWarnings("javadoc")
 public class TestSAXHandler {

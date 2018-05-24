@@ -56,5 +56,5 @@
  Support classes for building JDOM documents and content using StAX readers.
 
  */
-package org.jdom2.input.stax;
+package org.jdom.input.stax;
 

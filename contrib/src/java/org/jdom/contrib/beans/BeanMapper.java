@@ -52,15 +52,15 @@
 
  */
 
-package org.jdom2.contrib.beans;
+package org.jdom.contrib.beans;
 
 import java.lang.reflect.*;
 import java.util.*;
 import java.beans.*;
-import org.jdom2.Document;
-import org.jdom2.Element;
-import org.jdom2.Attribute;
-import org.jdom2.Namespace;
+import org.jdom.Document;
+import org.jdom.Element;
+import org.jdom.Attribute;
+import org.jdom.Namespace;
 
 /**
  * Maps a JavaBean to an XML tree and vice versa.  (Yes, it's yet
@@ -152,7 +152,7 @@ import org.jdom2.Namespace;
  * <pre> BeanMapper mapper = new BeanMapper();
  * mapper.addMapping("birthdate", "dob");        // element mapping
  * mapper.addMapping("age", "dob", "age");        // attribute mapping
- * mapper.setBeanPackage("org.jdom2.contrib.beans");
+ * mapper.setBeanPackage("org.jdom.contrib.beans");
  * </pre>
  * <h3>Converting Bean to JDOM</h3>
  * <pre>Document doc = mapper.toDocument(alex);</pre>

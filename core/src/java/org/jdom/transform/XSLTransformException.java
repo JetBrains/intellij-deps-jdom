@@ -52,9 +52,9 @@
 
  */
 
-package org.jdom2.transform;
+package org.jdom.transform;
 
-import org.jdom2.JDOMException;
+import org.jdom.JDOMException;
 
 /**
  * Thrown when an XSL stylesheet fails to compile or an XSL transform fails

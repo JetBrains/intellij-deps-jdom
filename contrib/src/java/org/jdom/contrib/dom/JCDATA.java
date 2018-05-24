@@ -52,12 +52,12 @@
 
  */
 
-package org.jdom2.contrib.dom;
+package org.jdom.contrib.dom;
 
 import org.w3c.dom.CDATASection;
 
-import org.jdom2.Content;
-import org.jdom2.Namespace;
+import org.jdom.Content;
+import org.jdom.Namespace;
 
 final class JCDATA extends JText implements CDATASection {
 	public JCDATA(final JDocument topdoc, final JParent parent,

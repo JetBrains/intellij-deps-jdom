@@ -1,6 +1,6 @@
-package org.jdom2.test.cases;
+package org.jdom.test.cases;
 
-import static org.jdom2.test.util.UnitTestUtil.compare;
+import static org.jdom.test.util.UnitTestUtil.compare;
 import static org.junit.Assert.assertTrue;
 
 import java.lang.reflect.Method;
@@ -8,15 +8,15 @@ import java.util.ArrayList;
 
 import org.junit.Test;
 
-import org.jdom2.Attribute;
-import org.jdom2.CDATA;
-import org.jdom2.Comment;
-import org.jdom2.DocType;
-import org.jdom2.Document;
-import org.jdom2.EntityRef;
-import org.jdom2.NamespaceAware;
-import org.jdom2.ProcessingInstruction;
-import org.jdom2.Text;
+import org.jdom.Attribute;
+import org.jdom.CDATA;
+import org.jdom.Comment;
+import org.jdom.DocType;
+import org.jdom.Document;
+import org.jdom.EntityRef;
+import org.jdom.NamespaceAware;
+import org.jdom.ProcessingInstruction;
+import org.jdom.Text;
 
 /**
  * When you use Generics Java automatically creates 'bridge' methods.

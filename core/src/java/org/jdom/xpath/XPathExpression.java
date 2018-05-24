@@ -52,12 +52,12 @@
 
  */
 
-package org.jdom2.xpath;
+package org.jdom.xpath;
 
 import java.util.List;
 
-import org.jdom2.Namespace;
-import org.jdom2.filter.Filter;
+import org.jdom.Namespace;
+import org.jdom.filter.Filter;
 
 /**
  * XPathExpression is a representation of a compiled XPath query and any

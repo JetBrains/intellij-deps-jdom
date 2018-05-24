@@ -52,14 +52,12 @@
 
  */
 
-package org.jdom2;
+package org.jdom;
 
 import java.util.*;
 
-import org.jdom2.Content;
-import org.jdom2.Parent;
-import org.jdom2.internal.ArrayCopy;
-import org.jdom2.util.IteratorIterable;
+import org.jdom.internal.ArrayCopy;
+import org.jdom.util.IteratorIterable;
 
 /**
  * Traverse all a parent's descendants (all children at any level below
@@ -176,7 +174,7 @@ final class DescendantIterator implements IteratorIterable<Content> {
 	}
 
 	/**
-	 * Detaches the last {@link org.jdom2.Content} returned by the last call to
+	 * Detaches the last {@link org.jdom.Content} returned by the last call to
 	 * next from it's parent.  <b>Note</b>: this <b>does not</b> affect
 	 * iteration and all children, siblings, and any node following the
 	 * removed node (in document order) will be visited.

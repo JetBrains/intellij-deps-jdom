@@ -52,13 +52,13 @@
 
  */
 
-package org.jdom2.output.support;
+package org.jdom.output.support;
 
 import java.util.Iterator;
 import java.util.List;
 import java.util.NoSuchElementException;
 
-import org.jdom2.Content;
+import org.jdom.Content;
 
 /**
  * This Walker implementation walks a list of Content in it's original RAW

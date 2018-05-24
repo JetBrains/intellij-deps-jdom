@@ -52,14 +52,14 @@
 
  */
 
-package org.jdom2.contrib.dom;
+package org.jdom.contrib.dom;
 
 import org.w3c.dom.DOMException;
 import org.w3c.dom.EntityReference;
 
-import org.jdom2.Content;
-import org.jdom2.EntityRef;
-import org.jdom2.Namespace;
+import org.jdom.Content;
+import org.jdom.EntityRef;
+import org.jdom.Namespace;
 
 class JEntityRef extends JSimpleContent implements EntityReference {
 

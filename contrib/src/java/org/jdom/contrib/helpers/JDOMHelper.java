@@ -52,9 +52,9 @@
 
  */
 
-package org.jdom2.contrib.helpers;
+package org.jdom.contrib.helpers;
 
-import org.jdom2.*;
+import org.jdom.*;
 import java.util.*;
 
 /**   <p>
@@ -65,7 +65,7 @@ import java.util.*;
  *    	{@link Element#sortContent(Comparator)}
  *    @see Element#sortChildren(Comparator)
  *    @see Element#sortContent(Comparator)
- *    @see Element#sortContent(org.jdom2.filter.Filter, Comparator)
+ *    @see Element#sortContent(org.jdom.filter.Filter, Comparator)
  */
 @Deprecated
 public class JDOMHelper {

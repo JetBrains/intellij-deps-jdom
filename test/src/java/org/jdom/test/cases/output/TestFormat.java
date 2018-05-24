@@ -1,12 +1,12 @@
-package org.jdom2.test.cases.output;
+package org.jdom.test.cases.output;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
 
-import org.jdom2.output.EscapeStrategy;
-import org.jdom2.output.Format;
-import org.jdom2.output.Format.TextMode;
+import org.jdom.output.EscapeStrategy;
+import org.jdom.output.Format;
+import org.jdom.output.Format.TextMode;
 import org.junit.Test;
 
 @SuppressWarnings("javadoc")

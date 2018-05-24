@@ -52,7 +52,7 @@
 
  */
 
-package org.jdom2;
+package org.jdom;
 
 /**
  * Thrown when a data conversion from a string to value type fails, such as

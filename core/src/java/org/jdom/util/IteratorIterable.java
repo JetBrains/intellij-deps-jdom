@@ -52,7 +52,7 @@
 
  */
 
-package org.jdom2.util;
+package org.jdom.util;
 
 import java.util.Iterator;
 

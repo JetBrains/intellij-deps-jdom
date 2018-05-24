@@ -52,23 +52,23 @@
 
  */
 
-package org.jdom2.xpath;
+package org.jdom.xpath;
 
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Iterator;
 import java.util.List;
 
-import org.jdom2.Attribute;
-import org.jdom2.Comment;
-import org.jdom2.Content;
-import org.jdom2.Element;
-import org.jdom2.Namespace;
-import org.jdom2.NamespaceAware;
-import org.jdom2.Parent;
-import org.jdom2.ProcessingInstruction;
-import org.jdom2.Text;
-import org.jdom2.filter.Filters;
+import org.jdom.Attribute;
+import org.jdom.Comment;
+import org.jdom.Content;
+import org.jdom.Element;
+import org.jdom.Namespace;
+import org.jdom.NamespaceAware;
+import org.jdom.Parent;
+import org.jdom.ProcessingInstruction;
+import org.jdom.Text;
+import org.jdom.filter.Filters;
 
 /**
  * Provides a set of utility methods to generate XPath expressions to select a

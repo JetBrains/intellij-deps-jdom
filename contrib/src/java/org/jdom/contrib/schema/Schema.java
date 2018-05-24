@@ -52,7 +52,7 @@
 
  */
 
-package org.jdom2.contrib.schema;
+package org.jdom.contrib.schema;
 
 import java.io.File;
 import java.io.InputStream;
@@ -74,11 +74,11 @@ import org.iso_relax.verifier.Verifier;
 import org.iso_relax.verifier.VerifierFactory;
 import org.iso_relax.verifier.VerifierConfigurationException;
 
-import org.jdom2.Document;
-import org.jdom2.Element;
-import org.jdom2.JDOMException;
-import org.jdom2.output.SAXOutputter;
-import org.jdom2.output.JDOMLocator;
+import org.jdom.Document;
+import org.jdom.Element;
+import org.jdom.JDOMException;
+import org.jdom.output.SAXOutputter;
+import org.jdom.output.JDOMLocator;
 
 /**
  * The compiled representation of a schema definition capable of
@@ -93,7 +93,7 @@ import org.jdom2.output.JDOMLocator;
  * <p>
  * To validate a document against a W3C XML Schema definition:</p>
  * <pre>
- * import org.jdom2.contrib.schema.Schema;
+ * import org.jdom.contrib.schema.Schema;
  *
  *    String uri = &lt;The URL of the schema document&gt;;
  *    Document doc = &lt;a JDOM document&gt;;

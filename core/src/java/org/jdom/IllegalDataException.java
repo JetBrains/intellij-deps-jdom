@@ -52,7 +52,7 @@
 
  */
 
-package org.jdom2;
+package org.jdom;
 
 /**
  * Thrown when illegal text is supplied to a JDOM construct.

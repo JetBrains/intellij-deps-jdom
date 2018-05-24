@@ -1,4 +1,4 @@
-package org.jdom2.test.cases.output;
+package org.jdom.test.cases.output;
 
 /* Please run replic.pl on me ! */
 /**
@@ -29,24 +29,24 @@ import javax.xml.transform.Result;
 import org.junit.Test;
 import org.junit.runner.JUnitCore;
 
-import org.jdom2.CDATA;
-import org.jdom2.Comment;
-import org.jdom2.Content;
-import org.jdom2.DocType;
-import org.jdom2.Document;
-import org.jdom2.Element;
-import org.jdom2.EntityRef;
-import org.jdom2.IllegalDataException;
-import org.jdom2.JDOMException;
-import org.jdom2.ProcessingInstruction;
-import org.jdom2.Text;
-import org.jdom2.UncheckedJDOMFactory;
-import org.jdom2.input.SAXBuilder;
-import org.jdom2.output.Format;
-import org.jdom2.output.Format.TextMode;
-import org.jdom2.output.support.AbstractXMLOutputProcessor;
-import org.jdom2.output.support.XMLOutputProcessor;
-import org.jdom2.output.XMLOutputter;
+import org.jdom.CDATA;
+import org.jdom.Comment;
+import org.jdom.Content;
+import org.jdom.DocType;
+import org.jdom.Document;
+import org.jdom.Element;
+import org.jdom.EntityRef;
+import org.jdom.IllegalDataException;
+import org.jdom.JDOMException;
+import org.jdom.ProcessingInstruction;
+import org.jdom.Text;
+import org.jdom.UncheckedJDOMFactory;
+import org.jdom.input.SAXBuilder;
+import org.jdom.output.Format;
+import org.jdom.output.Format.TextMode;
+import org.jdom.output.support.AbstractXMLOutputProcessor;
+import org.jdom.output.support.XMLOutputProcessor;
+import org.jdom.output.XMLOutputter;
 
 @SuppressWarnings("javadoc")
 public final class TestXMLOutputter extends AbstractTestOutputter {

@@ -52,7 +52,7 @@
 
  */
 
-package org.jdom2.located;
+package org.jdom.located;
 
 /**
  * Implementations of this class know about their location (line and column).

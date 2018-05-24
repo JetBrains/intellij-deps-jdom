@@ -52,7 +52,7 @@
 
  */
 
-package org.jdom2.output;
+package org.jdom.output;
 
 import org.xml.sax.Locator;
 

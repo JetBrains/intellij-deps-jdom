@@ -1,18 +1,18 @@
-package org.jdom2.test.cases.filter;
+package org.jdom.test.cases.filter;
 
 import static org.junit.Assert.fail;
 import static org.junit.Assert.assertTrue;
 
-import org.jdom2.CDATA;
-import org.jdom2.Comment;
-import org.jdom2.DocType;
-import org.jdom2.Element;
-import org.jdom2.EntityRef;
-import org.jdom2.ProcessingInstruction;
-import org.jdom2.Text;
-import org.jdom2.filter.ContentFilter;
-import org.jdom2.filter.ElementFilter;
-import org.jdom2.test.util.UnitTestUtil;
+import org.jdom.CDATA;
+import org.jdom.Comment;
+import org.jdom.DocType;
+import org.jdom.Element;
+import org.jdom.EntityRef;
+import org.jdom.ProcessingInstruction;
+import org.jdom.Text;
+import org.jdom.filter.ContentFilter;
+import org.jdom.filter.ElementFilter;
+import org.jdom.test.util.UnitTestUtil;
 import org.junit.Test;
 
 @SuppressWarnings("javadoc")

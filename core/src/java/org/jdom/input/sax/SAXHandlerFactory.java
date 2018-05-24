@@ -52,9 +52,9 @@
 
  */
 
-package org.jdom2.input.sax;
+package org.jdom.input.sax;
 
-import org.jdom2.JDOMFactory;
+import org.jdom.JDOMFactory;
 
 /**
  * Provides SAXBuilder with SAXHandler instances to support SAX parsing. Users
@@ -63,7 +63,7 @@ import org.jdom2.JDOMFactory;
  * factory to feed instances of that new class to SAXBuilder.
  * 
  * @see SAXHandler
- * @see org.jdom2.input.sax
+ * @see org.jdom.input.sax
  * @author Rolf Lear
  */
 public interface SAXHandlerFactory {

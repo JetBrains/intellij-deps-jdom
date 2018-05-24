@@ -1,6 +1,6 @@
-package org.jdom2.test.cases.xpath;
+package org.jdom.test.cases.xpath;
 
-import org.jdom2.xpath.XPathFactory;
+import org.jdom.xpath.XPathFactory;
 
 @SuppressWarnings("javadoc")
 public class TestDefaultXPathHelper extends AbstractTestXPathHepler {

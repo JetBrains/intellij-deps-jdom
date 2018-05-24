@@ -1,24 +1,24 @@
-package org.jdom2.test.cases;
+package org.jdom.test.cases;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Iterator;
 import java.util.List;
 
-import org.jdom2.Attribute;
-import org.jdom2.Comment;
-import org.jdom2.Element;
-import org.jdom2.IllegalAddException;
-import org.jdom2.Namespace;
-import org.jdom2.Text;
-import org.jdom2.internal.ArrayCopy;
-import org.jdom2.test.util.AbstractTestList;
+import org.jdom.Attribute;
+import org.jdom.Comment;
+import org.jdom.Element;
+import org.jdom.IllegalAddException;
+import org.jdom.Namespace;
+import org.jdom.Text;
+import org.jdom.internal.ArrayCopy;
+import org.jdom.test.util.AbstractTestList;
 
 import org.junit.Before;
 import org.junit.Test;
 
 import static org.junit.Assert.*;
-import static org.jdom2.test.util.UnitTestUtil.*;
+import static org.jdom.test.util.UnitTestUtil.*;
 
 @SuppressWarnings("javadoc")
 public class TestAttributeList extends AbstractTestList<Attribute> {

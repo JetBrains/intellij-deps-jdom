@@ -52,21 +52,21 @@
 
  */
 
-package org.jdom2.input.sax;
+package org.jdom.input.sax;
 
 import org.xml.sax.XMLReader;
 
-import org.jdom2.JDOMException;
-import org.jdom2.input.SAXBuilder;
+import org.jdom.JDOMException;
+import org.jdom.input.SAXBuilder;
 
 /**
  * This interface can be used to supply custom XMLReaders to {@link SAXBuilder}.
  * <p>
- * See the {@link org.jdom2.input.sax package documentation} for details on what
+ * See the {@link org.jdom.input.sax package documentation} for details on what
  * XMLReaderJDOMFactory implementations are available and when they are
  * recommended.
  * 
- * @see org.jdom2.input.sax
+ * @see org.jdom.input.sax
  * @author Rolf Lear
  */
 public interface XMLReaderJDOMFactory {

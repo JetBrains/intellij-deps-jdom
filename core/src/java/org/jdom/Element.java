@@ -52,10 +52,10 @@
 
  */
 
-package org.jdom2;
+package org.jdom;
 
-import static org.jdom2.JDOMConstants.NS_PREFIX_DEFAULT;
-import static org.jdom2.JDOMConstants.NS_PREFIX_XML;
+import static org.jdom.JDOMConstants.NS_PREFIX_DEFAULT;
+import static org.jdom.JDOMConstants.NS_PREFIX_XML;
 
 import java.io.IOException;
 import java.io.ObjectInputStream;
@@ -71,11 +71,11 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.TreeMap;
 
-import org.jdom2.ContentList.FilterList;
-import org.jdom2.filter.ElementFilter;
-import org.jdom2.filter.Filter;
-import org.jdom2.filter.Filters;
-import org.jdom2.util.IteratorIterable;
+import org.jdom.ContentList.FilterList;
+import org.jdom.filter.ElementFilter;
+import org.jdom.filter.Filter;
+import org.jdom.filter.Filters;
+import org.jdom.util.IteratorIterable;
 
 /**
  * An XML element. Methods allow the user to get and manipulate its child
@@ -683,7 +683,7 @@ public class Element extends Content implements Parent {
 	 * @throws IllegalDataException if the assigned text contains an illegal
 	 *                              character such as a vertical tab (as
 	 *                              determined by {@link
-	 *                              org.jdom2.Verifier#checkCharacterData})
+	 *                              org.jdom.Verifier#checkCharacterData})
 	 */
 	public Element setText(final String text) {
 		content.clear();
@@ -905,7 +905,7 @@ public class Element extends Content implements Parent {
 	 * @return this element modified
 	 * @throws IllegalDataException if <code>str</code> contains an
 	 *         illegal character such as a vertical tab (as determined
-	 *         by {@link org.jdom2.Verifier#checkCharacterData})
+	 *         by {@link org.jdom.Verifier#checkCharacterData})
 	 */
 	public Element addContent(final String str) {
 		return addContent(new Text(str));
@@ -1278,7 +1278,7 @@ public class Element extends Content implements Parent {
 	 *         attribute name.
 	 * @throws IllegalDataException if the given attribute value is
 	 *         illegal character data (as determined by
-	 *         {@link org.jdom2.Verifier#checkCharacterData}).
+	 *         {@link org.jdom.Verifier#checkCharacterData}).
 	 */
 	public Element setAttribute(final String name, final String value) {
 		final Attribute attribute = getAttribute(name);
@@ -1307,7 +1307,7 @@ public class Element extends Content implements Parent {
 	 *         namespace
 	 * @throws IllegalDataException if the given attribute value is
 	 *         illegal character data (as determined by
-	 *         {@link org.jdom2.Verifier#checkCharacterData}).
+	 *         {@link org.jdom.Verifier#checkCharacterData}).
 	 * @throws IllegalAddException if the attribute namespace prefix
 	 *         collides with another namespace prefix on the element.
 	 */
@@ -1391,7 +1391,7 @@ public class Element extends Content implements Parent {
 	 *  This returns a <code>String</code> representation of the
 	 *    <code>Element</code>, suitable for debugging. If the XML
 	 *    representation of the <code>Element</code> is desired,
-	 *    {@link org.jdom2.output.XMLOutputter#outputString(Element)}
+	 *    {@link org.jdom.output.XMLOutputter#outputString(Element)}
 	 *    should be used.
 	 * </p>
 	 *

@@ -52,7 +52,7 @@
 
  */
 
-package org.jdom2.xpath.jaxen;
+package org.jdom.xpath.jaxen;
 
 import java.io.IOException;
 import java.util.Arrays;
@@ -69,17 +69,17 @@ import org.jaxen.XPath;
 import org.jaxen.saxpath.SAXPathException;
 import org.jaxen.util.SingleObjectIterator;
 
-import org.jdom2.Attribute;
-import org.jdom2.Comment;
-import org.jdom2.Content;
-import org.jdom2.Document;
-import org.jdom2.Element;
-import org.jdom2.JDOMException;
-import org.jdom2.Namespace;
-import org.jdom2.Parent;
-import org.jdom2.ProcessingInstruction;
-import org.jdom2.Text;
-import org.jdom2.input.SAXBuilder;
+import org.jdom.Attribute;
+import org.jdom.Comment;
+import org.jdom.Content;
+import org.jdom.Document;
+import org.jdom.Element;
+import org.jdom.JDOMException;
+import org.jdom.Namespace;
+import org.jdom.Parent;
+import org.jdom.ProcessingInstruction;
+import org.jdom.Text;
+import org.jdom.input.SAXBuilder;
 
 class JDOMCoreNavigator extends DefaultNavigator {
 

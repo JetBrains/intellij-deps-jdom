@@ -52,15 +52,15 @@
 
  */
 
-package org.jdom2.xpath.jaxen;
+package org.jdom.xpath.jaxen;
 
 import java.util.HashMap;
 import java.util.List;
 
 import org.jaxen.NamespaceContext;
 
-import org.jdom2.Namespace;
-import org.jdom2.NamespaceAware;
+import org.jdom.Namespace;
+import org.jdom.NamespaceAware;
 
 final class JDOMNavigator extends JDOMCoreNavigator implements NamespaceContext {
 

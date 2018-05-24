@@ -1,4 +1,4 @@
-package org.jdom2.test.cases.filter;
+package org.jdom.test.cases.filter;
 
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
@@ -11,23 +11,23 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.RandomAccess;
 
-import org.jdom2.Attribute;
-import org.jdom2.CDATA;
-import org.jdom2.Comment;
-import org.jdom2.Content;
-import org.jdom2.DocType;
-import org.jdom2.Document;
-import org.jdom2.Element;
-import org.jdom2.EntityRef;
-import org.jdom2.Namespace;
-import org.jdom2.Parent;
-import org.jdom2.ProcessingInstruction;
-import org.jdom2.Text;
-import org.jdom2.filter.AttributeFilter;
-import org.jdom2.filter.ContentFilter;
-import org.jdom2.filter.Filter;
-import org.jdom2.filter.Filters;
-import org.jdom2.test.util.UnitTestUtil;
+import org.jdom.Attribute;
+import org.jdom.CDATA;
+import org.jdom.Comment;
+import org.jdom.Content;
+import org.jdom.DocType;
+import org.jdom.Document;
+import org.jdom.Element;
+import org.jdom.EntityRef;
+import org.jdom.Namespace;
+import org.jdom.Parent;
+import org.jdom.ProcessingInstruction;
+import org.jdom.Text;
+import org.jdom.filter.AttributeFilter;
+import org.jdom.filter.ContentFilter;
+import org.jdom.filter.Filter;
+import org.jdom.filter.Filters;
+import org.jdom.test.util.UnitTestUtil;
 
 @SuppressWarnings("javadoc")
 public class AbstractTestFilter {

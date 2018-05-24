@@ -1,4 +1,4 @@
-package org.jdom2.test.cases.input.sax;
+package org.jdom.test.cases.input.sax;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
@@ -12,15 +12,15 @@ import javax.xml.transform.stream.StreamSource;
 
 import org.junit.Test;
 
-import org.jdom2.Document;
-import org.jdom2.Element;
-import org.jdom2.JDOMException;
-import org.jdom2.Namespace;
-import org.jdom2.input.SAXBuilder;
-import org.jdom2.input.sax.XMLReaderJDOMFactory;
-import org.jdom2.input.sax.XMLReaderXSDFactory;
-import org.jdom2.test.util.FidoFetch;
-import org.jdom2.test.util.UnitTestUtil;
+import org.jdom.Document;
+import org.jdom.Element;
+import org.jdom.JDOMException;
+import org.jdom.Namespace;
+import org.jdom.input.SAXBuilder;
+import org.jdom.input.sax.XMLReaderJDOMFactory;
+import org.jdom.input.sax.XMLReaderXSDFactory;
+import org.jdom.test.util.FidoFetch;
+import org.jdom.test.util.UnitTestUtil;
 
 @SuppressWarnings("javadoc")
 public class TestXMLReaderXSDFactory {

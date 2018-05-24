@@ -52,7 +52,7 @@
 
  */
 
-package org.jdom2.util;
+package org.jdom.util;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -61,10 +61,10 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.NoSuchElementException;
 
-import org.jdom2.Attribute;
-import org.jdom2.Element;
-import org.jdom2.Namespace;
-import org.jdom2.internal.ArrayCopy;
+import org.jdom.Attribute;
+import org.jdom.Element;
+import org.jdom.Namespace;
+import org.jdom.internal.ArrayCopy;
 
 
 /**

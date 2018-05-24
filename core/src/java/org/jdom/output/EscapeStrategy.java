@@ -52,7 +52,7 @@
 
  */
 
-package org.jdom2.output;
+package org.jdom.output;
 
 /**
  * Logic to determine which characters should be formatted as character

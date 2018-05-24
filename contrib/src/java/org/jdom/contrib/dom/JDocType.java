@@ -52,15 +52,15 @@
 
  */
 
-package org.jdom2.contrib.dom;
+package org.jdom.contrib.dom;
 
 import org.w3c.dom.DOMException;
 import org.w3c.dom.DocumentType;
 import org.w3c.dom.NamedNodeMap;
 
-import org.jdom2.Content;
-import org.jdom2.DocType;
-import org.jdom2.Namespace;
+import org.jdom.Content;
+import org.jdom.DocType;
+import org.jdom.Namespace;
 
 class JDocType extends JSimpleContent implements DocumentType {
 

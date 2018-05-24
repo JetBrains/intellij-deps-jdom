@@ -1,4 +1,4 @@
-package org.jdom2.test.cases;
+package org.jdom.test.cases;
 
 /*-- 
 
@@ -62,7 +62,7 @@ package org.jdom2.test.cases;
  */
 import javax.xml.XMLConstants;
 
-import org.jdom2.*;
+import org.jdom.*;
 import org.junit.Test;
 import org.junit.runner.JUnitCore;
 import static org.junit.Assert.*;

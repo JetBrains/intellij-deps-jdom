@@ -1,4 +1,4 @@
-package org.jdom2.test.cases.output;
+package org.jdom.test.cases.output;
 
 /* Please run replic.pl on me ! */
 /**
@@ -8,11 +8,11 @@ package org.jdom2.test.cases.output;
  * @version 0.1
  */
 
-import org.jdom2.Element;
-import org.jdom2.JDOMConstants;
-import org.jdom2.input.DOMBuilder;
-import org.jdom2.input.SAXBuilder;
-import org.jdom2.output.DOMOutputter;
+import org.jdom.Element;
+import org.jdom.JDOMConstants;
+import org.jdom.input.DOMBuilder;
+import org.jdom.input.SAXBuilder;
+import org.jdom.output.DOMOutputter;
 
 import org.w3c.dom.Document;
 import org.xml.sax.InputSource;
@@ -123,7 +123,7 @@ public class TestDOMOutputterXmlnsNamespaces
      *
      * @throws Exception
      */
-    private org.w3c.dom.Element jdomToDom(org.jdom2.Element element) throws Exception
+    private org.w3c.dom.Element jdomToDom(org.jdom.Element element) throws Exception
     {
         return new DOMOutputter().output(element);
     }
@@ -138,7 +138,7 @@ public class TestDOMOutputterXmlnsNamespaces
      *
      * @throws Exception
      */
-    private org.jdom2.Element domToJdom(org.w3c.dom.Element element) throws Exception
+    private org.jdom.Element domToJdom(org.w3c.dom.Element element) throws Exception
     {
         final DOMBuilder builder = new DOMBuilder();
 

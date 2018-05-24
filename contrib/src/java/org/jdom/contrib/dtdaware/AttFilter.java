@@ -52,16 +52,16 @@
 
  */
 
-package org.jdom2.contrib.dtdaware;
+package org.jdom.contrib.dtdaware;
 
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Map;
 import java.util.Set;
 
-import org.jdom2.Attribute;
-import org.jdom2.Element;
-import org.jdom2.filter.AbstractFilter;
+import org.jdom.Attribute;
+import org.jdom.Element;
+import org.jdom.filter.AbstractFilter;
 
 
 /**

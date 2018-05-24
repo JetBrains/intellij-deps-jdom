@@ -52,12 +52,12 @@
 
  */
 
-package org.jdom2;
+package org.jdom;
 
 import java.util.*;
 
-import org.jdom2.filter.*;
-import org.jdom2.util.IteratorIterable;
+import org.jdom.filter.*;
+import org.jdom.util.IteratorIterable;
 
 /**
  * Traverse a parent's children that match the supplied filter.

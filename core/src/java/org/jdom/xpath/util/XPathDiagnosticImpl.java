@@ -52,15 +52,15 @@
 
  */
 
-package org.jdom2.xpath.util;
+package org.jdom.xpath.util;
 
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-import org.jdom2.filter.Filter;
-import org.jdom2.xpath.XPathExpression;
-import org.jdom2.xpath.XPathDiagnostic;
+import org.jdom.filter.Filter;
+import org.jdom.xpath.XPathExpression;
+import org.jdom.xpath.XPathDiagnostic;
 
 /**
  * A diagnostic implementation useful for diagnosing problems in XPath results.

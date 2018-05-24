@@ -52,7 +52,7 @@
 
  */
 
-package org.jdom2.xpath.jaxen;
+package org.jdom.xpath.jaxen;
 
 import java.util.ArrayList;
 import java.util.Iterator;
@@ -66,9 +66,9 @@ import org.jaxen.UnresolvableException;
 import org.jaxen.VariableContext;
 import org.jaxen.XPath;
 
-import org.jdom2.Namespace;
-import org.jdom2.filter.Filter;
-import org.jdom2.xpath.util.AbstractXPathCompiled;
+import org.jdom.Namespace;
+import org.jdom.filter.Filter;
+import org.jdom.xpath.util.AbstractXPathCompiled;
 
 /**
  * Jaxen specific code for XPath management.

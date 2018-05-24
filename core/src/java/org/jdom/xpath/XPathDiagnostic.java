@@ -52,7 +52,7 @@
 
  */
 
-package org.jdom2.xpath;
+package org.jdom.xpath;
 
 import java.util.List;
 

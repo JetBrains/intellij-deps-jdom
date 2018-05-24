@@ -1,11 +1,11 @@
-package org.jdom2.test.cases;
+package org.jdom.test.cases;
 
-import org.jdom2.Attribute;
-import org.jdom2.Document;
-import org.jdom2.Element;
-import org.jdom2.Namespace;
-import org.jdom2.Text;
-import org.jdom2.test.util.UnitTestUtil;
+import org.jdom.Attribute;
+import org.jdom.Document;
+import org.jdom.Element;
+import org.jdom.Namespace;
+import org.jdom.Text;
+import org.jdom.test.util.UnitTestUtil;
 import org.junit.Test;
 
 @SuppressWarnings("javadoc")

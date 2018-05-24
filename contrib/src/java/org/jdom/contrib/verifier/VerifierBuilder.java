@@ -52,13 +52,13 @@
 
  */
 
-package org.jdom2.contrib.verifier;
+package org.jdom.contrib.verifier;
 
-import org.jdom2.Verifier;
+import org.jdom.Verifier;
 
 /**
  * A utility class to build the data component of the main
- * org.jdom2.Verifier class. This class contains all the character
+ * org.jdom.Verifier class. This class contains all the character
  * identification/classification routines.
  * <p>
  * This class is based on the content of the main Verifier.java class

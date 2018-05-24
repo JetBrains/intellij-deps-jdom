@@ -1,6 +1,6 @@
-package org.jdom2.test.cases.serialize;
+package org.jdom.test.cases.serialize;
 
-import org.jdom2.DocType;
+import org.jdom.DocType;
 
 @SuppressWarnings("javadoc")
 public class SDocType extends DocType {

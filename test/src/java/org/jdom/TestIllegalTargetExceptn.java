@@ -1,4 +1,4 @@
-package org.jdom2;
+package org.jdom;
 
 import static org.junit.Assert.*;
 

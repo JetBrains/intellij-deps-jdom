@@ -1,6 +1,6 @@
-package org.jdom2.test.cases.serialize;
+package org.jdom.test.cases.serialize;
 
-import org.jdom2.Comment;
+import org.jdom.Comment;
 
 @SuppressWarnings("javadoc")
 public class SComment extends Comment {

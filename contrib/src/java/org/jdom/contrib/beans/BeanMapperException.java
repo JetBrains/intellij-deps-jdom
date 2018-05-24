@@ -52,7 +52,7 @@
 
  */
 
-package org.jdom2.contrib.beans;
+package org.jdom.contrib.beans;
 
 
 /**

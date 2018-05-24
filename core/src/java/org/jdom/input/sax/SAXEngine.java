@@ -52,7 +52,7 @@
 
  */
 
-package org.jdom2.input.sax;
+package org.jdom.input.sax;
 
 import java.io.File;
 import java.io.IOException;
@@ -65,22 +65,22 @@ import org.xml.sax.EntityResolver;
 import org.xml.sax.ErrorHandler;
 import org.xml.sax.InputSource;
 
-import org.jdom2.Document;
-import org.jdom2.JDOMException;
-import org.jdom2.JDOMFactory;
+import org.jdom.Document;
+import org.jdom.JDOMException;
+import org.jdom.JDOMFactory;
 
 /**
  * SAXEngine provides an interface to interact with either the SAXBuilder or the
  * SAXBuilderEngine. This makes it possible to do pooling of SAXEngines for
  * parsing using instances of either SAXBuilder or SAXBuilderEngine.
  * 
- * @see org.jdom2.input.sax
+ * @see org.jdom.input.sax
  * @author Rolf Lear
  */
 public interface SAXEngine {
 
 	/**
-	 * Returns the current {@link org.jdom2.JDOMFactory} in use.
+	 * Returns the current {@link org.jdom.JDOMFactory} in use.
 	 * 
 	 * @return the factory in use
 	 */

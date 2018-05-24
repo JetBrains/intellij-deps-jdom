@@ -52,7 +52,7 @@
 
  */
 
-package org.jdom2.contrib.xpath.xalan;
+package org.jdom.contrib.xpath.xalan;
 
 import java.util.Collections;
 import java.util.List;
@@ -77,17 +77,17 @@ import org.xml.sax.SAXException;
 import org.xml.sax.ext.DeclHandler;
 import org.xml.sax.ext.LexicalHandler;
 
-import org.jdom2.Attribute;
-import org.jdom2.Content;
-import org.jdom2.DocType;
-import org.jdom2.Document;
-import org.jdom2.Element;
-import org.jdom2.Namespace;
-import org.jdom2.NamespaceAware;
-import org.jdom2.Parent;
-import org.jdom2.internal.ArrayCopy;
-import org.jdom2.transform.JDOMSource;
-import org.jdom2.util.NamespaceStack;
+import org.jdom.Attribute;
+import org.jdom.Content;
+import org.jdom.DocType;
+import org.jdom.Document;
+import org.jdom.Element;
+import org.jdom.Namespace;
+import org.jdom.NamespaceAware;
+import org.jdom.Parent;
+import org.jdom.internal.ArrayCopy;
+import org.jdom.transform.JDOMSource;
+import org.jdom.util.NamespaceStack;
 
 /**
  * ***********************************************

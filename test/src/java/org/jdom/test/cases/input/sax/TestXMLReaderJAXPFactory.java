@@ -1,4 +1,4 @@
-package org.jdom2.test.cases.input.sax;
+package org.jdom.test.cases.input.sax;
 
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertNotNull;
@@ -8,9 +8,9 @@ import javax.xml.parsers.FactoryConfigurationError;
 
 import org.junit.Test;
 
-import org.jdom2.JDOMException;
-import org.jdom2.input.sax.XMLReaderJAXPFactory;
-import org.jdom2.test.util.UnitTestUtil;
+import org.jdom.JDOMException;
+import org.jdom.input.sax.XMLReaderJAXPFactory;
+import org.jdom.test.util.UnitTestUtil;
 
 @SuppressWarnings("javadoc")
 public class TestXMLReaderJAXPFactory {

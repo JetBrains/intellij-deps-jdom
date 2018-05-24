@@ -1,4 +1,4 @@
-package org.jdom2.test.cases.xpath;
+package org.jdom.test.cases.xpath;
 
 import static org.junit.Assert.*;
 
@@ -6,12 +6,12 @@ import java.util.Collections;
 
 import org.junit.Test;
 
-import org.jdom2.Namespace;
-import org.jdom2.filter.Filters;
-import org.jdom2.test.util.UnitTestUtil;
-import org.jdom2.xpath.XPathBuilder;
-import org.jdom2.xpath.XPathExpression;
-import org.jdom2.xpath.XPathFactory;
+import org.jdom.Namespace;
+import org.jdom.filter.Filters;
+import org.jdom.test.util.UnitTestUtil;
+import org.jdom.xpath.XPathBuilder;
+import org.jdom.xpath.XPathExpression;
+import org.jdom.xpath.XPathFactory;
 
 @SuppressWarnings("javadoc")
 public class TestXPathBuilder {

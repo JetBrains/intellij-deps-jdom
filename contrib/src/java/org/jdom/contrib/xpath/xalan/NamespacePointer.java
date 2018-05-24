@@ -52,12 +52,12 @@
 
  */
 
-package org.jdom2.contrib.xpath.xalan;
+package org.jdom.contrib.xpath.xalan;
 
 import java.util.List;
 
-import org.jdom2.Namespace;
-import org.jdom2.NamespaceAware;
+import org.jdom.Namespace;
+import org.jdom.NamespaceAware;
 
 /**
  * ***********************************************

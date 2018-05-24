@@ -52,7 +52,7 @@
 
  */
 
-package org.jdom2.input.sax;
+package org.jdom.input.sax;
 
 import javax.xml.parsers.ParserConfigurationException;
 import javax.xml.parsers.SAXParserFactory;
@@ -60,7 +60,7 @@ import javax.xml.parsers.SAXParserFactory;
 import org.xml.sax.SAXException;
 import org.xml.sax.XMLReader;
 
-import org.jdom2.JDOMException;
+import org.jdom.JDOMException;
 
 /**
  * Create XMLReaders directly from the javax.xml.parsers.SAXParserFactory API using an explicit
@@ -73,7 +73,7 @@ import org.jdom2.JDOMException;
  * See the documentation for {@link SAXParserFactory} for the details on what the factoryClassName
  * and classLoader should be.
  * 
- * @see org.jdom2.input.sax
+ * @see org.jdom.input.sax
  * @since 2.0.3
  * @author Rolf Lear
  */

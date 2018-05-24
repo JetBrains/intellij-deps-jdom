@@ -52,7 +52,7 @@
 
  */
 
-package org.jdom2.contrib.input.scanner;
+package org.jdom.contrib.input.scanner;
 
 import java.io.IOException;
 import java.util.*;
@@ -66,12 +66,12 @@ import org.xml.sax.SAXNotRecognizedException;
 import org.xml.sax.SAXNotSupportedException;
 import org.xml.sax.helpers.XMLFilterImpl;
 
-import org.jdom2.*;
-import org.jdom2.input.SAXBuilder;
-import org.jdom2.input.sax.XMLReaders;
-import org.jdom2.input.sax.XMLReaderJDOMFactory;
-import org.jdom2.input.sax.SAXHandler;
-import org.jdom2.input.sax.SAXHandlerFactory;
+import org.jdom.*;
+import org.jdom.input.SAXBuilder;
+import org.jdom.input.sax.XMLReaders;
+import org.jdom.input.sax.XMLReaderJDOMFactory;
+import org.jdom.input.sax.SAXHandler;
+import org.jdom.input.sax.SAXHandlerFactory;
 
 /**
  * An XML filter that uses XPath-like expressions to select the

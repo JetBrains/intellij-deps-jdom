@@ -52,13 +52,13 @@
 
  */
 
-package org.jdom2.filter;
+package org.jdom.filter;
 
-import org.jdom2.Element;
-import org.jdom2.Namespace;
+import org.jdom.Element;
+import org.jdom.Namespace;
 
 /**
- * A Filter that only matches {@link org.jdom2.Element} objects.
+ * A Filter that only matches {@link org.jdom.Element} objects.
  *
  * @author  Jools Enticknap
  * @author  Bradley S. Huffman

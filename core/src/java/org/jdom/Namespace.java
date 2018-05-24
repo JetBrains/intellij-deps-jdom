@@ -52,9 +52,9 @@
 
  */
 
-package org.jdom2;
+package org.jdom;
 
-import static org.jdom2.JDOMConstants.*;
+import static org.jdom.JDOMConstants.*;
 
 import java.io.InvalidObjectException;
 import java.io.Serializable;

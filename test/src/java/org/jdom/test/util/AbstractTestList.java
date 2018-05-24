@@ -1,10 +1,10 @@
-package org.jdom2.test.util;
+package org.jdom.test.util;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
 import static org.junit.Assert.fail;
-import static org.jdom2.test.util.UnitTestUtil.*;
+import static org.jdom.test.util.UnitTestUtil.*;
 
 import java.lang.reflect.Array;
 import java.util.Arrays;
@@ -18,7 +18,7 @@ import java.util.NoSuchElementException;
 
 import org.junit.Test;
 
-import org.jdom2.internal.ArrayCopy;
+import org.jdom.internal.ArrayCopy;
 
 /**
  * This base class can be used to test multiple implementations of List<?>

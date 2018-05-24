@@ -52,11 +52,11 @@
 
  */
 
-package org.jdom2.located;
+package org.jdom.located;
 
-import org.jdom2.CDATA;
-import org.jdom2.IllegalDataException;
-import org.jdom2.Text;
+import org.jdom.CDATA;
+import org.jdom.IllegalDataException;
+import org.jdom.Text;
 
 /**
  * An XML CDATA section. Represents character-based content within an XML
@@ -76,7 +76,7 @@ public class LocatedCDATA extends CDATA implements Located {
 	 * @param str the node's character content.
 	 * @throws IllegalDataException if <code>str</code> contains an
 	 *         illegal character such as a vertical tab (as determined
-	 *         by {@link org.jdom2.Verifier#checkCharacterData})
+	 *         by {@link org.jdom.Verifier#checkCharacterData})
 	 */
 	public LocatedCDATA(String str) {
 		super(str);

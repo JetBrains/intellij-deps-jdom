@@ -1,11 +1,11 @@
-package org.jdom2.test.cases;
+package org.jdom.test.cases;
 
 import java.util.List;
 
-import org.jdom2.Element;
-import org.jdom2.Text;
-import org.jdom2.filter.Filters;
-import org.jdom2.test.util.AbstractTestList;
+import org.jdom.Element;
+import org.jdom.Text;
+import org.jdom.filter.Filters;
+import org.jdom.test.util.AbstractTestList;
 
 @SuppressWarnings("javadoc")
 public class TestFilterListText extends AbstractTestList<Text> {

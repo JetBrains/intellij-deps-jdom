@@ -52,9 +52,9 @@
 
  */
 
-package org.jdom2.filter;
+package org.jdom.filter;
 
-import org.jdom2.Content;
+import org.jdom.Content;
 
 /**
  * Allow two filters to be chained together with a logical

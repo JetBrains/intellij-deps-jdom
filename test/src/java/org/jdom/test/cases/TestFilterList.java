@@ -1,4 +1,4 @@
-package org.jdom2.test.cases;
+package org.jdom.test.cases;
 
 /*-- 
 
@@ -61,9 +61,9 @@ package org.jdom2.test.cases;
  * @version 0.1
  */
 import static org.junit.Assert.*;
-import static org.jdom2.test.util.UnitTestUtil.*;
+import static org.jdom.test.util.UnitTestUtil.*;
 
-import org.jdom2.*;
+import org.jdom.*;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.JUnitCore;

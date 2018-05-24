@@ -1,9 +1,9 @@
-package org.jdom2.test.cases.xpath;
+package org.jdom.test.cases.xpath;
 
 import org.junit.Test;
 
-import org.jdom2.contrib.xpath.xalan.XalanXPathFactory;
-import org.jdom2.xpath.XPathFactory;
+import org.jdom.contrib.xpath.xalan.XalanXPathFactory;
+import org.jdom.xpath.XPathFactory;
 
 @SuppressWarnings({"javadoc"})
 public class TestXalanCompiled extends AbstractTestXPathCompiled {

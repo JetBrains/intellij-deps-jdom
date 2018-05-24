@@ -1,7 +1,7 @@
-package org.jdom2.test.cases;
+package org.jdom.test.cases;
 
-import static org.jdom2.test.util.UnitTestUtil.checkException;
-import static org.jdom2.test.util.UnitTestUtil.failNoException;
+import static org.jdom.test.util.UnitTestUtil.checkException;
+import static org.jdom.test.util.UnitTestUtil.failNoException;
 import static org.junit.Assert.assertNotNull;
 import static org.junit.Assert.assertTrue;
 
@@ -9,11 +9,11 @@ import java.util.Arrays;
 import java.util.Iterator;
 import java.util.List;
 
-import org.jdom2.Content;
-import org.jdom2.DocType;
-import org.jdom2.Element;
-import org.jdom2.internal.ArrayCopy;
-import org.jdom2.test.util.AbstractTestList;
+import org.jdom.Content;
+import org.jdom.DocType;
+import org.jdom.Element;
+import org.jdom.internal.ArrayCopy;
+import org.jdom.test.util.AbstractTestList;
 
 import org.junit.Before;
 import org.junit.Test;

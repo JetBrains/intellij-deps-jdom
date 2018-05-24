@@ -1,4 +1,4 @@
-package org.jdom2.test.cases.located;
+package org.jdom.test.cases.located;
 
 import static org.junit.Assert.assertTrue;
 import static org.junit.Assert.fail;
@@ -7,19 +7,19 @@ import java.io.IOException;
 
 import org.junit.Test;
 
-import org.jdom2.Comment;
-import org.jdom2.Content;
-import org.jdom2.Document;
-import org.jdom2.Element;
-import org.jdom2.JDOMException;
-import org.jdom2.JDOMFactory;
-import org.jdom2.filter.Filters;
-import org.jdom2.input.SAXBuilder;
-import org.jdom2.located.Located;
-import org.jdom2.located.LocatedJDOMFactory;
-import org.jdom2.test.cases.AbstractTestJDOMFactory;
-import org.jdom2.test.util.FidoFetch;
-import org.jdom2.xpath.XPathFactory;
+import org.jdom.Comment;
+import org.jdom.Content;
+import org.jdom.Document;
+import org.jdom.Element;
+import org.jdom.JDOMException;
+import org.jdom.JDOMFactory;
+import org.jdom.filter.Filters;
+import org.jdom.input.SAXBuilder;
+import org.jdom.located.Located;
+import org.jdom.located.LocatedJDOMFactory;
+import org.jdom.test.cases.AbstractTestJDOMFactory;
+import org.jdom.test.util.FidoFetch;
+import org.jdom.xpath.XPathFactory;
 
 @SuppressWarnings("javadoc")
 public class TestLocatedJDOMFactory extends AbstractTestJDOMFactory {

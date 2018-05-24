@@ -1,4 +1,4 @@
-package org.jdom2.test.cases;
+package org.jdom.test.cases;
 
 /* Please run replic.pl on me ! */
 /**
@@ -7,7 +7,7 @@ package org.jdom2.test.cases;
  * @author unascribed
  * @version 0.1
  */
-import org.jdom2.*;
+import org.jdom.*;
 import org.junit.Test;
 import org.junit.runner.JUnitCore;
 
@@ -16,10 +16,10 @@ import static org.junit.Assert.*;
 import java.io.*;
 import java.util.*;
 
-import org.jdom2.filter.ContentFilter;
-import org.jdom2.filter.ElementFilter;
-import org.jdom2.output.*;
-import org.jdom2.test.util.UnitTestUtil;
+import org.jdom.filter.ContentFilter;
+import org.jdom.filter.ElementFilter;
+import org.jdom.output.*;
+import org.jdom.test.util.UnitTestUtil;
 
 @SuppressWarnings("javadoc")
 public final class TestDocument {

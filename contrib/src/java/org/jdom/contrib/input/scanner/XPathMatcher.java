@@ -52,16 +52,16 @@
 
  */
 
-package org.jdom2.contrib.input.scanner;
+package org.jdom.contrib.input.scanner;
 
 
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Constructor;
 import java.lang.reflect.Modifier;
 
-import org.jdom2.Element;
-import org.jdom2.JDOMException;
-import org.jdom2.internal.SystemProperty;
+import org.jdom.Element;
+import org.jdom.JDOMException;
+import org.jdom.internal.SystemProperty;
 
 import org.xml.sax.Attributes;
 
@@ -72,7 +72,7 @@ import org.xml.sax.Attributes;
  * <p>
  * This class also plays the role of factory for concrete
  * implementations: The system property
- * "<code>org.jdom2.XPathMatcher.class</code>" shall contain the
+ * "<code>org.jdom.XPathMatcher.class</code>" shall contain the
  * fully-qualified name of a concrete subclass of XPatchMatcher with
  * a public {@link #XPathMatcher two argument constructor}.  If this
  * property is not defined, the default concrete implementation
@@ -92,16 +92,16 @@ public abstract class XPathMatcher {
     * name of the implementation class to use.
     * <p>
     * The property name is:
-    * "<code>org.jdom2.XPathMatcher.class</code>".</p>
+    * "<code>org.jdom.XPathMatcher.class</code>".</p>
     */
    private final static String  IMPLEMENTATION_CLASS_PROPERTY   =
-                                        "org.jdom2.XPathMatcher.class";
+                                        "org.jdom.XPathMatcher.class";
 
    /**
     * The default implementation class to use if none was configured.
     */
    private final static String  DEFAULT_IMPLEMENTATION_CLASS    =
-                "org.jdom2.contrib.input.scanner.JakartaRegExpXPathMatcher";
+                "org.jdom.contrib.input.scanner.JakartaRegExpXPathMatcher";
 
    /**
     * The constructor to instanciate a new XPathMatcher concrete

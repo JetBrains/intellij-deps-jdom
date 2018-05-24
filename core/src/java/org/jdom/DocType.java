@@ -52,7 +52,7 @@
 
  */
 
-package org.jdom2;
+package org.jdom;
 
 /**
  * An XML DOCTYPE declaration.  Method allow the user to get and set the
@@ -289,7 +289,7 @@ public class DocType extends Content {
 	public String toString() {
 		return new StringBuilder()
 		.append("[DocType: ")
-		.append(new org.jdom2.output.XMLOutputter().outputString(this))
+		.append(new org.jdom.output.XMLOutputter().outputString(this))
 		.append("]")
 		.toString();
 	}

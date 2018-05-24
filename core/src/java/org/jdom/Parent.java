@@ -52,22 +52,22 @@
 
  */
 
-package org.jdom2;
+package org.jdom;
 
 import java.io.Serializable;
 import java.util.*;
 
-import org.jdom2.filter.Filter;
-import org.jdom2.filter.Filters;
-import org.jdom2.util.IteratorIterable;
+import org.jdom.filter.Filter;
+import org.jdom.filter.Filters;
+import org.jdom.util.IteratorIterable;
 
 /**
  * Interface for JDOM objects which are allowed to contain
  * {@link Content} content - {@link Element} and {@link Document}. 
  *
- * @see org.jdom2.Content
- * @see org.jdom2.Document
- * @see org.jdom2.Element
+ * @see org.jdom.Content
+ * @see org.jdom.Document
+ * @see org.jdom.Element
  *
  * @author Bradley S. Huffman
  * @author Jason Hunter

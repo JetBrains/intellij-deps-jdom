@@ -1,8 +1,8 @@
-package org.jdom2.test.cases.xpath;
+package org.jdom.test.cases.xpath;
 
-import org.jdom2.JDOMException;
-import org.jdom2.xpath.XPath;
-import org.jdom2.xpath.jaxen.JDOMXPath;
+import org.jdom.JDOMException;
+import org.jdom.xpath.XPath;
+import org.jdom.xpath.jaxen.JDOMXPath;
 
 /**
  * 

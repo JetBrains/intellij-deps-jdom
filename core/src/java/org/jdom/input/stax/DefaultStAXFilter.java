@@ -52,9 +52,9 @@
 
  */
 
-package org.jdom2.input.stax;
+package org.jdom.input.stax;
 
-import org.jdom2.Namespace;
+import org.jdom.Namespace;
 
 /**
  * This DefaultStAXFilter includes all content and prunes nothing.

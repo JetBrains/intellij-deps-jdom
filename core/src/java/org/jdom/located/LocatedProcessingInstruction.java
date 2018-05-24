@@ -52,12 +52,12 @@
 
  */
 
-package org.jdom2.located;
+package org.jdom.located;
 
 import java.util.Map;
 
-import org.jdom2.IllegalTargetException;
-import org.jdom2.ProcessingInstruction;
+import org.jdom.IllegalTargetException;
+import org.jdom.ProcessingInstruction;
 
 /**
  * An XML processing instruction. Methods allow the user to obtain the target of

@@ -52,7 +52,7 @@
 
  */
 
-package org.jdom2.xpath.jaxen;
+package org.jdom.xpath.jaxen;
 
 import java.util.ArrayList;
 import java.util.Iterator;
@@ -63,14 +63,14 @@ import org.jaxen.JaxenException;
 import org.jaxen.SimpleVariableContext;
 import org.jaxen.XPath;
 
-import org.jdom2.Attribute;
-import org.jdom2.CDATA;
-import org.jdom2.Comment;
-import org.jdom2.Element;
-import org.jdom2.JDOMException;
-import org.jdom2.Namespace;
-import org.jdom2.ProcessingInstruction;
-import org.jdom2.Text;
+import org.jdom.Attribute;
+import org.jdom.CDATA;
+import org.jdom.Comment;
+import org.jdom.Element;
+import org.jdom.JDOMException;
+import org.jdom.Namespace;
+import org.jdom.ProcessingInstruction;
+import org.jdom.Text;
 
 /**
  * A concrete XPath implementation for Jaxen. This class must be public because
@@ -81,7 +81,7 @@ import org.jdom2.Text;
  * @deprecated replaced by compiled version.
  */
 @Deprecated
-public class JDOMXPath extends org.jdom2.xpath.XPath {
+public class JDOMXPath extends org.jdom.xpath.XPath {
 
 	/**
 	 * Default mechanism.

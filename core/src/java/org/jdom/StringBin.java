@@ -52,9 +52,9 @@
 
  */
 
-package org.jdom2;
+package org.jdom;
 
-import org.jdom2.internal.ArrayCopy;
+import org.jdom.internal.ArrayCopy;
 
 
 /**

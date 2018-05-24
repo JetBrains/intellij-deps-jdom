@@ -1,11 +1,11 @@
-package org.jdom2.test.cases;
+package org.jdom.test.cases;
 
 import java.util.List;
 
-import org.jdom2.Content;
-import org.jdom2.Element;
-import org.jdom2.filter.ElementFilter;
-import org.jdom2.test.util.AbstractTestList;
+import org.jdom.Content;
+import org.jdom.Element;
+import org.jdom.filter.ElementFilter;
+import org.jdom.test.util.AbstractTestList;
 import org.junit.Before;
 
 @SuppressWarnings("javadoc")

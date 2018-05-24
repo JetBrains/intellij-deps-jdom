@@ -1,4 +1,4 @@
-package org.jdom2.test.cases.xpath;
+package org.jdom.test.cases.xpath;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.fail;
@@ -9,24 +9,24 @@ import java.util.Iterator;
 
 import org.junit.Test;
 
-import org.jdom2.Attribute;
-import org.jdom2.CDATA;
-import org.jdom2.Comment;
-import org.jdom2.Content;
-import org.jdom2.Document;
-import org.jdom2.Element;
-import org.jdom2.EntityRef;
-import org.jdom2.JDOMException;
-import org.jdom2.NamespaceAware;
-import org.jdom2.ProcessingInstruction;
-import org.jdom2.Text;
-import org.jdom2.input.SAXBuilder;
-import org.jdom2.test.util.FidoFetch;
-import org.jdom2.test.util.UnitTestUtil;
-import org.jdom2.xpath.XPathDiagnostic;
-import org.jdom2.xpath.XPathExpression;
-import org.jdom2.xpath.XPathFactory;
-import org.jdom2.xpath.XPathHelper;
+import org.jdom.Attribute;
+import org.jdom.CDATA;
+import org.jdom.Comment;
+import org.jdom.Content;
+import org.jdom.Document;
+import org.jdom.Element;
+import org.jdom.EntityRef;
+import org.jdom.JDOMException;
+import org.jdom.NamespaceAware;
+import org.jdom.ProcessingInstruction;
+import org.jdom.Text;
+import org.jdom.input.SAXBuilder;
+import org.jdom.test.util.FidoFetch;
+import org.jdom.test.util.UnitTestUtil;
+import org.jdom.xpath.XPathDiagnostic;
+import org.jdom.xpath.XPathExpression;
+import org.jdom.xpath.XPathFactory;
+import org.jdom.xpath.XPathHelper;
 
 @SuppressWarnings("javadoc")
 public abstract class AbstractTestXPathHepler {

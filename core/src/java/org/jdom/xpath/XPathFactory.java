@@ -52,19 +52,19 @@
 
  */
 
-package org.jdom2.xpath;
+package org.jdom.xpath;
 
 import java.util.Collection;
 import java.util.Map;
 import java.util.concurrent.atomic.AtomicReference;
 
-import org.jdom2.JDOMConstants;
-import org.jdom2.Namespace;
-import org.jdom2.filter.Filter;
-import org.jdom2.filter.Filters;
-import org.jdom2.internal.ReflectionConstructor;
-import org.jdom2.internal.SystemProperty;
-import org.jdom2.xpath.jaxen.JaxenXPathFactory;
+import org.jdom.JDOMConstants;
+import org.jdom.Namespace;
+import org.jdom.filter.Filter;
+import org.jdom.filter.Filters;
+import org.jdom.internal.ReflectionConstructor;
+import org.jdom.internal.SystemProperty;
+import org.jdom.xpath.jaxen.JaxenXPathFactory;
 
 /**
  * XPathFactory allows JDOM users to configure which XPath implementation to use
@@ -232,7 +232,7 @@ public abstract class XPathFactory {
 	 * @throws IllegalArgumentException
 	 *         if any two Namespace values share the same prefix, or if there is
 	 *         any other reason that the XPath query cannot be compiled.
-	 * @see    org.jdom2.filter.Filters
+	 * @see    org.jdom.filter.Filters
 	 */
 	public abstract <T> XPathExpression<T> compile(String expression,
 			Filter<T> filter, Map<String, Object> variables,

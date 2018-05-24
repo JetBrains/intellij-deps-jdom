@@ -52,7 +52,7 @@
 
  */
 
-package org.jdom2.input.sax;
+package org.jdom.input.sax;
 
 import javax.xml.parsers.SAXParserFactory;
 import javax.xml.validation.Schema;
@@ -68,10 +68,10 @@ import javax.xml.validation.Schema;
  * but rather use an alternate means like
  * {@link XMLReaders#XSDVALIDATING}.
  * <p>
- * See the {@link org.jdom2.input.sax package documentation} for the best
+ * See the {@link org.jdom.input.sax package documentation} for the best
  * alternatives.
  * 
- * @see org.jdom2.input.sax
+ * @see org.jdom.input.sax
  * @author Rolf Lear
  */
 public class XMLReaderSchemaFactory extends AbstractReaderSchemaFactory {

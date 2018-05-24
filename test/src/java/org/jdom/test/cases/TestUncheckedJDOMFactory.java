@@ -1,7 +1,7 @@
-package org.jdom2.test.cases;
+package org.jdom.test.cases;
 
-import org.jdom2.JDOMFactory;
-import org.jdom2.UncheckedJDOMFactory;
+import org.jdom.JDOMFactory;
+import org.jdom.UncheckedJDOMFactory;
 
 @SuppressWarnings("javadoc")
 public class TestUncheckedJDOMFactory extends AbstractTestJDOMFactory {

@@ -52,11 +52,11 @@
 
  */
 
-package org.jdom2.located;
+package org.jdom.located;
 
-import org.jdom2.DocType;
-import org.jdom2.IllegalDataException;
-import org.jdom2.IllegalNameException;
+import org.jdom.DocType;
+import org.jdom.IllegalDataException;
+import org.jdom.IllegalNameException;
 
 /**
  * An XML DOCTYPE declaration.  Method allow the user to get and set the

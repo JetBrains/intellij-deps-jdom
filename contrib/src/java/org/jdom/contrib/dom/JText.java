@@ -52,14 +52,14 @@
 
  */
 
-package org.jdom2.contrib.dom;
+package org.jdom.contrib.dom;
 
 import org.w3c.dom.DOMException;
 import org.w3c.dom.Text;
 
-import org.jdom2.Content;
-import org.jdom2.Namespace;
-import org.jdom2.Verifier;
+import org.jdom.Content;
+import org.jdom.Namespace;
+import org.jdom.Verifier;
 
 class JText extends JSimpleCharacterContent implements Text {
 

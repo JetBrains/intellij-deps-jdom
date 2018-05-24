@@ -52,7 +52,7 @@
 
  */
 
-package org.jdom2.internal;
+package org.jdom.internal;
 
 /**
  * System.getProperty(...) requires security permissions in Applets, and some

@@ -52,16 +52,16 @@
 
  */
 
-package org.jdom2.contrib.input.scanner;
+package org.jdom.contrib.input.scanner;
 
 
 import java.util.regex.Pattern;
 import java.util.regex.PatternSyntaxException;
 
-import org.jdom2.Element;
-import org.jdom2.JDOMException;
-import org.jdom2.xpath.XPathExpression;
-import org.jdom2.xpath.XPathFactory;
+import org.jdom.Element;
+import org.jdom.JDOMException;
+import org.jdom.xpath.XPathExpression;
+import org.jdom.xpath.XPathFactory;
 
 import org.xml.sax.Attributes;
 

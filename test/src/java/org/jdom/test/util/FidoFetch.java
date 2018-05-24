@@ -1,4 +1,4 @@
-package org.jdom2.test.util;
+package org.jdom.test.util;
 
 import java.io.InputStream;
 import java.net.URL;
@@ -7,7 +7,7 @@ import java.util.concurrent.atomic.AtomicReference;
 /**
  * Android does not have a reliable ClassLoader.getResource() set of methods.
  * We do a poor-man's hack that works on Android too.
- * On Android, we need to make a new class org.jdom2.test.util.AndroidFetch.
+ * On Android, we need to make a new class org.jdom.test.util.AndroidFetch.
  * 
  * @author Rolf Lear
  *
@@ -41,7 +41,7 @@ public class FidoFetch {
 		FidoFetch ret = fetch.get();
 		if (ret == null) {
 //			if ("Dalvik".equalsIgnoreCase(System.getProperty("java.vm.name", "junk"))) {
-//				ret = ReflectionConstructor.construct("org.jdom2.test.util.AndroidFetch", FidoFetch.class);
+//				ret = ReflectionConstructor.construct("org.jdom.test.util.AndroidFetch", FidoFetch.class);
 //			} else {
 				ret = new FidoFetch();
 //			}

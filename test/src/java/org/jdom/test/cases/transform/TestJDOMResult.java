@@ -1,17 +1,17 @@
-package org.jdom2.test.cases.transform;
+package org.jdom.test.cases.transform;
 
 import static org.junit.Assert.*;
 
 import java.util.ArrayList;
 
-import org.jdom2.Content;
-import org.jdom2.Document;
-import org.jdom2.Element;
-import org.jdom2.JDOMFactory;
-import org.jdom2.ProcessingInstruction;
-import org.jdom2.Text;
-import org.jdom2.UncheckedJDOMFactory;
-import org.jdom2.transform.JDOMResult;
+import org.jdom.Content;
+import org.jdom.Document;
+import org.jdom.Element;
+import org.jdom.JDOMFactory;
+import org.jdom.ProcessingInstruction;
+import org.jdom.Text;
+import org.jdom.UncheckedJDOMFactory;
+import org.jdom.transform.JDOMResult;
 import org.junit.Test;
 import org.xml.sax.ContentHandler;
 import org.xml.sax.ext.DefaultHandler2;

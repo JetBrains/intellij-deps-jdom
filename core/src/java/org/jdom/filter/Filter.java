@@ -52,7 +52,7 @@
 
  */
 
-package org.jdom2.filter;
+package org.jdom.filter;
 
 import java.util.List;
 

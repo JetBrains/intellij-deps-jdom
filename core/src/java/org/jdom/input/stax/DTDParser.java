@@ -52,15 +52,15 @@
 
  */
 
-package org.jdom2.input.stax;
+package org.jdom.input.stax;
 
 import java.util.HashMap;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-import org.jdom2.DocType;
-import org.jdom2.JDOMException;
-import org.jdom2.JDOMFactory;
+import org.jdom.DocType;
+import org.jdom.JDOMException;
+import org.jdom.JDOMFactory;
 
 /**
  * Parses out key information from a single String representing a DOCTYPE

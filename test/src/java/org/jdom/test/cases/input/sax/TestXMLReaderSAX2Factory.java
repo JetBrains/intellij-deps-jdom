@@ -1,4 +1,4 @@
-package org.jdom2.test.cases.input.sax;
+package org.jdom.test.cases.input.sax;
 
 import static org.junit.Assert.*;
 
@@ -7,12 +7,12 @@ import java.io.IOException;
 import org.junit.Test;
 import org.xml.sax.SAXException;
 
-import org.jdom2.Document;
-import org.jdom2.JDOMException;
-import org.jdom2.input.SAXBuilder;
-import org.jdom2.input.sax.XMLReaderSAX2Factory;
-import org.jdom2.test.util.FidoFetch;
-import org.jdom2.test.util.UnitTestUtil;
+import org.jdom.Document;
+import org.jdom.JDOMException;
+import org.jdom.input.SAXBuilder;
+import org.jdom.input.sax.XMLReaderSAX2Factory;
+import org.jdom.test.util.FidoFetch;
+import org.jdom.test.util.UnitTestUtil;
 
 @SuppressWarnings("javadoc")
 public class TestXMLReaderSAX2Factory {

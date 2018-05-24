@@ -52,7 +52,7 @@
 
  */
 
-package org.jdom2;
+package org.jdom;
 
 /**
  * This simple class just tidies up any cloneable classes. This method deals

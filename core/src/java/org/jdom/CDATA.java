@@ -52,7 +52,7 @@
 
  */
 
-package org.jdom2;
+package org.jdom;
 
 /**
  * An XML CDATA section. Represents character-based content within an XML
@@ -91,7 +91,7 @@ public class CDATA extends Text {
 	 * @param string the node's character content.
 	 * @throws IllegalDataException if <code>str</code> contains an 
 	 *         illegal character such as a vertical tab (as determined
-	 *          by {@link org.jdom2.Verifier#checkCharacterData})
+	 *          by {@link org.jdom.Verifier#checkCharacterData})
 	 *         or the CDATA end delimiter <code>]]&gt;</code>.
 	 */
 	public CDATA(final String string) {
@@ -106,7 +106,7 @@ public class CDATA extends Text {
 	 * @return the object on which the method was invoked
 	 * @throws IllegalDataException if <code>str</code> contains an 
 	 *         illegal character such as a vertical tab (as determined
-	 *          by {@link org.jdom2.Verifier#checkCharacterData})
+	 *          by {@link org.jdom.Verifier#checkCharacterData})
 	 *         or the CDATA end delimiter <code>]]&gt;</code>.
 	 */
 	@Override
@@ -137,7 +137,7 @@ public class CDATA extends Text {
 	 * @param str character content to append.
 	 * @throws IllegalDataException if <code>str</code> contains an 
 	 *         illegal character such as a vertical tab (as determined
-	 *          by {@link org.jdom2.Verifier#checkCharacterData})
+	 *          by {@link org.jdom.Verifier#checkCharacterData})
 	 *         or the CDATA end delimiter <code>]]&gt;</code>.
 	 */
 	@Override
@@ -196,7 +196,7 @@ public class CDATA extends Text {
 	 * <code>CDATA</code> node, suitable for debugging. If the XML
 	 * representation of the <code>CDATA</code> node is desired,
 	 * either <code>{@link #getText}</code> or
-	 * {@link org.jdom2.output.XMLOutputter#output(CDATA, java.io.Writer)}</code>
+	 * {@link org.jdom.output.XMLOutputter#output(CDATA, java.io.Writer)}</code>
 	 * should be used.
 	 *
 	 * @return <code>String</code> - information about this node.

@@ -52,7 +52,7 @@
 
  */
 
-package org.jdom2.contrib.dom;
+package org.jdom.contrib.dom;
 
 import org.w3c.dom.Attr;
 import org.w3c.dom.DOMException;
@@ -62,8 +62,8 @@ import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 import org.w3c.dom.TypeInfo;
 
-import org.jdom2.JDOMConstants;
-import org.jdom2.Namespace;
+import org.jdom.JDOMConstants;
+import org.jdom.Namespace;
 
 final class JNamespace extends JNamespaceAware implements Attr {
 

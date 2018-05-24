@@ -1,4 +1,4 @@
-package org.jdom2.test.cases;
+package org.jdom.test.cases;
 
 /*--
 
@@ -61,8 +61,8 @@ package org.jdom2.test.cases;
  * @version 0.1
  */
 
-import static org.jdom2.test.util.UnitTestUtil.checkException;
-import static org.jdom2.test.util.UnitTestUtil.failNoException;
+import static org.jdom.test.util.UnitTestUtil.checkException;
+import static org.jdom.test.util.UnitTestUtil.failNoException;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertNotNull;
@@ -85,27 +85,27 @@ import java.util.Set;
 import org.junit.Test;
 import org.junit.runner.JUnitCore;
 
-import org.jdom2.Attribute;
-import org.jdom2.AttributeType;
-import org.jdom2.CDATA;
-import org.jdom2.Comment;
-import org.jdom2.Content;
-import org.jdom2.DocType;
-import org.jdom2.Document;
-import org.jdom2.Element;
-import org.jdom2.EntityRef;
-import org.jdom2.IllegalAddException;
-import org.jdom2.IllegalNameException;
-import org.jdom2.Namespace;
-import org.jdom2.ProcessingInstruction;
-import org.jdom2.Text;
-import org.jdom2.Content.CType;
-import org.jdom2.filter.ContentFilter;
-import org.jdom2.filter.ElementFilter;
-import org.jdom2.filter.Filters;
-import org.jdom2.output.Format;
-import org.jdom2.output.XMLOutputter;
-import org.jdom2.test.util.UnitTestUtil;
+import org.jdom.Attribute;
+import org.jdom.AttributeType;
+import org.jdom.CDATA;
+import org.jdom.Comment;
+import org.jdom.Content;
+import org.jdom.DocType;
+import org.jdom.Document;
+import org.jdom.Element;
+import org.jdom.EntityRef;
+import org.jdom.IllegalAddException;
+import org.jdom.IllegalNameException;
+import org.jdom.Namespace;
+import org.jdom.ProcessingInstruction;
+import org.jdom.Text;
+import org.jdom.Content.CType;
+import org.jdom.filter.ContentFilter;
+import org.jdom.filter.ElementFilter;
+import org.jdom.filter.Filters;
+import org.jdom.output.Format;
+import org.jdom.output.XMLOutputter;
+import org.jdom.test.util.UnitTestUtil;
 
 @SuppressWarnings("javadoc")
 public final class TestElement {
