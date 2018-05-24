@@ -1,0 +1,21 @@
+dependencies {
+    compile project(':core')
+    testCompile project(':contrib')
+    testCompile 'junit:junit:4.12'
+}
+
+sourceSets {
+    test {
+        java {
+            srcDir 'src/java'
+        }
+        resources {
+            srcDir 'src/resources'
+        }
+        resources {
+            srcDir 'src/java'
+            include '**/*.xml', '**/*.xsd', '**/*.dtd'
+        }
+    }
+}
+

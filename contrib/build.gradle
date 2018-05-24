@@ -1,0 +1,16 @@
+dependencies {
+    compile project(':core')
+    compile 'junit:junit:4.12'
+    compile 'isorelax:isorelax:20030108'
+    compile 'xerces:xercesImpl:2.11.0'
+    compile 'xalan:xalan:2.7.2'
+}
+
+sourceSets {
+    main {
+        java {
+            srcDir 'src/java'
+        }
+    }
+}
+

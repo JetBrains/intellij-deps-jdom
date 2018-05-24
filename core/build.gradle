@@ -1,0 +1,22 @@
+sourceSets {
+    main {
+        java {
+            srcDir 'src/java'
+        }
+    }
+}
+
+sourceCompatibility = '1.6'
+targetCompatibility = '1.6'
+
+dependencies {
+    compile 'jaxen:jaxen:1.1.6'
+}
+
+task sourceJar(type: Jar) {
+    from sourceSets.main.java
+}
+
+artifacts {
+    archives sourceJar
+}
