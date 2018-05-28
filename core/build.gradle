@@ -13,9 +13,7 @@ dependencies {
     compile 'jaxen:jaxen:1.1.6'
 }
 
-jar {
-    baseName 'jdom'
-}
+archivesBaseName = 'jdom'
 
 task sourceJar(type: Jar) {
     from sourceSets.main.java
