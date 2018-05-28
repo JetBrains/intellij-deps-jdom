@@ -68,7 +68,7 @@ import org.jdom.Element;
 import org.jdom.JDOMConstants;
 import org.jdom.JDOMException;
 import org.jdom.output.SAXOutputter;
-import org.jdom.output.XMLOutputter;
+import org.jdom.output.XMLOutputter2;
 import org.xml.sax.EntityResolver;
 import org.xml.sax.InputSource;
 import org.xml.sax.SAXException;
@@ -451,11 +451,11 @@ public class JDOMSource extends SAXSource {
 				// Get an in-memory string representation of the document
 				// and return a reader on it.
 				reader = new StringReader(
-						new XMLOutputter().outputString(docsource));
+						new XMLOutputter2().outputString(docsource));
 			}
 			else if (listsource != null) {
 				reader = new StringReader(
-						new XMLOutputter().outputString(listsource));
+						new XMLOutputter2().outputString(listsource));
 			}
 			// Else: No source, no reader!
 			return reader;

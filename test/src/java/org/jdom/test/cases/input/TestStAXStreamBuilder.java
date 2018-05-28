@@ -24,7 +24,7 @@ import org.jdom.input.SAXBuilder;
 import org.jdom.input.StAXStreamBuilder;
 import org.jdom.input.stax.DefaultStAXFilter;
 import org.jdom.output.Format;
-import org.jdom.output.XMLOutputter;
+import org.jdom.output.XMLOutputter2;
 import org.jdom.test.util.FidoFetch;
 import org.jdom.test.util.UnitTestUtil;
 
@@ -174,7 +174,7 @@ public class TestStAXStreamBuilder {
 	private String toString(Document doc) {
 		UnitTestUtil.normalizeAttributes(doc.getRootElement());
 		normalizeDTD(doc.getDocType());
-		XMLOutputter out = new XMLOutputter(Format.getPrettyFormat());
+		XMLOutputter2 out = new XMLOutputter2(Format.getPrettyFormat());
 		CharArrayWriter caw = new CharArrayWriter();
 		try {
 			out.output(doc, caw);
@@ -187,7 +187,7 @@ public class TestStAXStreamBuilder {
 
 	private String toString(Element emt) {
 		UnitTestUtil.normalizeAttributes(emt);
-		XMLOutputter out = new XMLOutputter(Format.getPrettyFormat());
+		XMLOutputter2 out = new XMLOutputter2(Format.getPrettyFormat());
 		CharArrayWriter caw = new CharArrayWriter();
 		try {
 			out.output(emt, caw);

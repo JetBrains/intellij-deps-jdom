@@ -9,7 +9,7 @@ import org.jdom.Document;
 import org.jdom.JDOMException;
 import org.jdom.input.SAXBuilder;
 import org.jdom.output.Format;
-import org.jdom.output.XMLOutputter;
+import org.jdom.output.XMLOutputter2;
 import org.jdom.test.util.FidoFetch;
 
 import org.junit.Test;
@@ -45,7 +45,7 @@ public class TestIssue008ExpandEntity {
 		if (encoding != null) {
 			fmt.setEncoding(encoding);
 		}
-		XMLOutputter xout = new XMLOutputter(fmt);
+		XMLOutputter2 xout = new XMLOutputter2(fmt);
 		
 		String actual = xout.outputString(doc.getRootElement());
 		assertEquals(expect, actual);

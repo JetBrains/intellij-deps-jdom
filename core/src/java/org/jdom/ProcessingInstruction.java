@@ -54,6 +54,8 @@
 
 package org.jdom;
 
+import org.jdom.output.XMLOutputter2;
+
 import java.util.*;
 
 /**
@@ -445,7 +447,7 @@ public class ProcessingInstruction extends Content {
 	 * This returns a <code>String</code> representation of the
 	 * <code>ProcessingInstruction</code>, suitable for debugging. If the XML
 	 * representation of the <code>ProcessingInstruction</code> is desired,
-	 * {@link org.jdom.output.XMLOutputter#outputString(ProcessingInstruction)}
+	 * {@link XMLOutputter2#outputString(ProcessingInstruction)}
 	 * should be used.
 	 *
 	 * @return <code>String</code> - information about the
@@ -455,7 +457,7 @@ public class ProcessingInstruction extends Content {
 	public String toString() {
 		return new StringBuilder()
 		.append("[ProcessingInstruction: ")
-		.append(new org.jdom.output.XMLOutputter().outputString(this))
+		.append(new XMLOutputter2().outputString(this))
 		.append("]")
 		.toString();
 	}

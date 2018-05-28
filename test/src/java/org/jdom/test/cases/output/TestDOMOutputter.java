@@ -38,7 +38,7 @@ import org.jdom.input.DOMBuilder;
 import org.jdom.output.DOMOutputter;
 import org.jdom.output.Format;
 import org.jdom.output.LineSeparator;
-import org.jdom.output.XMLOutputter;
+import org.jdom.output.XMLOutputter2;
 import org.jdom.output.support.AbstractDOMOutputProcessor;
 import org.jdom.output.support.DOMOutputProcessor;
 import org.jdom.test.util.UnitTestUtil;
@@ -88,7 +88,7 @@ public final class TestDOMOutputter extends AbstractTestOutputter {
     }
     
     private void roundTrip(DOMSetup setup, Document doc) {
-    	XMLOutputter xout = new XMLOutputter(Format.getRawFormat());
+    	XMLOutputter2 xout = new XMLOutputter2(Format.getRawFormat());
     	// create a String representation of the input.
     	if (doc.hasRootElement()) {
     		UnitTestUtil.normalizeAttributes(doc.getRootElement());
@@ -416,7 +416,7 @@ public final class TestDOMOutputter extends AbstractTestOutputter {
     		if (input == null) {
     			return "";
     		}
-    		XMLOutputter xout = new XMLOutputter();
+    		XMLOutputter2 xout = new XMLOutputter2();
     		xout.getFormat().setLineSeparator(LineSeparator.NL);
     		DOMBuilder builder = new DOMBuilder();
     		

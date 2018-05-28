@@ -90,7 +90,7 @@ import org.jdom.ProcessingInstruction;
 import org.jdom.Text;
 import org.jdom.output.Format;
 import org.jdom.output.Format.TextMode;
-import org.jdom.output.XMLOutputter;
+import org.jdom.output.XMLOutputter2;
 import org.jdom.util.NamespaceStack;
 
 /**
@@ -400,7 +400,7 @@ public class AbstractSAXOutputProcessor extends AbstractOutputProcessor
 				&& ((dtdHandler != null) || (declHandler != null))) {
 
 			// Build a dummy XML document that only references the DTD...
-			String dtdDoc = new XMLOutputter().outputString(docType);
+			String dtdDoc = new XMLOutputter2().outputString(docType);
 
 			try {
 				// And parse it to fire DTD events.

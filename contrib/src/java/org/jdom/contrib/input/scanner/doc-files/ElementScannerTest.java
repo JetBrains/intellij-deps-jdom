@@ -3,7 +3,7 @@ import java.io.IOException;
 import org.xml.sax.InputSource;
 
 import org.jdom.Element;
-import org.jdom.output.XMLOutputter;
+import org.jdom.output.XMLOutputter2;
 
 import org.jdom.contrib.input.scanner.ElementScanner;
 import org.jdom.contrib.input.scanner.ElementListener;
@@ -12,7 +12,7 @@ import org.jdom.contrib.input.scanner.ElementListener;
 @SuppressWarnings("javadoc")
 public class ElementScannerTest
 {
-   public static XMLOutputter out = new XMLOutputter();
+   public static XMLOutputter2 out = new XMLOutputter2();
 
    public static void main(String[] args) throws Exception
    {

@@ -149,7 +149,7 @@ public class TestIndexed implements java.io.Serializable {
 
         System.out.println("===== Testing toDocument()");
         Document doc = mapper.toDocument(pizza);
-        XMLOutputter o = new XMLOutputter(Format.getPrettyFormat());
+        XMLOutputter2 o = new XMLOutputter2(Format.getPrettyFormat());
         o.output(doc, System.out);
         System.out.println();
 

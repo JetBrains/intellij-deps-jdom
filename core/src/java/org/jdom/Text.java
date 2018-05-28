@@ -55,6 +55,7 @@
 package org.jdom;
 
 import org.jdom.output.Format;
+import org.jdom.output.XMLOutputter2;
 
 /**
  * An XML character sequence. Provides a modular, parentable method of
@@ -238,7 +239,7 @@ public class Text extends Content {
 	 * <code>Text</code> node, suitable for debugging. If the XML
 	 * representation of the <code>Text</code> node is desired,
 	 * either <code>{@link #getText}</code> or
-	 * {@link org.jdom.output.XMLOutputter#outputString(Text)}</code>
+	 * {@link XMLOutputter2#outputString(Text)}</code>
 	 * should be used.
 	 *
 	 * @return <code>String</code> - information about this node.

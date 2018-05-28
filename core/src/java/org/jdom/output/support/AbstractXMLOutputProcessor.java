@@ -77,12 +77,12 @@ import org.jdom.Text;
 import org.jdom.Verifier;
 import org.jdom.output.Format;
 import org.jdom.output.Format.TextMode;
-import org.jdom.output.XMLOutputter;
+import org.jdom.output.XMLOutputter2;
 import org.jdom.util.NamespaceStack;
 
 /**
  * This class provides a concrete implementation of {@link XMLOutputProcessor}
- * for supporting the {@link XMLOutputter}.
+ * for supporting the {@link XMLOutputter2}.
  * <p>
  * <h2>Overview</h2>
  * <p>
@@ -159,7 +159,7 @@ import org.jdom.util.NamespaceStack;
  * ultimately be output through the the text* methods (and no other content).
  * <p>
  *
- * @see XMLOutputter
+ * @see XMLOutputter2
  * @see XMLOutputProcessor
  * @since JDOM2
  * @author Rolf Lear

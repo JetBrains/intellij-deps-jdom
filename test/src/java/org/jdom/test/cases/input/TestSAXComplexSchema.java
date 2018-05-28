@@ -23,7 +23,7 @@ import org.jdom.Namespace;
 import org.jdom.input.SAXBuilder;
 import org.jdom.input.sax.XMLReaders;
 import org.jdom.output.Format;
-import org.jdom.output.XMLOutputter;
+import org.jdom.output.XMLOutputter2;
 import org.jdom.test.util.FidoFetch;
 
 
@@ -51,7 +51,7 @@ public class TestSAXComplexSchema {
 		
 		try {
 			Document doc = builder.build(rurl);
-			XMLOutputter out = new XMLOutputter(Format.getPrettyFormat());
+			XMLOutputter2 out = new XMLOutputter2(Format.getPrettyFormat());
 			StringWriter sw = new StringWriter();
 			out.output(doc, sw);
 			assertTrue(sw.toString().length() > 0);
@@ -91,7 +91,7 @@ public class TestSAXComplexSchema {
 		
 		try {
 			Document doc = builder.build(rurl);
-			XMLOutputter out = new XMLOutputter(Format.getPrettyFormat());
+			XMLOutputter2 out = new XMLOutputter2(Format.getPrettyFormat());
 			StringWriter sw = new StringWriter();
 			out.output(doc, sw);
 			assertTrue(sw.toString().length() > 0);

@@ -21,7 +21,7 @@ import org.jdom.Element;
 import org.jdom.Namespace;
 import org.jdom.ProcessingInstruction;
 import org.jdom.Text;
-import org.jdom.output.XMLOutputter;
+import org.jdom.output.XMLOutputter2;
 import org.jdom.transform.JDOMResult;
 import org.jdom.transform.JDOMSource;
 import org.junit.Ignore;
@@ -31,7 +31,7 @@ import org.junit.Test;
 public class TestJDOMTransform {
 	
 	private static final void checkTransform(Document doc) {
-	    XMLOutputter out = new XMLOutputter();
+	    XMLOutputter2 out = new XMLOutputter2();
 	    String expect = out.outputString(doc);
 	    
 	    try {

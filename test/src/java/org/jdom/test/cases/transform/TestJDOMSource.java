@@ -22,7 +22,7 @@ import org.jdom.Content;
 import org.jdom.Document;
 import org.jdom.Element;
 import org.jdom.output.SAXOutputter;
-import org.jdom.output.XMLOutputter;
+import org.jdom.output.XMLOutputter2;
 import org.jdom.transform.JDOMSource;
 import org.junit.Test;
 import org.xml.sax.Attributes;
@@ -174,7 +174,7 @@ public class TestJDOMSource {
 	public void testInputSourceDocCharacterStream() throws IOException {
 		JDOMSource source = new JDOMSource(new Document(new Element("root")));
 		Document doc = source.getDocument();
-		String expect = new XMLOutputter().outputString(doc);
+		String expect = new XMLOutputter2().outputString(doc);
 		Reader r = source.getInputSource().getCharacterStream();
 		StringWriter sw = new StringWriter();
 		char[] buffer = new char[512];
@@ -191,7 +191,7 @@ public class TestJDOMSource {
 	public void testInputSourceListCharacterStream() throws IOException {
 		JDOMSource source = new JDOMSource(new Element("root"));
 		Element emt = (Element)source.getNodes().get(0);
-		String expect = new XMLOutputter().outputString(emt);
+		String expect = new XMLOutputter2().outputString(emt);
 		Reader r = source.getInputSource().getCharacterStream();
 		StringWriter sw = new StringWriter();
 		char[] buffer = new char[512];

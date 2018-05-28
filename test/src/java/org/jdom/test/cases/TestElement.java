@@ -104,7 +104,7 @@ import org.jdom.filter.ContentFilter;
 import org.jdom.filter.ElementFilter;
 import org.jdom.filter.Filters;
 import org.jdom.output.Format;
-import org.jdom.output.XMLOutputter;
+import org.jdom.output.XMLOutputter2;
 import org.jdom.test.util.UnitTestUtil;
 
 @SuppressWarnings("javadoc")
@@ -1999,7 +1999,7 @@ public final class TestElement {
         String bufWithEmptyNS = "<element xmlns=\"http://foo\"><child1 xmlns=\"\" /><child2 xmlns=\"\" /></element>";
 
         StringWriter sw = new StringWriter();
-        XMLOutputter op = new XMLOutputter();
+        XMLOutputter2 op = new XMLOutputter2();
         op.output(element, sw);
         assertEquals("Incorrect output for NO_NAMESPACE in a default namespace", bufWithNoNS, sw.toString());
 
@@ -2011,7 +2011,7 @@ public final class TestElement {
         element.addContent(child1);
         element.addContent(child2);
         sw = new StringWriter();
-        op = new XMLOutputter();
+        op = new XMLOutputter2();
         op.output(element, sw);
         assertTrue("Incorrect output for empty default namespace", sw.toString().equals(bufWithEmptyNS));
 
@@ -2062,7 +2062,7 @@ public final class TestElement {
         Element elIn = UnitTestUtil.deSerialize(element);
 
         StringWriter sw = new StringWriter();
-        XMLOutputter op = new XMLOutputter();
+        XMLOutputter2 op = new XMLOutputter2();
         op.output(elIn, sw);
         assertEquals("Incorrect data after serialization", sw.toString(), bufWithEmptyNS);
 
@@ -2088,7 +2088,7 @@ public final class TestElement {
         Element elIn2 = UnitTestUtil.deSerialize(element2);
 
         StringWriter sw2 = new StringWriter();
-        XMLOutputter op2 = new XMLOutputter();
+        XMLOutputter2 op2 = new XMLOutputter2();
         op2.output(elIn2, sw2);
         assertTrue("Incorrect data after serialization", sw2.toString().equals(bufWithEmptyNS2));
     }

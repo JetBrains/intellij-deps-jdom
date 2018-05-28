@@ -601,7 +601,7 @@ public final class TestDocument {
 		element = docIn.getRootElement();
 
 		StringWriter sw = new StringWriter();
-		XMLOutputter op= new XMLOutputter(Format.getRawFormat());
+		XMLOutputter2 op= new XMLOutputter2(Format.getRawFormat());
 		op.output(element, sw);
 		assertTrue("Incorrect data after serialization", sw.toString().equals(bufWithEmptyNS));
 
@@ -1013,7 +1013,7 @@ public final class TestDocument {
 			// good
 		}
 		
-		XMLOutputter out = new XMLOutputter();
+		XMLOutputter2 out = new XMLOutputter2();
 		out.getFormat().setLineSeparator(LineSeparator.NL);
 		StringWriter sw = new StringWriter();
 		out.output(doc, sw);

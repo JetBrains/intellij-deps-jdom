@@ -64,7 +64,7 @@ import org.jdom.JDOMException;
 import org.jdom.input.SAXBuilder;
 import org.jdom.input.sax.XMLReaderJDOMFactory;
 import org.jdom.input.sax.XMLReaderSAX2Factory;
-import org.jdom.output.XMLOutputter;
+import org.jdom.output.XMLOutputter2;
 
 // todo:
 // weak references and/or timeout cache
@@ -266,7 +266,7 @@ public class JDOMBean {
             bean = new JDOMBean();
         }
 
-        XMLOutputter out = new XMLOutputter();
+        XMLOutputter2 out = new XMLOutputter2();
                 
         for (; i<args.length; ++i) {
             Document doc = bean.getDocument(args[i]);

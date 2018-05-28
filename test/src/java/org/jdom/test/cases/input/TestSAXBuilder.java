@@ -113,7 +113,7 @@ import org.jdom.input.sax.XMLReaderJDOMFactory;
 import org.jdom.input.sax.XMLReaderSAX2Factory;
 import org.jdom.input.sax.XMLReaders;
 import org.jdom.output.Format;
-import org.jdom.output.XMLOutputter;
+import org.jdom.output.XMLOutputter2;
 import org.jdom.test.util.FidoFetch;
 import org.jdom.test.util.UnitTestUtil;
 
@@ -840,7 +840,7 @@ public final class TestSAXBuilder {
 	}
 	
 	private void assertXMLMatches(String baseuri, Document doc) {
-		XMLOutputter out = new XMLOutputter(Format.getCompactFormat());
+		XMLOutputter2 out = new XMLOutputter2(Format.getCompactFormat());
 		try {
 			CharArrayWriter caw = new CharArrayWriter();
 			out.output(doc, caw);

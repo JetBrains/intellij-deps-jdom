@@ -69,10 +69,10 @@ import org.jdom.EntityRef;
 import org.jdom.ProcessingInstruction;
 import org.jdom.Text;
 import org.jdom.output.Format;
-import org.jdom.output.XMLOutputter;
+import org.jdom.output.XMLOutputter2;
 
 /**
- * This interface provides a base support for the {@link XMLOutputter}.
+ * This interface provides a base support for the {@link XMLOutputter2}.
  * <p>
  * People who want to create a custom XMLOutputProcessor for XMLOutputter are
  * able to implement this interface with the following notes and restrictions:
@@ -92,7 +92,7 @@ import org.jdom.output.XMLOutputter;
  * are encouraged to extend the AbstractXMLOutputProcessor rather than do a full
  * re-implementation of this interface.
  * 
- * @see XMLOutputter
+ * @see XMLOutputter2
  * @see AbstractXMLOutputProcessor
  * @since JDOM2
  * @author Rolf Lear

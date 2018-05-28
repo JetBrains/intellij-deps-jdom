@@ -72,9 +72,8 @@ import java.util.List;
 import java.util.TreeMap;
 
 import org.jdom.ContentList.FilterList;
-import org.jdom.filter.ElementFilter;
-import org.jdom.filter.Filter;
-import org.jdom.filter.Filters;
+import org.jdom.filter.*;
+import org.jdom.output.XMLOutputter2;
 import org.jdom.util.IteratorIterable;
 
 /**
@@ -1400,7 +1399,7 @@ public class Element extends Content implements Parent {
 	 *  This returns a <code>String</code> representation of the
 	 *    <code>Element</code>, suitable for debugging. If the XML
 	 *    representation of the <code>Element</code> is desired,
-	 *    {@link org.jdom.output.XMLOutputter#outputString(Element)}
+	 *    {@link XMLOutputter2#outputString(Element)}
 	 *    should be used.
 	 * </p>
 	 *

@@ -144,7 +144,7 @@ import org.jdom.output.support.XMLOutputProcessor;
  * @author Bradley S. Huffman
  */
 
-public final class XMLOutputter implements Cloneable {
+public final class XMLOutputter2 implements Cloneable {
 
 	/*
 	 * =====================================================================
@@ -174,7 +174,7 @@ public final class XMLOutputter implements Cloneable {
 	 * final part is important because it improves performance.
 	 * <p>
 	 * The JDOM user can change the actual XMLOutputProcessor with the
-	 * {@link XMLOutputter#setXMLOutputProcessor(XMLOutputProcessor)} method.
+	 * {@link XMLOutputter2#setXMLOutputProcessor(XMLOutputProcessor)} method.
 	 * 
 	 * @author rolf
 	 */
@@ -184,7 +184,7 @@ public final class XMLOutputter implements Cloneable {
 		/**
 		 * A helper method to implement backward-compatibility with JDOM1
 		 * 
-		 * @see XMLOutputter#escapeAttributeEntities(String)
+		 * @see XMLOutputter2#escapeAttributeEntities(String)
 		 * @param str
 		 *        The String to output.
 		 * @param format
@@ -204,7 +204,7 @@ public final class XMLOutputter implements Cloneable {
 		/**
 		 * A helper method to implement backward-compatibility with JDOM1
 		 * 
-		 * @see XMLOutputter#escapeElementEntities(String)
+		 * @see XMLOutputter2#escapeElementEntities(String)
 		 * @param str
 		 *        The String to output.
 		 * @param format
@@ -262,7 +262,7 @@ public final class XMLOutputter implements Cloneable {
 	 *        The XMLOutputProcessor to delegate output to. If null the
 	 *        XMLOutputter will use the default XMLOutputProcessor.
 	 */
-	public XMLOutputter(Format format, XMLOutputProcessor processor) {
+	public XMLOutputter2(Format format, XMLOutputProcessor processor) {
 		myFormat = format == null ? Format.getRawFormat() : format.clone();
 		myProcessor = processor == null ? DEFAULTPROCESSOR : processor;
 	}
@@ -271,7 +271,7 @@ public final class XMLOutputter implements Cloneable {
 	 * This will create an <code>XMLOutputter</code> with a default
 	 * {@link Format} and {@link XMLOutputProcessor}.
 	 */
-	public XMLOutputter() {
+	public XMLOutputter2() {
 		this(null, null);
 	}
 
@@ -284,7 +284,7 @@ public final class XMLOutputter implements Cloneable {
 	 * @param that
 	 *        the XMLOutputter to clone
 	 */
-	public XMLOutputter(XMLOutputter that) {
+	public XMLOutputter2(XMLOutputter2 that) {
 		this(that.myFormat, null);
 	}
 
@@ -301,7 +301,7 @@ public final class XMLOutputter implements Cloneable {
 	 *        format indicates that XMLOutputter should use the default
 	 *        {@link Format#getRawFormat()}
 	 */
-	public XMLOutputter(Format format) {
+	public XMLOutputter2(Format format) {
 		this(format, null);
 	}
 
@@ -313,7 +313,7 @@ public final class XMLOutputter implements Cloneable {
 	 *        The XMLOutputProcessor to delegate output to. If null the
 	 *        XMLOutputter will use the default XMLOutputProcessor.
 	 */
-	public XMLOutputter(XMLOutputProcessor processor) {
+	public XMLOutputter2(XMLOutputProcessor processor) {
 		this(null, processor);
 	}
 
@@ -1029,14 +1029,14 @@ public final class XMLOutputter implements Cloneable {
 	 * Returns a cloned copy of this XMLOutputter.
 	 */
 	@Override
-	public XMLOutputter clone() {
+	public XMLOutputter2 clone() {
 		// Implementation notes: Since all state of an XMLOutputter is
 		// embodied in simple private instance variables, Object.clone
 		// can be used. Note that since Object.clone is totally
 		// broken, we must catch an exception that will never be
 		// thrown.
 		try {
-			return (XMLOutputter) super.clone();
+			return (XMLOutputter2) super.clone();
 		} catch (java.lang.CloneNotSupportedException e) {
 			// even though this should never ever happen, it's still
 			// possible to fool Java into throwing a

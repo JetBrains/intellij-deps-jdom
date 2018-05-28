@@ -48,7 +48,7 @@ import org.jdom.output.Format;
 import org.jdom.output.JDOMLocator;
 import org.jdom.output.LineSeparator;
 import org.jdom.output.SAXOutputter;
-import org.jdom.output.XMLOutputter;
+import org.jdom.output.XMLOutputter2;
 import org.jdom.output.support.AbstractSAXOutputProcessor;
 import org.jdom.output.support.SAXOutputProcessor;
 import org.jdom.test.util.UnitTestUtil;
@@ -79,7 +79,7 @@ public class TestSAXOutputter extends AbstractTestOutputter {
     }
     
     private void roundTrip(SAXSetup setup, Document doc) {
-    	XMLOutputter xout = new XMLOutputter(Format.getRawFormat());
+    	XMLOutputter2 xout = new XMLOutputter2(Format.getRawFormat());
     	// create a String representation of the input.
     	if (doc.hasRootElement()) {
     		UnitTestUtil.normalizeAttributes(doc.getRootElement());
@@ -112,7 +112,7 @@ public class TestSAXOutputter extends AbstractTestOutputter {
     }
     
     private void roundTrip(SAXSetup setup, Element emt) {
-    	XMLOutputter xout = new XMLOutputter(Format.getRawFormat());
+    	XMLOutputter2 xout = new XMLOutputter2(Format.getRawFormat());
     	Document tstdoc = new Document();
     	tstdoc.addContent(emt.clone());
     	String expect = xout.outputString(tstdoc);
@@ -143,7 +143,7 @@ public class TestSAXOutputter extends AbstractTestOutputter {
     }
     
     private void roundTripFragment(SAXSetup setup, List<Content> content) {
-    	XMLOutputter xout = new XMLOutputter(Format.getRawFormat());
+    	XMLOutputter2 xout = new XMLOutputter2(Format.getRawFormat());
     	Element root = new Element("root");
     	Document tstdoc = new Document(root);
     	
@@ -185,7 +185,7 @@ public class TestSAXOutputter extends AbstractTestOutputter {
     }
     
     private void roundTripFragment(SAXSetup setup, Content content) {
-    	XMLOutputter xout = new XMLOutputter(Format.getRawFormat());
+    	XMLOutputter2 xout = new XMLOutputter2(Format.getRawFormat());
     	Element root = new Element("root");
     	Document tstdoc = new Document(root);
     	
@@ -225,7 +225,7 @@ public class TestSAXOutputter extends AbstractTestOutputter {
     }
     
     private void roundTrip(SAXSetup setup, List<? extends Content> content) {
-    	XMLOutputter xout = new XMLOutputter(Format.getRawFormat());
+    	XMLOutputter2 xout = new XMLOutputter2(Format.getRawFormat());
     	Document tstdoc = new Document();
     	for (Object o : content) {
     		tstdoc.addContent((Content)o);
@@ -615,7 +615,7 @@ public class TestSAXOutputter extends AbstractTestOutputter {
     	// as a result the output of CDATA structures appears as plain text.
     	// and comments are dropped....
     	e.addContent(new Text("cdata"));
-    	String expect = new XMLOutputter().outputString(doc);
+    	String expect = new XMLOutputter2().outputString(doc);
     	e.removeContent(2);
     	e.addContent(new CDATA("cdata"));
     	e.addContent(new Comment("This is a document"));
@@ -625,7 +625,7 @@ public class TestSAXOutputter extends AbstractTestOutputter {
     	saxout.output(doc);
     	
     	Document act = handler.getDocument();
-    	String actual = new XMLOutputter().outputString(act);
+    	String actual = new XMLOutputter2().outputString(act);
     	
     	assertEquals(expect, actual);
     	
@@ -828,7 +828,7 @@ public class TestSAXOutputter extends AbstractTestOutputter {
 		} catch (Exception e) {
 			throw new IllegalStateException("Could not output", e);
 		}
-		XMLOutputter xout = new XMLOutputter();
+		XMLOutputter2 xout = new XMLOutputter2();
 		xout.getFormat().setLineSeparator(LineSeparator.NL);
 		return xout.outputString(handler.getDocument());
 	}
@@ -847,7 +847,7 @@ public class TestSAXOutputter extends AbstractTestOutputter {
 		} catch (Exception e) {
 			throw new IllegalStateException("Could not output", e);
 		}
-		XMLOutputter xout = new XMLOutputter();
+		XMLOutputter2 xout = new XMLOutputter2();
 		xout.getFormat().setLineSeparator(LineSeparator.NL);
 		return xout.outputString(handler.getDocument().getDocType());
 	}
@@ -863,7 +863,7 @@ public class TestSAXOutputter extends AbstractTestOutputter {
 		} catch (Exception e) {
 			throw new IllegalStateException("Could not output", e);
 		}
-		XMLOutputter xout = new XMLOutputter();
+		XMLOutputter2 xout = new XMLOutputter2();
 		xout.getFormat().setLineSeparator(LineSeparator.NL);
 		return xout.outputString(handler.getDocument().getRootElement());
 	}
@@ -883,7 +883,7 @@ public class TestSAXOutputter extends AbstractTestOutputter {
 		} catch (Exception e) {
 			throw new IllegalStateException("Could not output", e);
 		}
-		XMLOutputter xout = new XMLOutputter();
+		XMLOutputter2 xout = new XMLOutputter2();
 		xout.getFormat().setLineSeparator(LineSeparator.NL);
 		return xout.outputString(handler.getDocument().getRootElement().getContent());
 	}
@@ -903,7 +903,7 @@ public class TestSAXOutputter extends AbstractTestOutputter {
 		} catch (Exception e) {
 			throw new IllegalStateException("Could not output", e);
 		}
-		XMLOutputter xout = new XMLOutputter();
+		XMLOutputter2 xout = new XMLOutputter2();
 		xout.getFormat().setLineSeparator(LineSeparator.NL);
 		return xout.outputString(handler.getDocument().getRootElement().getContent());
 	}
@@ -923,7 +923,7 @@ public class TestSAXOutputter extends AbstractTestOutputter {
 		} catch (Exception e) {
 			throw new IllegalStateException("Could not output", e);
 		}
-		XMLOutputter xout = new XMLOutputter();
+		XMLOutputter2 xout = new XMLOutputter2();
 		xout.getFormat().setLineSeparator(LineSeparator.NL);
 		return xout.outputString(handler.getDocument().getRootElement().getContent());
 	}
@@ -943,7 +943,7 @@ public class TestSAXOutputter extends AbstractTestOutputter {
 		} catch (Exception e) {
 			throw new IllegalStateException("Could not output", e);
 		}
-		XMLOutputter xout = new XMLOutputter();
+		XMLOutputter2 xout = new XMLOutputter2();
 		xout.getFormat().setLineSeparator(LineSeparator.NL);
 		return xout.outputString(handler.getDocument().getRootElement().getContent());
 	}
@@ -963,7 +963,7 @@ public class TestSAXOutputter extends AbstractTestOutputter {
 		} catch (Exception e) {
 			throw new IllegalStateException("Could not output", e);
 		}
-		XMLOutputter xout = new XMLOutputter();
+		XMLOutputter2 xout = new XMLOutputter2();
 		xout.getFormat().setLineSeparator(LineSeparator.NL);
 		return xout.outputString(handler.getDocument().getRootElement().getContent());
 	}
@@ -983,7 +983,7 @@ public class TestSAXOutputter extends AbstractTestOutputter {
 		} catch (Exception e) {
 			throw new IllegalStateException("Could not output", e);
 		}
-		XMLOutputter xout = new XMLOutputter();
+		XMLOutputter2 xout = new XMLOutputter2();
 		xout.getFormat().setLineSeparator(LineSeparator.NL);
 		return xout.outputString(handler.getDocument().getRootElement().getContent());
 	}
@@ -999,7 +999,7 @@ public class TestSAXOutputter extends AbstractTestOutputter {
 		} catch (Exception e) {
 			throw new IllegalStateException("Could not output", e);
 		}
-		XMLOutputter xout = new XMLOutputter();
+		XMLOutputter2 xout = new XMLOutputter2();
 		xout.getFormat().setLineSeparator(LineSeparator.NL);
 		return xout.outputString(handler.getDocument().getRootElement());
 	}

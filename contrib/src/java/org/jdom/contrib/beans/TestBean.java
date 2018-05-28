@@ -129,7 +129,7 @@ public class TestBean implements java.io.Serializable {
 			alex.setFriend(amy);
 
 			Document doc = mapper.toDocument(alex);
-			XMLOutputter o = new XMLOutputter(Format.getPrettyFormat());
+			XMLOutputter2 o = new XMLOutputter2(Format.getPrettyFormat());
 			o.output(doc, System.out);
 			System.out.println();
 

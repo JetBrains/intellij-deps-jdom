@@ -22,7 +22,7 @@ import org.jdom.JDOMException;
 import org.jdom.JDOMFactory;
 import org.jdom.Namespace;
 import org.jdom.input.SAXBuilder;
-import org.jdom.output.XMLOutputter;
+import org.jdom.output.XMLOutputter2;
 import org.jdom.transform.XSLTransformException;
 import org.jdom.transform.XSLTransformer;
 import org.junit.Ignore;
@@ -45,7 +45,7 @@ public class TestXSLTransformer {
 	}
 	
 	private void checkDocs(Document docexpect, Document docactual) {
-		XMLOutputter out = new XMLOutputter();
+		XMLOutputter2 out = new XMLOutputter2();
 		String expect = out.outputString(docexpect);
 		String actual = out.outputString(docactual);
 		assertEquals(expect, actual);

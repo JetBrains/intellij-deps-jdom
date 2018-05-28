@@ -84,7 +84,7 @@ import org.jdom.internal.SystemProperty;
  * LineSeparator for output.
  * <p>
  * JDOM has always allowed the line-terminating sequence to be customised (or
- * even disabled) for each {@link XMLOutputter} operation by using this Format
+ * even disabled) for each {@link XMLOutputter2} operation by using this Format
  * class.
  * <p>
  * JDOM2 introduces two new features in relation to the end-of-line sequence.

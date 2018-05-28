@@ -77,7 +77,7 @@ public class TestIds {
       Element    elt = doc.getElementById(args[1]);
 
       if (elt != null) {
-         new XMLOutputter(Format.getPrettyFormat()).output(elt, System.out);
+         new XMLOutputter2(Format.getPrettyFormat()).output(elt, System.out);
          System.out.println();
          System.exit(0);
       }

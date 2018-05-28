@@ -98,7 +98,7 @@ import org.jdom.input.sax.SAXHandler;
 import org.jdom.internal.ArrayCopy;
 import org.jdom.output.Format;
 import org.jdom.output.SAXOutputter;
-import org.jdom.output.XMLOutputter;
+import org.jdom.output.XMLOutputter2;
 import org.jdom.xpath.XPathExpression;
 import org.jdom.xpath.XPathFactory;
 
@@ -325,7 +325,7 @@ public class PerfDoc {
 	}
 	
 	private void dump(Format format) throws IOException {
-		XMLOutputter xout = new XMLOutputter(format);
+		XMLOutputter2 xout = new XMLOutputter2(format);
 		devnull.reset();
 		System.setProperty("NamespaceStack", "");
 		xout.output(document, devnull);
@@ -401,7 +401,7 @@ public class PerfDoc {
 	}
 	
 	public long duplicate() throws Exception {
-		final XMLOutputter xout = new XMLOutputter(Format.getRawFormat());
+		final XMLOutputter2 xout = new XMLOutputter2(Format.getRawFormat());
 		final String orig = xout.outputString(document);
 		dupeTime = PerfTest.timeRun(new TimeRunnable() {
 			@Override
@@ -419,7 +419,7 @@ public class PerfDoc {
 	}
 	
 	public long checkedParse() throws Exception {
-		final XMLOutputter xout = new XMLOutputter(Format.getRawFormat());
+		final XMLOutputter2 xout = new XMLOutputter2(Format.getRawFormat());
 		final String orig = xout.outputString(document);
 		checkedTime = PerfTest.timeRun(new TimeRunnable() {
 			@Override
@@ -439,7 +439,7 @@ public class PerfDoc {
 	}
 	
 	public long unCheckedParse() throws Exception {
-		final XMLOutputter xout = new XMLOutputter(Format.getRawFormat());
+		final XMLOutputter2 xout = new XMLOutputter2(Format.getRawFormat());
 		final String orig = xout.outputString(document);
 		uncheckedTime = PerfTest.timeRun(new TimeRunnable() {
 			@Override

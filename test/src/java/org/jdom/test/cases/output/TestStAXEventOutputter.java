@@ -56,7 +56,7 @@ import org.jdom.output.support.AbstractStAXEventProcessor;
 import org.jdom.output.support.StAXEventProcessor;
 import org.jdom.output.SAXOutputter;
 import org.jdom.output.StAXEventOutputter;
-import org.jdom.output.XMLOutputter;
+import org.jdom.output.XMLOutputter2;
 
 @SuppressWarnings("javadoc")
 public final class TestStAXEventOutputter extends AbstractTestOutputter {
@@ -786,7 +786,7 @@ public final class TestStAXEventOutputter extends AbstractTestOutputter {
     	// as a result the output of CDATA structures appears as plain text.
     	// and comments are dropped....
     	e.addContent(new Text("cdata"));
-    	String expect = new XMLOutputter().outputString(doc);
+    	String expect = new XMLOutputter2().outputString(doc);
     	e.removeContent(2);
     	e.addContent(new CDATA("cdata"));
     	e.addContent(new Comment("This is a document"));
@@ -796,7 +796,7 @@ public final class TestStAXEventOutputter extends AbstractTestOutputter {
     	saxout.output(doc);
     	
     	Document act = handler.getDocument();
-    	String actual = new XMLOutputter().outputString(act);
+    	String actual = new XMLOutputter2().outputString(act);
     	
     	assertEquals(expect, actual);
     	

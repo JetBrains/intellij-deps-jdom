@@ -54,6 +54,8 @@
 
 package org.jdom;
 
+import org.jdom.output.XMLOutputter2;
+
 /**
  * An XML DOCTYPE declaration.  Method allow the user to get and set the
  * root element name, public id, system id and internal subset.
@@ -289,7 +291,7 @@ public class DocType extends Content {
 	public String toString() {
 		return new StringBuilder()
 		.append("[DocType: ")
-		.append(new org.jdom.output.XMLOutputter().outputString(this))
+		.append(new XMLOutputter2().outputString(this))
 		.append("]")
 		.toString();
 	}

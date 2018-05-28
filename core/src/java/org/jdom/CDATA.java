@@ -54,6 +54,8 @@
 
 package org.jdom;
 
+import org.jdom.output.XMLOutputter2;
+
 /**
  * An XML CDATA section. Represents character-based content within an XML
  * document that should be output within special CDATA tags. Semantically it's
@@ -196,7 +198,7 @@ public class CDATA extends Text {
 	 * <code>CDATA</code> node, suitable for debugging. If the XML
 	 * representation of the <code>CDATA</code> node is desired,
 	 * either <code>{@link #getText}</code> or
-	 * {@link org.jdom.output.XMLOutputter#output(CDATA, java.io.Writer)}</code>
+	 * {@link XMLOutputter2#output(CDATA, java.io.Writer)}</code>
 	 * should be used.
 	 *
 	 * @return <code>String</code> - information about this node.
