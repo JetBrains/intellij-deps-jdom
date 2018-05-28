@@ -204,7 +204,7 @@ public interface Parent extends Cloneable, NamespaceAware, Serializable {
 	 *
 	 * @return a deep copy of this parent and it's children.
 	 */
-	Object clone();
+	Parent clone();
 
 	/**
 	 * Returns an {@link java.util.Iterator} that walks over all descendants
@@ -231,7 +231,7 @@ public interface Parent extends Cloneable, NamespaceAware, Serializable {
 	 *
 	 * @return an iterator to walk descendants
 	 */
-	IteratorIterable<Content> getDescendants();
+	Iterator<Content> getDescendants();
 
 	/**
 	 * Returns an {@link java.util.Iterator} that walks over all descendants
@@ -265,7 +265,7 @@ public interface Parent extends Cloneable, NamespaceAware, Serializable {
 	 *        filters.
 	 * @return an iterator to walk descendants that match a filter
 	 */
-	<E extends Content> IteratorIterable<E> getDescendants(Filter<E> filter);
+	<E extends Content> Iterator<E> getDescendants(Filter<E> filter);
 
 	/**
 	 * Return this parent's parent, or null if this parent is currently

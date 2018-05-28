@@ -213,7 +213,7 @@ public abstract class XPath implements Serializable {
 	 *                         expression on the specified context
 	 *                         failed.
 	 */
-	abstract public List<?> selectNodes(Object context) throws JDOMException;
+	abstract public List selectNodes(Object context) throws JDOMException;
 
 	/**
 	 * Evaluates the wrapped XPath expression and returns the first
@@ -348,7 +348,7 @@ public abstract class XPath implements Serializable {
 	 *                         its evaluation on the specified context
 	 *                         failed.
 	 */
-	public static List<?> selectNodes(Object context, String path)
+	public static List selectNodes(Object context, String path)
 			throws JDOMException {
 		return newInstance(path).selectNodes(context);
 	}

@@ -381,7 +381,7 @@ public class Element extends Content implements Parent {
 	 * @throws IllegalAddException if the namespace prefix collides with another
 	 *                             namespace prefix on the element
 	 */
-	public boolean addNamespaceDeclaration(final Namespace additionalNamespace) {
+	public void addNamespaceDeclaration(final Namespace additionalNamespace) {
 
 		if (additionalNamespaces == null) {
 			additionalNamespaces = new ArrayList<Namespace>(INITIAL_ARRAY_SIZE);
@@ -389,7 +389,7 @@ public class Element extends Content implements Parent {
 		
 		for (Namespace ns : additionalNamespaces) {
 			if (ns == additionalNamespace) {
-				return false;
+				return;
 			}
 		}
 
@@ -400,7 +400,7 @@ public class Element extends Content implements Parent {
 			throw new IllegalAddException(this, additionalNamespace, reason);
 		}
 
-		return additionalNamespaces.add(additionalNamespace);
+		additionalNamespaces.add(additionalNamespace);
 	}
 
 	/**
@@ -922,6 +922,15 @@ public class Element extends Content implements Parent {
 		content.add(child);
 		return this;
 	}
+
+	/**
+	 * The same as {@link #addContent(Content)}, added to keep binary compatibility.
+	 */
+	public Element addContent(Element child) {
+		content.add(child);
+		return this;
+	}
+
 
 	/**
 	 * Appends all children in the given collection to the end of
@@ -1475,7 +1484,7 @@ public class Element extends Content implements Parent {
 	 * @return an iterator to walk descendants
 	 */
 	@Override
-	public IteratorIterable<Content> getDescendants() {
+	public Iterator<Content> getDescendants() {
 		return new DescendantIterator(this);
 	}
 
@@ -1491,7 +1500,7 @@ public class Element extends Content implements Parent {
 	 * @return an iterator to walk descendants within a filter
 	 */
 	@Override
-	public <F extends Content> IteratorIterable<F> getDescendants(final Filter<F> filter) {
+	public <F extends Content> Iterator<F> getDescendants(final Filter<F> filter) {
 		return new FilterIterator<F>(new DescendantIterator(this), filter);
 	}
 

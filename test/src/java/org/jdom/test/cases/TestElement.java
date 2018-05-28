@@ -2171,7 +2171,7 @@ public final class TestElement {
 		
 		// further we can add nsa as an additional namespace because it is the
 		// same as the Element's namespace.
-		assertTrue(emt.addNamespaceDeclaration(nsa));
+		emt.addNamespaceDeclaration(nsa);
 		
 		try {
 			// but, now we can't change the Element's Namespace.
@@ -2184,8 +2184,7 @@ public final class TestElement {
 			fail("Expected IllegalAddException, but got " + e.getClass());
 		}
 
-		// false because it's already added.
-		assertFalse(emt.addNamespaceDeclaration(nsa));
+		emt.addNamespaceDeclaration(nsa);
 	}
 	
 	@Test

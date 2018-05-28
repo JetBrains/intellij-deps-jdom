@@ -191,7 +191,7 @@ public class DefaultJDOMFactory implements JDOMFactory {
 	}
 
 	@Override
-	public final Element element(String name, Namespace namespace) {
+	public Element element(String name, Namespace namespace) {
 		return element(-1, -1, name, namespace);
 	}
 	
@@ -202,7 +202,7 @@ public class DefaultJDOMFactory implements JDOMFactory {
 	}
 	
 	@Override
-	public final Element element(String name) {
+	public Element element(String name) {
 		return element(-1, -1, name);
 	}
 
@@ -212,7 +212,7 @@ public class DefaultJDOMFactory implements JDOMFactory {
 	}
 
 	@Override
-	public final Element element(String name, String uri) {
+	public Element element(String name, String uri) {
 		return element(-1, -1, name, uri);
 	}
 
@@ -223,7 +223,7 @@ public class DefaultJDOMFactory implements JDOMFactory {
 	}
 	
 	@Override
-	public final Element element(String name, String prefix, String uri) {
+	public Element element(String name, String prefix, String uri) {
 		return element(-1, -1, name, prefix, uri);
 	}
 	
