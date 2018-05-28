@@ -52,7 +52,7 @@ Copyright (C) 2012 Jason Hunter & Brett McLaughlin.
 
  */
 
-package org.jdom.filter;
+package org.jdom.filter2;
 
 import java.util.ArrayList;
 import java.util.Collections;

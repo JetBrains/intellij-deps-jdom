@@ -6,7 +6,7 @@ import static org.junit.Assert.assertTrue;
 import org.junit.Test;
 
 import org.jdom.Element;
-import org.jdom.filter.Filters;
+import org.jdom.filter2.Filters;
 import org.jdom.xpath.XPathExpression;
 import org.jdom.xpath.XPathFactory;
 import org.jdom.xpath.jaxen.JaxenXPathFactory;

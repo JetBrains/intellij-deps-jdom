@@ -89,7 +89,7 @@ import org.jdom.Namespace;
 import org.jdom.ProcessingInstruction;
 import org.jdom.Text;
 import org.jdom.UncheckedJDOMFactory;
-import org.jdom.filter.ElementFilter;
+import org.jdom.filter2.ElementFilter;
 import org.jdom.input.DOMBuilder;
 import org.jdom.input.SAXBuilder;
 import org.jdom.input.StAXEventBuilder;

@@ -7,8 +7,8 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.RandomAccess;
 
-import org.jdom.filter.Filter;
-import org.jdom.filter.Filters;
+import org.jdom.filter2.Filter;
+import org.jdom.filter2.Filters;
 import org.jdom.test.util.UnitTestUtil;
 
 import org.junit.Test;

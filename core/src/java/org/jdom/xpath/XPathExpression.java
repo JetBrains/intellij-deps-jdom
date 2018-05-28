@@ -57,7 +57,7 @@ package org.jdom.xpath;
 import java.util.List;
 
 import org.jdom.Namespace;
-import org.jdom.filter.Filter;
+import org.jdom.filter2.Filter;
 
 /**
  * XPathExpression is a representation of a compiled XPath query and any

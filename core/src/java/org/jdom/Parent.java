@@ -57,9 +57,8 @@ package org.jdom;
 import java.io.Serializable;
 import java.util.*;
 
-import org.jdom.filter.Filter;
-import org.jdom.filter.Filters;
-import org.jdom.util.IteratorIterable;
+import org.jdom.filter2.Filter;
+import org.jdom.filter2.Filters;
 
 /**
  * Interface for JDOM objects which are allowed to contain

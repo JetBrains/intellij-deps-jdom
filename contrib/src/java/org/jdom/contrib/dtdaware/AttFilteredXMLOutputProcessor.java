@@ -58,7 +58,7 @@ import java.io.IOException;
 import java.io.Writer;
 
 import org.jdom.Attribute;
-import org.jdom.filter.Filter;
+import org.jdom.filter2.Filter;
 import org.jdom.output.support.AbstractXMLOutputProcessor;
 import org.jdom.output.support.FormatStack;
 

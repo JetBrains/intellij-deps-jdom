@@ -23,10 +23,10 @@ import org.jdom.Namespace;
 import org.jdom.Parent;
 import org.jdom.ProcessingInstruction;
 import org.jdom.Text;
-import org.jdom.filter.AttributeFilter;
-import org.jdom.filter.ContentFilter;
-import org.jdom.filter.Filter;
-import org.jdom.filter.Filters;
+import org.jdom.filter2.AttributeFilter;
+import org.jdom.filter2.ContentFilter;
+import org.jdom.filter2.Filter;
+import org.jdom.filter2.Filters;
 import org.jdom.test.util.UnitTestUtil;
 
 @SuppressWarnings("javadoc")

@@ -68,7 +68,7 @@ import org.jdom.NamespaceAware;
 import org.jdom.Parent;
 import org.jdom.ProcessingInstruction;
 import org.jdom.Text;
-import org.jdom.filter.Filters;
+import org.jdom.filter2.Filters;
 
 /**
  * Provides a set of utility methods to generate XPath expressions to select a
@@ -184,7 +184,7 @@ public final class XPathHelper {
 			final Parent pnt = content.getParent();
 
 			if (content instanceof Text) { // OR CDATA!
-				
+
 				final List<?> sibs = pnt == null ? null :
 					pnt.getContent(Filters.text()); // CDATA
 				return getPositionPath(content, sibs, "text()", buffer);

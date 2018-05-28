@@ -7,7 +7,7 @@ import java.util.Collections;
 import org.junit.Test;
 
 import org.jdom.Namespace;
-import org.jdom.filter.Filters;
+import org.jdom.filter2.Filters;
 import org.jdom.test.util.UnitTestUtil;
 import org.jdom.xpath.XPathBuilder;
 import org.jdom.xpath.XPathExpression;

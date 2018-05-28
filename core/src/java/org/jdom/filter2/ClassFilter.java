@@ -52,7 +52,7 @@
 
  */
 
-package org.jdom.filter;
+package org.jdom.filter2;
 
 /**
  * Filter input according to the input class.

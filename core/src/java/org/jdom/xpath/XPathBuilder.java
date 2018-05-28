@@ -59,7 +59,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 import org.jdom.Namespace;
-import org.jdom.filter.Filter;
+import org.jdom.filter2.Filter;
 
 /**
  * A helper class for creating {@link XPathExpression} instances without having

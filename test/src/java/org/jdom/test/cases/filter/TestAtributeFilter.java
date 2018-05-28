@@ -2,7 +2,7 @@ package org.jdom.test.cases.filter;
 
 import org.jdom.Attribute;
 import org.jdom.Namespace;
-import org.jdom.filter.AttributeFilter;
+import org.jdom.filter2.AttributeFilter;
 import org.junit.Test;
 
 @SuppressWarnings("javadoc")

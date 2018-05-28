@@ -15,9 +15,9 @@ import org.jdom.EntityRef;
 import org.jdom.Namespace;
 import org.jdom.ProcessingInstruction;
 import org.jdom.Text;
-import org.jdom.filter.ContentFilter;
-import org.jdom.filter.Filter;
-import org.jdom.filter.Filters;
+import org.jdom.filter2.ContentFilter;
+import org.jdom.filter2.Filter;
+import org.jdom.filter2.Filters;
 import org.jdom.test.util.UnitTestUtil;
 import org.junit.Test;
 

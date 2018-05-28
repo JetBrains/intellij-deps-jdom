@@ -61,7 +61,7 @@ import java.util.Set;
 
 import org.jdom.Attribute;
 import org.jdom.Element;
-import org.jdom.filter.AbstractFilter;
+import org.jdom.filter2.AbstractFilter;
 
 
 /**

@@ -4,7 +4,7 @@ import java.util.List;
 
 import org.jdom.Element;
 import org.jdom.Text;
-import org.jdom.filter.Filters;
+import org.jdom.filter2.Filters;
 import org.jdom.test.util.AbstractTestList;
 
 @SuppressWarnings("javadoc")

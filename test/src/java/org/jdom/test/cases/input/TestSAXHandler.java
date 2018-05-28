@@ -28,7 +28,7 @@ import org.jdom.EntityRef;
 import org.jdom.JDOMFactory;
 import org.jdom.Namespace;
 import org.jdom.ProcessingInstruction;
-import org.jdom.filter.ContentFilter;
+import org.jdom.filter2.ContentFilter;
 import org.jdom.input.sax.SAXHandler;
 
 @SuppressWarnings("javadoc")

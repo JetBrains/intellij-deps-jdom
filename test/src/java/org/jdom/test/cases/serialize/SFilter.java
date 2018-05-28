@@ -1,6 +1,6 @@
 package org.jdom.test.cases.serialize;
 
-import org.jdom.filter.AbstractFilter;
+import org.jdom.filter2.AbstractFilter;
 
 @SuppressWarnings("javadoc")
 public class SFilter extends AbstractFilter<Integer> {

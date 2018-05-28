@@ -58,7 +58,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-import org.jdom.filter.Filter;
+import org.jdom.filter2.Filter;
 import org.jdom.xpath.XPathExpression;
 import org.jdom.xpath.XPathDiagnostic;
 

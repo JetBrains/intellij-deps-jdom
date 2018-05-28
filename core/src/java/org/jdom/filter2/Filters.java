@@ -52,7 +52,7 @@
 
  */
 
-package org.jdom.filter;
+package org.jdom.filter2;
 
 import org.jdom.Attribute;
 import org.jdom.CDATA;

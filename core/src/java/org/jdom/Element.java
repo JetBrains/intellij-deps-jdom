@@ -72,9 +72,8 @@ import java.util.List;
 import java.util.TreeMap;
 
 import org.jdom.ContentList.FilterList;
-import org.jdom.filter.*;
+import org.jdom.filter2.*;
 import org.jdom.output.XMLOutputter2;
-import org.jdom.util.IteratorIterable;
 
 /**
  * An XML element. Methods allow the user to get and manipulate its child

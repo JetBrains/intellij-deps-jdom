@@ -57,7 +57,7 @@
 import java.io.*;
 import java.util.*;
 import org.jdom.*;
-import org.jdom.filter.Filters;
+import org.jdom.filter2.Filters;
 import org.jdom.input.*;
 import org.jdom.xpath.*;
 

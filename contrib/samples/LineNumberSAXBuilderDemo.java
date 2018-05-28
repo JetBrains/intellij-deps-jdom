@@ -45,7 +45,7 @@ import java.util.Iterator;
 
 import org.jdom.Document;
 import org.jdom.input.SAXBuilder;
-import org.jdom.filter.*;
+import org.jdom.filter2.*;
 
 import org.jdom.contrib.input.*;
 

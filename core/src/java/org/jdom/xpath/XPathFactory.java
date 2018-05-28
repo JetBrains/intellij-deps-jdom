@@ -60,8 +60,8 @@ import java.util.concurrent.atomic.AtomicReference;
 
 import org.jdom.JDOMConstants;
 import org.jdom.Namespace;
-import org.jdom.filter.Filter;
-import org.jdom.filter.Filters;
+import org.jdom.filter2.Filter;
+import org.jdom.filter2.Filters;
 import org.jdom.internal.ReflectionConstructor;
 import org.jdom.internal.SystemProperty;
 import org.jdom.xpath.jaxen.JaxenXPathFactory;
@@ -232,7 +232,7 @@ public abstract class XPathFactory {
 	 * @throws IllegalArgumentException
 	 *         if any two Namespace values share the same prefix, or if there is
 	 *         any other reason that the XPath query cannot be compiled.
-	 * @see    org.jdom.filter.Filters
+	 * @see    org.jdom.filter2.Filters
 	 */
 	public abstract <T> XPathExpression<T> compile(String expression,
 			Filter<T> filter, Map<String, Object> variables,

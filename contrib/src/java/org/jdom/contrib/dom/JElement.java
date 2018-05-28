@@ -69,7 +69,7 @@ import org.w3c.dom.TypeInfo;
 import org.jdom.Attribute;
 import org.jdom.Namespace;
 import org.jdom.Parent;
-import org.jdom.filter.Filters;
+import org.jdom.filter2.Filters;
 
 class JElement extends JParent implements Element {
 

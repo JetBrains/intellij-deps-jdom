@@ -13,7 +13,7 @@ import org.jdom.Document;
 import org.jdom.Element;
 import org.jdom.JDOMException;
 import org.jdom.JDOMFactory;
-import org.jdom.filter.Filters;
+import org.jdom.filter2.Filters;
 import org.jdom.input.SAXBuilder;
 import org.jdom.located.Located;
 import org.jdom.located.LocatedJDOMFactory;

@@ -57,7 +57,7 @@ package org.jdom.contrib.xpath.xalan;
 import java.util.Map;
 
 import org.jdom.Namespace;
-import org.jdom.filter.Filter;
+import org.jdom.filter2.Filter;
 import org.jdom.xpath.XPathExpression;
 
 /**

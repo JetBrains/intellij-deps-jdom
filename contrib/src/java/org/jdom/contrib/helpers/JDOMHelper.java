@@ -65,7 +65,7 @@ import java.util.*;
  *    	{@link Element#sortContent(Comparator)}
  *    @see Element#sortChildren(Comparator)
  *    @see Element#sortContent(Comparator)
- *    @see Element#sortContent(org.jdom.filter.Filter, Comparator)
+ *    @see Element#sortContent(org.jdom.filter2.Filter, Comparator)
  */
 @Deprecated
 public class JDOMHelper {

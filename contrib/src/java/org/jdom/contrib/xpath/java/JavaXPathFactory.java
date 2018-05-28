@@ -59,7 +59,7 @@ import java.util.Map;
 import javax.xml.xpath.XPathFactory;
 
 import org.jdom.Namespace;
-import org.jdom.filter.Filter;
+import org.jdom.filter2.Filter;
 import org.jdom.xpath.XPathExpression;
 
 /**

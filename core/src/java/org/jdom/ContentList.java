@@ -56,7 +56,7 @@ package org.jdom;
 
 import java.util.*;
 
-import org.jdom.filter.*;
+import org.jdom.filter2.*;
 import org.jdom.internal.ArrayCopy;
 
 /**

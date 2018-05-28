@@ -57,8 +57,8 @@
 import java.util.*;
 
 import org.jdom.*;
-import org.jdom.filter.ElementFilter;
-import org.jdom.filter.Filters;
+import org.jdom.filter2.ElementFilter;
+import org.jdom.filter2.Filters;
 import org.jdom.input.*;
 import org.jdom.output.*;
 

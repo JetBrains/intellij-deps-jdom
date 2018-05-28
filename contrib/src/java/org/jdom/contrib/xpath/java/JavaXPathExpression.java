@@ -85,7 +85,7 @@ import org.jdom.ProcessingInstruction;
 import org.jdom.Text;
 import org.jdom.contrib.dom.DOM;
 import org.jdom.contrib.dom.Wrapper;
-import org.jdom.filter.Filter;
+import org.jdom.filter2.Filter;
 import org.jdom.internal.ArrayCopy;
 import org.jdom.xpath.util.AbstractXPathCompiled;
 

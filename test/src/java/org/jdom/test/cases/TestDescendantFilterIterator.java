@@ -13,7 +13,7 @@ import java.util.NoSuchElementException;
 import org.jdom.Content;
 import org.jdom.Document;
 import org.jdom.Element;
-import org.jdom.filter.ElementFilter;
+import org.jdom.filter2.ElementFilter;
 import org.jdom.util.IteratorIterable;
 
 import org.junit.Test;

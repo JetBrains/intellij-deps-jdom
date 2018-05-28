@@ -81,7 +81,7 @@ import org.jdom.EntityRef;
 import org.jdom.Namespace;
 import org.jdom.ProcessingInstruction;
 import org.jdom.Text;
-import org.jdom.filter.ElementFilter;
+import org.jdom.filter2.ElementFilter;
 
 @SuppressWarnings("javadoc")
 public final class TestSerialization {

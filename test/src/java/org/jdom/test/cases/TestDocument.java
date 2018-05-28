@@ -16,8 +16,8 @@ import static org.junit.Assert.*;
 import java.io.*;
 import java.util.*;
 
-import org.jdom.filter.ContentFilter;
-import org.jdom.filter.ElementFilter;
+import org.jdom.filter2.ContentFilter;
+import org.jdom.filter2.ElementFilter;
 import org.jdom.output.*;
 import org.jdom.test.util.UnitTestUtil;
 

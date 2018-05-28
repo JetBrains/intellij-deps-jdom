@@ -67,7 +67,7 @@ import org.jaxen.VariableContext;
 import org.jaxen.XPath;
 
 import org.jdom.Namespace;
-import org.jdom.filter.Filter;
+import org.jdom.filter2.Filter;
 import org.jdom.xpath.util.AbstractXPathCompiled;
 
 /**

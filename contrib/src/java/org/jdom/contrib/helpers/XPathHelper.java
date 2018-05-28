@@ -66,7 +66,7 @@ import org.jdom.JDOMException;
 import org.jdom.Namespace;
 import org.jdom.ProcessingInstruction;
 import org.jdom.Text;
-import org.jdom.filter.Filters;
+import org.jdom.filter2.Filters;
 
 
 /**
