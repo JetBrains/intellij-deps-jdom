@@ -1,6 +1,8 @@
 /*--
 
- Copyright (C) 2000-2012 Jason Hunter & Brett McLaughlin.
+ $Id: AbstractFilter.java,v 1.6 2007/11/10 05:29:00 jhunter Exp $
+
+ Copyright (C) 2000-2007 Jason Hunter & Brett McLaughlin.
  All rights reserved.
 
  Redistribution and use in source and binary forms, with or without
@@ -52,13 +54,7 @@
 
  */
 
-package org.jdom.filter2;
-
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Iterator;
-import java.util.List;
-import java.util.RandomAccess;
+package org.jdom.filter;
 
 import org.jdom.Content;
 
@@ -66,82 +62,32 @@ import org.jdom.Content;
  * Partial implementation of {@link Filter}.
  *
  * @author Bradley S. Huffman
- * @author Rolf Lear
- * @param <T> The Generic type of content returned by this Filter
+ * @version $Revision: 1.6 $, $Date: 2007/11/10 05:29:00 $
  */
-public abstract class AbstractFilter<T> implements Filter<T> {
+public abstract class AbstractFilter<T extends Content> implements Filter<T> {
 
-	/**
-	 * JDOM2 Serialization: Default mechanism
-	 */
-	private static final long serialVersionUID = 200L;
+    private static final String CVS_ID = 
+      "@(#) $RCSfile: AbstractFilter.java,v $ $Revision: 1.6 $ $Date: 2007/11/10 05:29:00 $";
 
-	@Override
-	public final boolean matches(Object content) {
-		return filter(content) != null;
-	}
+    public Filter negate() {
+        return new NegateFilter(this);
+    }
 
-	@Override
-	public List<T> filter(List<?> content) {
-		if (content == null) {
-			return Collections.emptyList();
-		}
-		if (content instanceof RandomAccess) {
-			final int sz = content.size();
-			final ArrayList<T> ret = new ArrayList<T>(sz);
-			for (int i = 0; i < sz; i++) {
-				final T c = filter(content.get(i));
-				if (c != null) {
-					ret.add(c);
-				}
-			}
-			if (ret.isEmpty()) {
-				return Collections.emptyList();
-			}
-			return Collections.unmodifiableList(ret);
-		}
-		final ArrayList<T> ret = new ArrayList<T>(10);
-		for (Iterator<?> it = content.iterator(); it.hasNext(); ) {
-			final T c = filter(it.next());
-			if (c != null) {
-				ret.add(c);
-			}
-		}
-		if (ret.isEmpty()) {
-			return Collections.emptyList();
-		}
-		return Collections.unmodifiableList(ret);
-	}
+    public Filter or(Filter filter) {
+        return new OrFilter(this, filter);
+    }
 
-	@Override
-	public final Filter<?> negate() {
-		if (this instanceof NegateFilter) {
-			return ((NegateFilter)this).getBaseFilter();
-		}
-		return new NegateFilter(this);
-	}
+    public Filter and(Filter filter) {
+        return new AndFilter(this, filter);
+    }
 
-	@Override
-	public final Filter<? extends Content> or(Filter<?> filter) {
-		return new OrFilter(this, filter);
-	}
-
-	@Override
-	public final Filter<T> and(Filter<?> filter) {
-		return new AndFilter<T>(filter, this);
-	}
-
-	@Override
-	public <R> Filter<R> refine(Filter<R> filter) {
-		return new AndFilter<R>(this, filter);
-	}
-
-	public static <E extends Content> org.jdom.filter.Filter<E> toFilter(final Filter<E> filter) {
-		return new org.jdom.filter.Filter<E>() {
-			@Override
-			public boolean matches(Object obj) {
-				return filter.matches(obj);
-			}
-		};
-	}
+    public static <T extends Content> org.jdom.filter2.Filter<T> toFilter2(final Filter<T> filter) {
+        return new org.jdom.filter2.AbstractFilter<T>() {
+            @Override
+            public T filter(Object content) {
+                //noinspection unchecked
+                return filter.matches(content) ? (T) content : null;
+            }
+        };
+    }
 }

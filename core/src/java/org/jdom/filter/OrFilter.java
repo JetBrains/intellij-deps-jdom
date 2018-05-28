@@ -1,6 +1,8 @@
 /*--
 
- Copyright (C) 2000-2012 Jason Hunter & Brett McLaughlin.
+ $Id: OrFilter.java,v 1.5 2007/11/10 05:29:00 jhunter Exp $
+
+ Copyright (C) 2000-2007 Jason Hunter & Brett McLaughlin.
  All rights reserved.
 
  Redistribution and use in source and binary forms, with or without
@@ -52,96 +54,74 @@
 
  */
 
-package org.jdom.filter2;
-
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Iterator;
-import java.util.List;
-import java.util.RandomAccess;
+package org.jdom.filter;
 
 import org.jdom.Content;
 
 /**
- * Partial implementation of {@link Filter}.
+ * Allow two filters to be chained together with a logical
+ * <b>or</b> operation.
  *
  * @author Bradley S. Huffman
- * @author Rolf Lear
- * @param <T> The Generic type of content returned by this Filter
+ * @version $Revision: 1.5 $, $Date: 2007/11/10 05:29:00 $
  */
-public abstract class AbstractFilter<T> implements Filter<T> {
+final class OrFilter<E extends Content> extends AbstractFilter<E> {
 
-	/**
-	 * JDOM2 Serialization: Default mechanism
-	 */
-	private static final long serialVersionUID = 200L;
+    private static final String CVS_ID = 
+      "@(#) $RCSfile: OrFilter.java,v $ $Revision: 1.5 $ $Date: 2007/11/10 05:29:00 $";
 
-	@Override
-	public final boolean matches(Object content) {
-		return filter(content) != null;
-	}
+    /** Filter for left side of logical <b>or</b> */
+    private Filter left;
 
-	@Override
-	public List<T> filter(List<?> content) {
-		if (content == null) {
-			return Collections.emptyList();
-		}
-		if (content instanceof RandomAccess) {
-			final int sz = content.size();
-			final ArrayList<T> ret = new ArrayList<T>(sz);
-			for (int i = 0; i < sz; i++) {
-				final T c = filter(content.get(i));
-				if (c != null) {
-					ret.add(c);
-				}
-			}
-			if (ret.isEmpty()) {
-				return Collections.emptyList();
-			}
-			return Collections.unmodifiableList(ret);
-		}
-		final ArrayList<T> ret = new ArrayList<T>(10);
-		for (Iterator<?> it = content.iterator(); it.hasNext(); ) {
-			final T c = filter(it.next());
-			if (c != null) {
-				ret.add(c);
-			}
-		}
-		if (ret.isEmpty()) {
-			return Collections.emptyList();
-		}
-		return Collections.unmodifiableList(ret);
-	}
+    /** Filter for right side of logical <b>or</b> */
+    private Filter right;
 
-	@Override
-	public final Filter<?> negate() {
-		if (this instanceof NegateFilter) {
-			return ((NegateFilter)this).getBaseFilter();
-		}
-		return new NegateFilter(this);
-	}
+    /**
+     * Match if either of the supplied filters.
+     *
+     * @param left left side of logical <b>or</b>
+     * @param right right side of logical <b>or</b>
+     * @throws IllegalArgumentException if either supplied filter is null
+     */
+    public OrFilter(Filter left, Filter right) {
+        if ((left == null) || (right == null)) {
+            throw new IllegalArgumentException("null filter not allowed");
+        }
+        this.left = left;
+        this.right = right;
+    }
 
-	@Override
-	public final Filter<? extends Content> or(Filter<?> filter) {
-		return new OrFilter(this, filter);
-	}
+    public boolean matches(Object obj) {
+        return left.matches(obj) || right.matches(obj);
+    }
 
-	@Override
-	public final Filter<T> and(Filter<?> filter) {
-		return new AndFilter<T>(filter, this);
-	}
+    public boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
 
-	@Override
-	public <R> Filter<R> refine(Filter<R> filter) {
-		return new AndFilter<R>(this, filter);
-	}
+        if (obj instanceof OrFilter) {
+            OrFilter filter = (OrFilter) obj;
+            if ((left.equals(filter.left)  && right.equals(filter.right)) ||
+                (left.equals(filter.right) && right.equals(filter.left))) {
+                    return true;
+            }
+        }
+        return false;
+    }
 
-	public static <E extends Content> org.jdom.filter.Filter<E> toFilter(final Filter<E> filter) {
-		return new org.jdom.filter.Filter<E>() {
-			@Override
-			public boolean matches(Object obj) {
-				return filter.matches(obj);
-			}
-		};
-	}
+    public int hashCode() {
+        return (31 * left.hashCode()) + right.hashCode();
+    }
+
+    public String toString() {
+        return new StringBuffer(64)
+                   .append("[OrFilter: ")
+                   .append(left.toString())
+                   .append(",\n")
+                   .append("           ")
+                   .append(right.toString())
+                   .append("]")
+                   .toString();
+    }
 }

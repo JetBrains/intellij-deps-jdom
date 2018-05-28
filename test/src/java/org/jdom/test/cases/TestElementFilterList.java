@@ -4,7 +4,7 @@ import java.util.List;
 
 import org.jdom.Content;
 import org.jdom.Element;
-import org.jdom.filter2.ElementFilter;
+import org.jdom.filter.ElementFilter;
 import org.jdom.test.util.AbstractTestList;
 import org.junit.Before;
 

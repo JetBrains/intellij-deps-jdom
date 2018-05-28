@@ -58,6 +58,7 @@ import java.net.URISyntaxException;
 import java.util.Iterator;
 import java.util.List;
 
+import org.jdom.filter2.AbstractFilter;
 import org.w3c.dom.Attr;
 import org.w3c.dom.DOMException;
 import org.w3c.dom.Element;
@@ -219,7 +220,7 @@ class JElement extends JParent implements Element {
 	@Override
 	public String getTextContent() throws DOMException {
 		final Iterator<org.jdom.Text> it = ((org.jdom.Element)shadow).
-				getDescendants(Filters.fclass(org.jdom.Text.class));
+				getDescendants(AbstractFilter.toFilter(Filters.fclass(org.jdom.Text.class)));
 		final StringBuilder sb = new StringBuilder();
 		while (it.hasNext()) {
 			sb.append(it.next().getText());

@@ -56,7 +56,8 @@ package org.jdom;
 
 import java.util.*;
 
-import org.jdom.filter2.*;
+import org.jdom.filter.AbstractFilter;
+import org.jdom.filter2.Filter;
 import org.jdom.internal.ArrayCopy;
 
 /**
@@ -448,8 +449,21 @@ final class ContentList extends AbstractList<Content>
 	 *        <code>Filter</code> for this view.
 	 * @return a list representing the rules of the <code>Filter</code>.
 	 */
-	<E extends Content> List<E> getView(final Filter<E> filter) {
+	<E extends Content> List<E> getView(final org.jdom.filter2.Filter<E> filter) {
 		return new FilterList<E>(filter);
+	}
+
+	/**
+	 * Return a view of this list based on the given filter.
+	 *
+	 * @param <E>
+	 *        The Generic type of the content as set by the Filter.
+	 * @param filter
+	 *        <code>Filter</code> for this view.
+	 * @return a list representing the rules of the <code>Filter</code>.
+	 */
+	<E extends Content> List<E> getView(final org.jdom.filter.Filter<E> filter) {
+		return new FilterList<E>(AbstractFilter.toFilter2(filter));
 	}
 
 	/**

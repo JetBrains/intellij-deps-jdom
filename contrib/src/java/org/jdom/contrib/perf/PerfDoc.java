@@ -71,6 +71,7 @@ import javax.xml.stream.XMLEventReader;
 import javax.xml.stream.XMLInputFactory;
 import javax.xml.stream.XMLStreamReader;
 
+import org.jdom.filter.ElementFilter;
 import org.xml.sax.InputSource;
 import org.xml.sax.SAXException;
 import org.xml.sax.XMLReader;
@@ -89,7 +90,6 @@ import org.jdom.Namespace;
 import org.jdom.ProcessingInstruction;
 import org.jdom.Text;
 import org.jdom.UncheckedJDOMFactory;
-import org.jdom.filter2.ElementFilter;
 import org.jdom.input.DOMBuilder;
 import org.jdom.input.SAXBuilder;
 import org.jdom.input.StAXEventBuilder;

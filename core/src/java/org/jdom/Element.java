@@ -72,7 +72,9 @@ import java.util.List;
 import java.util.TreeMap;
 
 import org.jdom.ContentList.FilterList;
-import org.jdom.filter2.*;
+import org.jdom.filter.AbstractFilter;
+import org.jdom.filter.ElementFilter;
+import org.jdom.filter.Filter;
 import org.jdom.output.XMLOutputter2;
 
 /**
@@ -1499,7 +1501,7 @@ public class Element extends Content implements Parent {
 	 */
 	@Override
 	public <F extends Content> Iterator<F> getDescendants(final Filter<F> filter) {
-		return new FilterIterator<F>(new DescendantIterator(this), filter);
+		return new FilterIterator<F>(new DescendantIterator(this), AbstractFilter.toFilter2(filter));
 	}
 
 

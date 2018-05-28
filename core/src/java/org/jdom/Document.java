@@ -59,7 +59,8 @@ import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.util.*;
 
-import org.jdom.filter2.*;
+import org.jdom.filter.AbstractFilter;
+import org.jdom.filter.Filter;
 import org.jdom.output.XMLOutputter2;
 import org.jdom.util.IteratorIterable;
 
@@ -740,7 +741,7 @@ public class Document extends CloneBase implements Parent {
 	 */
 	@Override
 	public <F extends Content> IteratorIterable<F> getDescendants(final Filter<F> filter) {
-		return new FilterIterator<F>(new DescendantIterator(this), filter);
+		return new FilterIterator<F>(new DescendantIterator(this), AbstractFilter.toFilter2(filter));
 	}
 
 	/**

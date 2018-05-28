@@ -82,6 +82,9 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.Set;
 
+import org.jdom.filter.ContentFilter;
+import org.jdom.filter.ElementFilter;
+import org.jdom.filter.Filters;
 import org.junit.Test;
 import org.junit.runner.JUnitCore;
 
@@ -100,9 +103,6 @@ import org.jdom.Namespace;
 import org.jdom.ProcessingInstruction;
 import org.jdom.Text;
 import org.jdom.Content.CType;
-import org.jdom.filter2.ContentFilter;
-import org.jdom.filter2.ElementFilter;
-import org.jdom.filter2.Filters;
 import org.jdom.output.Format;
 import org.jdom.output.XMLOutputter2;
 import org.jdom.test.util.UnitTestUtil;

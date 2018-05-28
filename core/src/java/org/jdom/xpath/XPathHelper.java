@@ -68,6 +68,7 @@ import org.jdom.NamespaceAware;
 import org.jdom.Parent;
 import org.jdom.ProcessingInstruction;
 import org.jdom.Text;
+import org.jdom.filter2.AbstractFilter;
 import org.jdom.filter2.Filters;
 
 /**
@@ -186,19 +187,19 @@ public final class XPathHelper {
 			if (content instanceof Text) { // OR CDATA!
 
 				final List<?> sibs = pnt == null ? null :
-					pnt.getContent(Filters.text()); // CDATA
+					pnt.getContent(AbstractFilter.toFilter(Filters.text())); // CDATA
 				return getPositionPath(content, sibs, "text()", buffer);
 				
 			} else if (content instanceof Comment) {
-				
+
 				final List<?> sibs = pnt == null ? null :
-					pnt.getContent(Filters.comment());
+					pnt.getContent(AbstractFilter.toFilter(Filters.comment()));
 				return getPositionPath(content, sibs, "comment()", buffer);
 				
 			} else if (content instanceof ProcessingInstruction) {
-				
-				final List<?> sibs = pnt == null ? null : 
-					pnt.getContent(Filters.processinginstruction());
+
+				final List<?> sibs = pnt == null ? null :
+					pnt.getContent(AbstractFilter.toFilter(Filters.processinginstruction()));
 				return getPositionPath(content, sibs,
 						"processing-instruction()", buffer);
 				

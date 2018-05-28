@@ -63,7 +63,7 @@ public class TestLocatedJDOMFactory extends AbstractTestJDOMFactory {
 		checkLocation(root.getContent(0), 5, 2);
 		
 		// get the comment...
-		Comment comment = root.getContent(Filters.comment()).get(0);
+		Comment comment = root.getContent(org.jdom.filter.Filters.comment()).get(0);
 		checkLocation(comment, 12, 19);
 		
 		Element leaf = XPathFactory.instance().compile("//leaf", Filters.element()).evaluateFirst(doc);

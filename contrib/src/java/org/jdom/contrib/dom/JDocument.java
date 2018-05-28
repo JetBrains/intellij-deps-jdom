@@ -83,7 +83,7 @@ import org.jdom.DocType;
 import org.jdom.EntityRef;
 import org.jdom.Namespace;
 import org.jdom.Parent;
-import org.jdom.filter2.Filters;
+import org.jdom.filter.Filters;
 import org.jdom.util.NamespaceStack;
 
 class JDocument extends JParent implements Document {
@@ -300,7 +300,7 @@ class JDocument extends JParent implements Document {
 		}
 		final ArrayList<JElement> enodes = new ArrayList<JElement>();
 		final boolean alltags = "*".equals(tagname);
-		
+
 		final Iterator<org.jdom.Element> it =
 				xshadow.getDescendants(Filters.element());
 
