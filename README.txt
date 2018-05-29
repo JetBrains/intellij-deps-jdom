@@ -1,3 +1,6 @@
+This is a patched versions of JDOM project which is used in IntelliJ Platform.
+It's based on JDOM 2.0.x version and patched to restore compatibility with JDOM 1.1.
+
 Introduction to the JDOM project
 ================================
 
