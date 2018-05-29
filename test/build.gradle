@@ -2,6 +2,7 @@ dependencies {
     compile project(':core')
     testCompile project(':contrib')
     testCompile 'junit:junit:4.12'
+    testRuntime 'jaxen:jaxen:1.1.6'
 }
 
 sourceSets {

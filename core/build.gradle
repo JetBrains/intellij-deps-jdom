@@ -10,7 +10,7 @@ sourceCompatibility = '1.6'
 targetCompatibility = '1.6'
 
 dependencies {
-    compile 'jaxen:jaxen:1.1.6'
+    compileOnly 'jaxen:jaxen:1.1.6'
 }
 
 archivesBaseName = 'jdom'
