@@ -1275,6 +1275,13 @@ public class Element extends Content implements Parent {
 	}
 
 	/**
+	 * The same as {@link #setAttributes(Collection)}, added to keep binary compatibility.
+	 */
+	public Element setAttributes(final List<? extends Attribute> newAttributes) {
+		return setAttributes((Collection<? extends Attribute>) newAttributes);
+	}
+
+	/**
 	 * <p>
 	 * This sets an attribute value for this element.  Any existing attribute
 	 * with the same name and namespace URI is removed.
