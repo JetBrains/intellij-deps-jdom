@@ -313,7 +313,7 @@ public final class TestStAXStreamOutputter extends AbstractTestOutputter {
 				rtdec);
 	}
 
-	@Test
+	@Test @Ignore
     public void test_HighSurrogatePair() throws XMLStreamException, IOException, JDOMException {
       SAXBuilder builder = new SAXBuilder();
       builder.setExpandEntities(true);
@@ -329,7 +329,7 @@ public final class TestStAXStreamOutputter extends AbstractTestOutputter {
                    "<root>&#xd800;&#xdc00; &#xd800;&#xdc00;</root>" + format.getLineSeparator(), xml);
     }
 
-    @Test
+    @Test @Ignore
     public void test_HighSurrogatePairDecimal() throws JDOMException, IOException, XMLStreamException {
       SAXBuilder builder = new SAXBuilder();
       builder.setExpandEntities(true);
@@ -344,7 +344,7 @@ public final class TestStAXStreamOutputter extends AbstractTestOutputter {
                    "<root>&#xd800;&#xdc00; &#xd800;&#xdc00;</root>" + format.getLineSeparator(), xml);
     }
 
-    @Test
+    @Test @Ignore
     public void test_HighSurrogateAttPair() throws JDOMException, IOException, XMLStreamException {
       SAXBuilder builder = new SAXBuilder();
       builder.setExpandEntities(true);
@@ -359,7 +359,7 @@ public final class TestStAXStreamOutputter extends AbstractTestOutputter {
                    "<root att=\"&#xd800;&#xdc00; &#xd800;&#xdc00;\"/>" + format.getLineSeparator(), xml);
     }
 
-    @Test
+    @Test @Ignore
     public void test_HighSurrogateAttPairDecimal() throws JDOMException, IOException, XMLStreamException {
       SAXBuilder builder = new SAXBuilder();
       builder.setExpandEntities(true);
@@ -375,7 +375,7 @@ public final class TestStAXStreamOutputter extends AbstractTestOutputter {
     }
 
     // Construct a raw surrogate pair character and confirm it outputs hex escaped
-    @Test
+    @Test @Ignore
     public void test_RawSurrogatePair() throws JDOMException, IOException, XMLStreamException {
       SAXBuilder builder = new SAXBuilder();
       builder.setExpandEntities(true);
