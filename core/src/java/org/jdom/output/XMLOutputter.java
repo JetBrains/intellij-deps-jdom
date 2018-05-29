@@ -385,7 +385,7 @@ public class XMLOutputter implements Cloneable {
                 printDocType(out, doc.getDocType());
                 // Always print line separator after declaration, helps the
                 // output look better and is semantically inconsequential
-                out.write(currentFormat.lineSeparator);
+                writeLineSeparator(out);
             }
             else {
                 // XXX if we get here then we have a illegal content, for
@@ -398,9 +398,15 @@ public class XMLOutputter implements Cloneable {
 
         // Output final line separator
         // We output this no matter what the newline flags say
-        out.write(currentFormat.lineSeparator);
+        writeLineSeparator(out);
 
         out.flush();
+    }
+
+    private void writeLineSeparator(Writer out) throws IOException {
+        if (currentFormat.lineSeparator != null) {
+            out.write(currentFormat.lineSeparator);
+        }
     }
 
     /**
@@ -690,7 +696,7 @@ public class XMLOutputter implements Cloneable {
             // Print new line after decl always, even if no other new lines
             // Helps the output look better and is semantically
             // inconsequential
-            out.write(currentFormat.lineSeparator);
+            writeLineSeparator(out);
         }
     }
 
@@ -726,7 +732,7 @@ public class XMLOutputter implements Cloneable {
         }
         if ((internalSubset != null) && (!internalSubset.equals(""))) {
             out.write(" [");
-            out.write(currentFormat.lineSeparator);
+            writeLineSeparator(out);
             out.write(docType.getInternalSubset());
             out.write("]");
         }
@@ -1195,7 +1201,7 @@ public class XMLOutputter implements Cloneable {
      */
     private void newline(Writer out) throws IOException {
         if (currentFormat.indent != null) {
-            out.write(currentFormat.lineSeparator);
+            writeLineSeparator(out);
         }
     }
 
@@ -1553,18 +1559,23 @@ public class XMLOutputter implements Cloneable {
      */
     public String toString() {
         StringBuffer buffer = new StringBuffer();
-        for (int i = 0; i < userFormat.lineSeparator.length(); i++) {
-            char ch = userFormat.lineSeparator.charAt(i);
-            switch (ch) {
-            case '\r': buffer.append("\\r");
-                       break;
-            case '\n': buffer.append("\\n");
-                       break;
-            case '\t': buffer.append("\\t");
-                       break;
-            default:   buffer.append("[" + ((int)ch) + "]");
-                       break;
+        if (userFormat.lineSeparator != null) {
+            for (int i = 0; i < userFormat.lineSeparator.length(); i++) {
+                char ch = userFormat.lineSeparator.charAt(i);
+                switch (ch) {
+                case '\r': buffer.append("\\r");
+                           break;
+                case '\n': buffer.append("\\n");
+                           break;
+                case '\t': buffer.append("\\t");
+                           break;
+                default:   buffer.append("[" + ((int)ch) + "]");
+                           break;
+                }
             }
+        }
+        else {
+            buffer.append("null");
         }
 
         return (

@@ -12,6 +12,7 @@ import org.jdom.*;
 import org.jdom.input.SAXBuilder;
 import org.jdom.output.Format;
 import org.jdom.output.Format.TextMode;
+import org.jdom.output.LineSeparator;
 import org.jdom.output.XMLOutputter;
 import org.jdom.output.XMLOutputter2;
 import org.jdom.output.support.AbstractXMLOutputProcessor;
@@ -412,6 +413,13 @@ public final class TestXMLOutputter extends AbstractTestOutputter {
 		TestFormat.checkEquals(Format.getRawFormat(), out.getFormat());
 		out.setFormat(mine);
 		TestFormat.checkEquals(mine, out.getFormat());
+	}
+
+	@Test
+	public void testNoLineSeparator() {
+		XMLOutputter out = new XMLOutputter(Format.getRawFormat().setLineSeparator(LineSeparator.NONE));
+		assertEquals("<?xml version=\"1.0\" encoding=\"UTF-8\"?><root />",
+				out.outputString(new Document(new Element("root"))));
 	}
 
 	@Test
