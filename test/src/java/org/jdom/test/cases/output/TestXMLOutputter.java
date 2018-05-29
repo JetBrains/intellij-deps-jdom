@@ -14,7 +14,6 @@ import org.jdom.output.Format;
 import org.jdom.output.Format.TextMode;
 import org.jdom.output.LineSeparator;
 import org.jdom.output.XMLOutputter;
-import org.jdom.output.XMLOutputter2;
 import org.jdom.output.support.AbstractXMLOutputProcessor;
 import org.jdom.output.support.XMLOutputProcessor;
 import org.junit.Ignore;
@@ -247,7 +246,7 @@ public final class TestXMLOutputter extends AbstractTestOutputter {
       builder.setExpandEntities(true);
       Document doc = builder.build(new StringReader("<?xml version=\"1.0\"?><root>&#x10000; &#x10000;</root>"));
       Format format = Format.getCompactFormat().setEncoding("ISO-8859-1");
-      XMLOutputter2 outputter = new XMLOutputter2(format);
+      XMLOutputter outputter = new XMLOutputter(format);
       StringWriter sw = new StringWriter();
       outputter.output(doc, sw);
       String xml = sw.toString();
@@ -261,7 +260,7 @@ public final class TestXMLOutputter extends AbstractTestOutputter {
       builder.setExpandEntities(true);
       Document doc = builder.build(new StringReader("<?xml version=\"1.0\"?><root>&#x10000; &#65536;</root>"));
       Format format = Format.getCompactFormat().setEncoding("ISO-8859-1");
-      XMLOutputter2 outputter = new XMLOutputter2(format);
+      XMLOutputter outputter = new XMLOutputter(format);
       ByteArrayOutputStream baos = new ByteArrayOutputStream();
       outputter.output(doc, baos);
       String xml = baos.toString();
@@ -275,7 +274,7 @@ public final class TestXMLOutputter extends AbstractTestOutputter {
       builder.setExpandEntities(true);
       Document doc = builder.build(new StringReader("<?xml version=\"1.0\"?><root att=\"&#x10000; &#x10000;\" />"));
       Format format = Format.getCompactFormat().setEncoding("ISO-8859-1");
-      XMLOutputter2 outputter = new XMLOutputter2(format);
+      XMLOutputter outputter = new XMLOutputter(format);
       ByteArrayOutputStream baos = new ByteArrayOutputStream();
       outputter.output(doc, baos);
       String xml = baos.toString();
@@ -289,7 +288,7 @@ public final class TestXMLOutputter extends AbstractTestOutputter {
       builder.setExpandEntities(true);
       Document doc = builder.build(new StringReader("<?xml version=\"1.0\"?><root att=\"&#x10000; &#65536;\" />"));
       Format format = Format.getCompactFormat().setEncoding("ISO-8859-1");
-      XMLOutputter2 outputter = new XMLOutputter2(format);
+      XMLOutputter outputter = new XMLOutputter(format);
       ByteArrayOutputStream baos = new ByteArrayOutputStream();
       outputter.output(doc, baos);
       String xml = baos.toString();
@@ -304,7 +303,7 @@ public final class TestXMLOutputter extends AbstractTestOutputter {
       builder.setExpandEntities(true);
       Document doc = builder.build(new StringReader("<?xml version=\"1.0\"?><root>\uD800\uDC00</root>"));
       Format format = Format.getCompactFormat().setEncoding("ISO-8859-1");
-      XMLOutputter2 outputter = new XMLOutputter2(format);
+      XMLOutputter outputter = new XMLOutputter(format);
       ByteArrayOutputStream baos = new ByteArrayOutputStream();
       outputter.output(doc, baos);
       String xml = baos.toString();
@@ -319,7 +318,7 @@ public final class TestXMLOutputter extends AbstractTestOutputter {
       builder.setExpandEntities(true);
       Document doc = builder.build(new StringReader("<?xml version=\"1.0\"?><root>\uD800\uDC00</root>"));
       Format format = Format.getCompactFormat().setEncoding("UTF-8");
-      XMLOutputter2 outputter = new XMLOutputter2(format);
+      XMLOutputter outputter = new XMLOutputter(format);
       ByteArrayOutputStream baos = new ByteArrayOutputStream();
       outputter.output(doc, baos);
       String xml = baos.toString();
@@ -353,7 +352,7 @@ public final class TestXMLOutputter extends AbstractTestOutputter {
       Text t = new UncheckedJDOMFactory().text("\uD800\uDBFF");
       doc.getRootElement().setContent(t);
       Format format = Format.getCompactFormat().setEncoding("ISO-8859-1");
-      XMLOutputter2 outputter = new XMLOutputter2(format);
+      XMLOutputter outputter = new XMLOutputter(format);
       ByteArrayOutputStream baos = new ByteArrayOutputStream();
       try {
         outputter.output(doc, baos);
@@ -369,7 +368,7 @@ public final class TestXMLOutputter extends AbstractTestOutputter {
 
 	@Test
 	public void testXMLOutputter() {
-		XMLOutputter2 out = new XMLOutputter2();
+		XMLOutputter out = new XMLOutputter();
 		TestFormat.checkEquals(out.getFormat(), Format.getRawFormat());
 	}
 
@@ -378,30 +377,8 @@ public final class TestXMLOutputter extends AbstractTestOutputter {
 	public void testXMLOutputterFormat() {
 		Format mine = Format.getCompactFormat();
 		mine.setEncoding("US-ASCII");
-		XMLOutputter2 out = new XMLOutputter2(mine);
+		XMLOutputter out = new XMLOutputter(mine);
 		TestFormat.checkEquals(mine, out.getFormat());
-	}
-
-	@Test
-	public void testXMLOutputterXMLOutputter() {
-		Format mine = Format.getCompactFormat();
-		XMLOutputProcessor xoutp = new XMLOutputter2().getXMLOutputProcessor();
-		mine.setEncoding("US-ASCII");
-		// double-constcut it.
-		XMLOutputter2 out = new XMLOutputter2(new XMLOutputter2(mine));
-		TestFormat.checkEquals(mine, out.getFormat());
-		assertTrue(xoutp == out.getXMLOutputProcessor());
-	}
-
-	@Test
-	public void testXMLOutputterXMLOutputProcessor() {
-		XMLOutputProcessor xoutp = new AbstractXMLOutputProcessor() {
-			// nothing;
-		};
-		// double-constrcut it.
-		XMLOutputter2 out = new XMLOutputter2(xoutp);
-		TestFormat.checkEquals(Format.getRawFormat(), out.getFormat());
-		assertTrue(xoutp == out.getXMLOutputProcessor());
 	}
 
 	@Test
@@ -409,7 +386,7 @@ public final class TestXMLOutputter extends AbstractTestOutputter {
 		Format mine = Format.getCompactFormat();
 		mine.setEncoding("US-ASCII");
 		// double-constcut it.
-		XMLOutputter2 out = new XMLOutputter2();
+		XMLOutputter out = new XMLOutputter();
 		TestFormat.checkEquals(Format.getRawFormat(), out.getFormat());
 		out.setFormat(mine);
 		TestFormat.checkEquals(mine, out.getFormat());
@@ -420,19 +397,6 @@ public final class TestXMLOutputter extends AbstractTestOutputter {
 		XMLOutputter out = new XMLOutputter(Format.getRawFormat().setLineSeparator(LineSeparator.NONE));
 		assertEquals("<?xml version=\"1.0\" encoding=\"UTF-8\"?><root />",
 				out.outputString(new Document(new Element("root"))));
-	}
-
-	@Test
-	public void testXMLOutputProcessor() {
-		XMLOutputProcessor xoutp = new AbstractXMLOutputProcessor() {
-			// nothing;
-		};
-		// double-constcut it.
-		XMLOutputter2 out = new XMLOutputter2();
-		XMLOutputProcessor xop = out.getXMLOutputProcessor();
-		out.setXMLOutputProcessor(xoutp);
-		assertTrue(xoutp != xop);
-		assertTrue(xoutp == out.getXMLOutputProcessor());
 	}
 
 	@Test
@@ -453,7 +417,7 @@ public final class TestXMLOutputter extends AbstractTestOutputter {
 		totest.put("Frodo's Journey", "Frodo's Journey");
 
 
-		XMLOutputter2 out = new XMLOutputter2();
+		XMLOutputter out = new XMLOutputter();
 
 		for (Map.Entry<String,String> me : totest.entrySet()) {
 			if (!me.getValue().equals(out.escapeAttributeEntities(me.getKey()))) {
@@ -481,7 +445,7 @@ public final class TestXMLOutputter extends AbstractTestOutputter {
 		totest.put("Frodo's Journey", "Frodo's Journey");
 
 
-		XMLOutputter2 out = new XMLOutputter2();
+		XMLOutputter out = new XMLOutputter();
 
 		for (Map.Entry<String,String> me : totest.entrySet()) {
 			if (!me.getValue().equals(out.escapeElementEntities(me.getKey()))) {
@@ -494,25 +458,8 @@ public final class TestXMLOutputter extends AbstractTestOutputter {
 
 
 	@Test
-	public void testTrimFullWhite() {
-		// See issue #31.
-		// https://github.com/hunterhacker/jdom/issues/31
-		// This tests should pass when issue 31 is resolved.
-		Element root = new Element("root");
-		root.addContent(new Text(" "));
-		root.addContent(new Text("x"));
-		root.addContent(new Text(" "));
-		Format mf = Format.getRawFormat();
-		mf.setTextMode(TextMode.TRIM_FULL_WHITE);
-		XMLOutputter2 xout = new XMLOutputter2(mf);
-		String output = xout.outputString(root);
-		assertEquals("<root> x </root>", output);
-	}
-
-
-	@Test
 	public void testClone() {
-		XMLOutputter2 xo = new XMLOutputter2();
+		XMLOutputter xo = new XMLOutputter();
 		assertTrue(xo != xo.clone());
 	}
 
@@ -520,30 +467,8 @@ public final class TestXMLOutputter extends AbstractTestOutputter {
 	public void testToString() {
 		Format fmt = Format.getCompactFormat();
 		fmt.setLineSeparator("\n\t ");
-		XMLOutputter2 out = new XMLOutputter2(fmt);
+		XMLOutputter out = new XMLOutputter(fmt);
 		assertNotNull(out.toString());
-	}
-
-	@Test
-	public void testCRNLEscaping() {
-		Document doc = new Document();
-		Element root = new Element("root");
-		Element child1 = new Element("child1");
-		Element child2 = new Element("child2");
-		Text stuff = new Text("foo");
-		root.addContent(child1);
-		root.addContent(stuff);
-		root.addContent(child2);
-		doc.setRootElement(root);
-		XMLOutputter2 xout = new XMLOutputter2(Format.getPrettyFormat());
-		String actual = xout.outputString(doc);
-		String expect = "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n"
-				+ "<root>\r\n"
-				+ "  <child1 />\r\n"
-				+ "  foo\r\n"
-				+ "  <child2 />\r\n"
-				+ "</root>\r\n";
-		assertEquals(expect, actual);
 	}
 
 	/**
@@ -586,7 +511,7 @@ public final class TestXMLOutputter extends AbstractTestOutputter {
 		String[] result  = new String[] {expect(raw), expect(compact), expect(pretty), expect(trimfw)};
 
 		for (int i = 0; i < 4; i++) {
-			XMLOutputter2 out = new XMLOutputter2(formats[i]);
+			XMLOutputter out = new XMLOutputter(formats[i]);
 			ByteArrayOutputStream baos = new ByteArrayOutputStream(result[i].length() * 2);
 			CharArrayWriter caw = new CharArrayWriter(result[i].length() + 2);
 			try {
@@ -614,7 +539,7 @@ public final class TestXMLOutputter extends AbstractTestOutputter {
 
 	private Method getMethod(String name, Class<?>...classes) {
 		try {
-			return XMLOutputter2.class.getMethod(name, classes);
+			return XMLOutputter.class.getMethod(name, classes);
 		} catch (Exception e) {
 			// ignore.
 			System.out.println("Can't find " + name + " on " + this.getClass().getName() + ": " + e.getMessage());
