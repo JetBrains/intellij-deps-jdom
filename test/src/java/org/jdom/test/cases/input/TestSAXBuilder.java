@@ -1157,20 +1157,26 @@ public final class TestSAXBuilder {
 			checkException(IOException.class, e.getCause());
 		}
 	}
-	
+
+	@Test
+	public void testSimpleCDATA() throws JDOMException, IOException {
+		SAXBuilder sb = new SAXBuilder();
+    Document doc = sb.build(new StringReader("<message><![CDATA[hello]]></message>"));
+		List<Content> content = doc.getRootElement().getContent();
+		assertEquals("Should be only one child: " + content, 1 , content.size());
+	}
+
 	@Test
 	public void testSplitCDATAinCDATA() throws JDOMException, IOException {
-	    // Note the ]]><![CDATA[ in the middle
-	    String toparse = "<message><![CDATA[  expected:<[[D/0]]]]><![CDATA[> but was:<[null]>  ]]></message>";
-	    
-	    SAXBuilder sb = new SAXBuilder();
-	    Document doc = sb.build(new CharArrayReader(toparse.toCharArray()));
-	    
-	    assertEquals("Should match:   expected:<[[D/0]]> but was:<[null]>", "  expected:<[[D/0]]> but was:<[null]>  " , doc.getRootElement().getValue());
-	    
-	    
+	  	// Note the ]]><![CDATA[ in the middle
+	  	String toparse = "<message><![CDATA[  expected:<[[D/0]]]]><![CDATA[> but was:<[null]>  ]]></message>";
+
+	  	SAXBuilder sb = new SAXBuilder();
+	  	Document doc = sb.build(new CharArrayReader(toparse.toCharArray()));
+
+	  	assertEquals("Should match:   expected:<[[D/0]]> but was:<[null]>", "  expected:<[[D/0]]> but was:<[null]>  ", doc.getRootElement().getValue());
 	}
-	
+
 	@Test
 	public void testParserFactory() throws JDOMException, IOException {
 		if (System.getProperty("org.jdom2.performance") == null) {
