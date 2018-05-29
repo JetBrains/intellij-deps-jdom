@@ -71,13 +71,7 @@ import static org.junit.Assert.assertNull;
 import static org.junit.Assert.assertTrue;
 import static org.junit.Assert.fail;
 
-import java.io.ByteArrayInputStream;
-import java.io.CharArrayReader;
-import java.io.CharArrayWriter;
-import java.io.File;
-import java.io.FileWriter;
-import java.io.IOException;
-import java.io.Reader;
+import java.io.*;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.nio.CharBuffer;
@@ -498,16 +492,15 @@ public final class TestSAXBuilder {
 		
 	}
 
-	@SuppressWarnings("deprecation")
 	@Test
-	public void testGetIgnoringElementContentWhitespace() throws JDOMException {
-		SAXBuilder sb = new SAXBuilder(true);
+	public void testGetIgnoringElementContentWhitespace() throws JDOMException, IOException {
+		SAXBuilder sb = new SAXBuilder();
 		assertNull(sb.getDriverClass());
 		assertTrue(sb.getEntityResolver() == null);
 		assertTrue(sb.getErrorHandler() == null);
 		assertTrue(sb.getDTDHandler() == null);
 		assertTrue(sb.getXMLFilter() == null);
-		assertTrue(sb.isValidating());
+		assertFalse(sb.isValidating());
 		assertTrue(sb.getExpandEntities());
 		
 		SAXEngine se = sb.buildEngine();
@@ -517,38 +510,61 @@ public final class TestSAXBuilder {
 		assertTrue(sb.getIgnoringElementContentWhitespace());		
 		se = sb.buildEngine();
 		assertTrue(se.getIgnoringElementContentWhitespace());
+		se.build(new StringReader(testxml));
+		assertTrue(se.getIgnoringElementContentWhitespace());
 		sb.setIgnoringElementContentWhitespace(false);
 		assertFalse(sb.getIgnoringElementContentWhitespace());		
 		se = sb.buildEngine();
 		assertFalse(se.getIgnoringElementContentWhitespace());
 	}
 
-	@SuppressWarnings("deprecation")
 	@Test
-	public void testGetIgnoringBoundaryWhitespace() throws JDOMException {
-		SAXBuilder sb = new SAXBuilder(true);
+	public void testGetIgnoringBoundaryWhitespace() throws JDOMException, IOException {
+		SAXBuilder sb = new SAXBuilder();
 		SAXEngine se = sb.buildEngine();
 		assertNull(sb.getDriverClass());
 		assertTrue(sb.getEntityResolver() == null);
 		assertTrue(sb.getErrorHandler() == null);
 		assertTrue(sb.getDTDHandler() == null);
 		assertTrue(sb.getXMLFilter() == null);
-		assertTrue(sb.isValidating());
+		assertFalse(sb.isValidating());
 		assertTrue(sb.getExpandEntities());
 		assertTrue(se.getEntityResolver() == null);
 		assertTrue(se.getErrorHandler() != null);
 		assertTrue(se.getDTDHandler() != null);
-		assertTrue(se.isValidating());
+		assertFalse(se.isValidating());
 		assertTrue(se.getExpandEntities());
 		sb.setIgnoringBoundaryWhitespace(true);
 		assertTrue(sb.getIgnoringBoundaryWhitespace());		
 		se = sb.buildEngine();
-		assertTrue(se.getIgnoringBoundaryWhitespace());		
+		assertTrue(se.getIgnoringBoundaryWhitespace());
+		se.build(new StringReader(testxml));
+		assertTrue(se.getIgnoringBoundaryWhitespace());
 		sb.setIgnoringBoundaryWhitespace(false);
 		assertFalse(sb.getIgnoringBoundaryWhitespace());
 		
 		se = sb.buildEngine();
 		assertFalse(se.getIgnoringBoundaryWhitespace());
+	}
+
+	@Test
+	public void testGetExpandEntities() throws JDOMException, IOException {
+		SAXBuilder sb = new SAXBuilder();
+		assertTrue(sb.getExpandEntities());
+		sb.setExpandEntities(false);
+		SAXEngine se = sb.buildEngine();
+		assertFalse(se.getExpandEntities());
+		se = sb.buildEngine();
+		assertFalse(se.getExpandEntities());
+		se.build(new StringReader(testxml));
+		assertFalse(se.getExpandEntities());
+
+		sb.setExpandEntities(true);
+		assertTrue(sb.getExpandEntities());
+		se = sb.buildEngine();
+		assertTrue(se.getExpandEntities());
+		se.build(new StringReader(testxml));
+		assertTrue(se.getExpandEntities());
 	}
 
 	@SuppressWarnings("deprecation")
@@ -566,6 +582,16 @@ public final class TestSAXBuilder {
 		assertTrue(sb.getReuseParser());		
 		sb.setReuseParser(false);
 		assertFalse(sb.getReuseParser());		
+	}
+
+	@Test
+	public void testReuseParser() throws JDOMException, IOException {
+		SAXBuilder sb = new SAXBuilder();
+		assertTrue(sb.getReuseParser());
+
+		sb.build(new StringReader("<?xml version=\"1.0\"?>\n<!-- comment -->\n<root/>"));
+		Document document = sb.build(new StringReader(testxml));
+		assertXMLMatches(null, document);
 	}
 
 	@Test

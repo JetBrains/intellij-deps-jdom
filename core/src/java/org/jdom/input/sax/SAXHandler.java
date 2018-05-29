@@ -166,7 +166,7 @@ public class SAXHandler extends DefaultHandler implements LexicalHandler,
 	/** Indicator of whether we are in a CDATA - must be reset() */
 	private boolean inCDATA = false;
 
-	/** Indicator of whether we should expand entities - must be reset() */
+	/** Indicator of whether we should expand entities */
 	private boolean expand = true;
 
 	/**
@@ -232,15 +232,12 @@ public class SAXHandler extends DefaultHandler implements LexicalHandler,
 		inInternalSubset = false;
 		previousCDATA = false;
 		inCDATA = false;
-		expand = true;
 		suppress = false;
 		entityDepth = 0;
 		declaredNamespaces.clear();
 		internalSubset.setLength(0);
 		textBuffer.clear();
 		externalEntities.clear();
-		ignoringWhite = false;
-		ignoringBoundaryWhite = false;
 		resetSubCLass();
 	}
 
